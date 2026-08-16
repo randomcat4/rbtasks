@@ -1,0 +1,42 @@
+{
+  "$id": "returnbench:d3xor04:submission",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "kernel_basis": {
+      "items": {
+        "items": {
+          "type": "integer"
+        },
+        "maxItems": 16,
+        "minItems": 16,
+        "type": "array"
+      },
+      "maxItems": 5,
+      "minItems": 5,
+      "type": "array"
+    },
+    "particular": {
+      "items": {
+        "type": "integer"
+      },
+      "maxItems": 16,
+      "minItems": 16,
+      "type": "array"
+    },
+    "rank": {
+      "type": "integer"
+    },
+    "solution_count": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "kernel_basis",
+    "particular",
+    "rank",
+    "solution_count"
+  ],
+  "title": "d3xor04 actor submission shape (values intentionally omitted)",
+  "type": "object"
+}

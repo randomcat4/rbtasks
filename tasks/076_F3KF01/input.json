@@ -1,0 +1,115 @@
+{
+  "covariance_update": "Joseph form",
+  "cycle_order": "predict_then_update",
+  "initial_covariance": [
+    [
+      {
+        "den": 1,
+        "num": 1
+      },
+      {
+        "den": 1,
+        "num": 0
+      }
+    ],
+    [
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 1
+      }
+    ]
+  ],
+  "initial_mean": [
+    {
+      "den": 1,
+      "num": 0
+    },
+    {
+      "den": 1,
+      "num": 1
+    }
+  ],
+  "measurements": [
+    {
+      "den": 1,
+      "num": 2
+    },
+    {
+      "den": 4,
+      "num": 11
+    },
+    {
+      "den": 1,
+      "num": 4
+    }
+  ],
+  "observation_covariance": [
+    [
+      {
+        "den": 4,
+        "num": 1
+      }
+    ]
+  ],
+  "observation_matrix": [
+    [
+      {
+        "den": 1,
+        "num": 1
+      },
+      {
+        "den": 1,
+        "num": 0
+      }
+    ]
+  ],
+  "process_covariance": [
+    [
+      {
+        "den": 10,
+        "num": 1
+      },
+      {
+        "den": 1,
+        "num": 0
+      }
+    ],
+    [
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 20,
+        "num": 1
+      }
+    ]
+  ],
+  "schema": "f3.kalman.v1",
+  "transition": [
+    [
+      {
+        "den": 1,
+        "num": 1
+      },
+      {
+        "den": 1,
+        "num": 1
+      }
+    ],
+    [
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 1
+      }
+    ]
+  ]
+}

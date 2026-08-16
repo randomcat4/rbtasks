@@ -1,0 +1,29 @@
+{
+  "$id": "returnbench:F3CV01:submission",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "kind": {
+      "type": "string"
+    },
+    "output": {
+      "items": {
+        "items": {
+          "type": "integer"
+        },
+        "maxItems": 5,
+        "minItems": 5,
+        "type": "array"
+      },
+      "maxItems": 4,
+      "minItems": 4,
+      "type": "array"
+    }
+  },
+  "required": [
+    "kind",
+    "output"
+  ],
+  "title": "F3CV01 actor submission shape (values intentionally omitted)",
+  "type": "object"
+}

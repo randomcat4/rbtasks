@@ -1,0 +1,17 @@
+{
+  "schema_version": "returnbench-exact-certificate-v1",
+  "task_id": "P5IIR09",
+  "integer": "JSON integer",
+  "rational": "reduced [numerator,denominator], denominator>0",
+  "additional_top_level_fields": "rejected",
+  "required_top_level_fields": {
+    "stable": "bool",
+    "jury_table": "18 exact row records including raw_normalization_gcd",
+    "schur_rows": "19 canonical primitive rational coefficient rows",
+    "strict_margins": "positive rational[18]",
+    "bilinear_polynomial": "rational[19] ascending",
+    "sturm_sequence": "exact rational rows",
+    "sturm_variations": "five integer counts",
+    "route_agreement": "two booleans"
+  }
+}

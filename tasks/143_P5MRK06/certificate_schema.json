@@ -1,0 +1,13 @@
+{
+  "schema_version": "returnbench-exact-certificate-v1",
+  "task_id": "P5MRK06",
+  "integer": "JSON integer",
+  "rational": "reduced [numerator,denominator], denominator>0",
+  "additional_top_level_fields": "rejected",
+  "required_top_level_fields": {
+    "hitting_times": "rational[64]",
+    "absorption_probabilities": "rational[64][5]",
+    "modular_tables": "three {prime,pivot_product,hitting_residues[64],absorption_residues[64][5]}",
+    "reconstruction_bounds": "three integer uniqueness bounds"
+  }
+}

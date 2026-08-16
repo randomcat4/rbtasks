@@ -1,0 +1,12 @@
+{
+  "bibliographic_context": [
+    "R. E. Kalman, On the General Theory of Control Systems, IFAC 1960, DOI:10.1016/S1474-6670(17)70094-8"
+  ],
+  "claim_provenance": "project_generated_original_fixed_instance",
+  "license": "MIT",
+  "license_authority": "root LICENSE; explicit project-owner authorization 2026-08-16",
+  "revision": "20168ee9248de85c16dbc1b5c57723999cd8960235c9667e87bad11e5ac5e38e",
+  "source_locator": "urn:rbtasks:h4:h4obs02:v1",
+  "task_id": "H4OBS02",
+  "third_party_code_or_data_copied": false
+}

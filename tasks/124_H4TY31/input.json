@@ -1,0 +1,190 @@
+{
+  "expression": {
+    "body": {
+      "body": {
+        "arg": {
+          "arg": {
+            "body": {
+              "id": "n31",
+              "kind": "var",
+              "name": "q"
+            },
+            "id": "n30",
+            "kind": "lam",
+            "param": "q"
+          },
+          "fn": {
+            "arg": {
+              "body": {
+                "id": "n29",
+                "kind": "var",
+                "name": "p"
+              },
+              "id": "n28",
+              "kind": "lam",
+              "param": "p"
+            },
+            "fn": {
+              "id": "n27",
+              "kind": "var",
+              "name": "compose"
+            },
+            "id": "n26",
+            "kind": "app"
+          },
+          "id": "n25",
+          "kind": "app"
+        },
+        "fn": {
+          "arg": {
+            "arg": {
+              "id": "n24",
+              "kind": "var",
+              "name": "twice"
+            },
+            "fn": {
+              "arg": {
+                "id": "n23",
+                "kind": "var",
+                "name": "twice"
+              },
+              "fn": {
+                "id": "n22",
+                "kind": "var",
+                "name": "compose"
+              },
+              "id": "n21",
+              "kind": "app"
+            },
+            "id": "n20",
+            "kind": "app"
+          },
+          "fn": {
+            "id": "n19",
+            "kind": "var",
+            "name": "pair"
+          },
+          "id": "n18",
+          "kind": "app"
+        },
+        "id": "n17",
+        "kind": "app"
+      },
+      "id": "n09",
+      "kind": "let",
+      "name": "twice",
+      "value": {
+        "body": {
+          "body": {
+            "arg": {
+              "arg": {
+                "id": "n16",
+                "kind": "var",
+                "name": "x"
+              },
+              "fn": {
+                "id": "n15",
+                "kind": "var",
+                "name": "h"
+              },
+              "id": "n14",
+              "kind": "app"
+            },
+            "fn": {
+              "id": "n13",
+              "kind": "var",
+              "name": "h"
+            },
+            "id": "n12",
+            "kind": "app"
+          },
+          "id": "n11",
+          "kind": "lam",
+          "param": "x"
+        },
+        "id": "n10",
+        "kind": "lam",
+        "param": "h"
+      }
+    },
+    "id": "n00",
+    "kind": "let",
+    "name": "compose",
+    "value": {
+      "body": {
+        "body": {
+          "body": {
+            "arg": {
+              "arg": {
+                "id": "n08",
+                "kind": "var",
+                "name": "x"
+              },
+              "fn": {
+                "id": "n07",
+                "kind": "var",
+                "name": "g"
+              },
+              "id": "n06",
+              "kind": "app"
+            },
+            "fn": {
+              "id": "n05",
+              "kind": "var",
+              "name": "f"
+            },
+            "id": "n04",
+            "kind": "app"
+          },
+          "id": "n03",
+          "kind": "lam",
+          "param": "x"
+        },
+        "id": "n02",
+        "kind": "lam",
+        "param": "g"
+      },
+      "id": "n01",
+      "kind": "lam",
+      "param": "f"
+    }
+  },
+  "fresh_variable_order": "preorder Algorithm W; lambda binders then scheme instantiations then application result variables",
+  "primitive_schemes": {
+    "pair": {
+      "quantified": [
+        "a",
+        "b"
+      ],
+      "type": {
+        "from": {
+          "name": "a",
+          "tag": "var"
+        },
+        "tag": "arrow",
+        "to": {
+          "from": {
+            "name": "b",
+            "tag": "var"
+          },
+          "tag": "arrow",
+          "to": {
+            "args": [
+              {
+                "name": "a",
+                "tag": "var"
+              },
+              {
+                "name": "b",
+                "tag": "var"
+              }
+            ],
+            "name": "Pair",
+            "tag": "con"
+          }
+        }
+      }
+    }
+  },
+  "schema": "h4.hm_principal.v1"
+}

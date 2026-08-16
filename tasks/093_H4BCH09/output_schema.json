@@ -1,0 +1,55 @@
+{
+  "additional_fields": "forbidden",
+  "contract_completeness": "Every required field has an explicit JSON type, shape, defining equation or predicate, and canonicalization rule.",
+  "field_contracts": {
+    "corrected_codeword": {
+      "canonicalization": "binary entries, ascending coefficient/position order",
+      "definition": "received with exactly error_positions toggled",
+      "json_type": "array of integers",
+      "shape": "[n]"
+    },
+    "error_positions": {
+      "canonicalization": "strictly increasing, unique, 0<=i<n",
+      "definition": "bit coordinates i whose Chien root is alpha^(-i)",
+      "json_type": "array of integers",
+      "shape": "[at most designed_t]"
+    },
+    "generator_quotient": {
+      "canonicalization": "ascending coefficients, no trailing zero",
+      "definition": "binary q with corrected=g*q",
+      "json_type": "array of integers",
+      "shape": "[n-degree(g)]"
+    },
+    "locator_polynomial_gf64_ascending": {
+      "canonicalization": "ascending powers; constant 1",
+      "definition": "Lambda(z)=product(1+alpha^i z)",
+      "json_type": "array of integers",
+      "shape": "[error_count+1]"
+    },
+    "syndromes_s1_to_s6": {
+      "canonicalization": "j increasing",
+      "definition": "s_j=received(alpha^j), j=1,...,2t, in GF(64) encoding",
+      "json_type": "array of integers",
+      "shape": "[2*designed_t]"
+    }
+  },
+  "representation_conventions": [
+    "Indices are zero-based unless a mathematical exponent or degree is explicitly named. Matrices are row-major; nested tensor array order is stated per task.",
+    "A rational scalar is a reduced JSON string \"n\" or \"n/d\" with positive denominator. JSON integers are used only where the field contract says integer. Floats, decimal approximations, NaN and infinity are invalid.",
+    "The submission object has exactly required_fields, with no additional keys. Nested objects likewise use exactly the named keys."
+  ],
+  "required_fields": [
+    "syndromes_s1_to_s6",
+    "locator_polynomial_gf64_ascending",
+    "error_positions",
+    "corrected_codeword",
+    "generator_quotient"
+  ],
+  "schema": "h4.output-contract.v1",
+  "task_rules": [
+    "A GF(64) element is an integer 0..63 whose bit j is the coefficient of alpha^j. Addition is XOR; multiplication is binary-polynomial multiplication modulo primitive_polynomial, whose integer bits encode x^6+x+1 (0x43).",
+    "Binary words and polynomials use ascending coefficient order: received[i] is the x^i coefficient. Let alpha be the residue class of x and s_j=r(alpha^j).",
+    "For an increasing error set E, Lambda(z)=product_(i in E)(1+alpha^i z), coefficients ascending. Its Chien roots satisfy Lambda(alpha^(-i))=0. The corrected word must equal received with exactly E toggled and equal generator_polynomial_ascending times the ascending binary quotient."
+  ],
+  "task_schema": "h4.bch_decode.v1"
+}

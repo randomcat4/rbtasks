@@ -1,0 +1,15 @@
+{
+  "additional_top_level_fields": "rejected",
+  "required_top_level_fields": {
+    "b_minus_one_infeasibility_search": "complete zero-solution trace",
+    "bin_loads": "int[]",
+    "contracted_conflicts": "int[2][]",
+    "contracted_groups": "int[][]",
+    "contracted_weights": "int[]",
+    "item_to_bin": "int[]",
+    "packing_search": "trace",
+    "pb_source_bridge": "capacity/conflict/same/different rows"
+  },
+  "schema_version": "returnbench-exhaustive-certificate-v1",
+  "task_id": "P5BIN19"
+}

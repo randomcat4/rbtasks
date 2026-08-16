@@ -1,0 +1,12 @@
+{
+  "additional_top_level_fields": "rejected",
+  "required_top_level_fields": {
+    "bfs": "{distances,parents,parent_generators,layers}",
+    "cayley_adjacency": "int[][]",
+    "diameter": "int",
+    "diameter_witness": "int",
+    "group_law": "{identity,inverses,associativity_checks}"
+  },
+  "schema_version": "returnbench-structural-certificate-v1",
+  "task_id": "P5CAY12"
+}

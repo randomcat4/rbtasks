@@ -1,0 +1,51 @@
+{
+  "$id": "returnbench:d3brg02:submission",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "bridges": {
+      "items": {
+        "items": {
+          "type": "integer"
+        },
+        "maxItems": 2,
+        "minItems": 2,
+        "type": "array"
+      },
+      "maxItems": 5,
+      "minItems": 5,
+      "type": "array"
+    },
+    "components": {
+      "items": {
+        "anyOf": [
+          {
+            "items": {
+              "type": "integer"
+            },
+            "maxItems": 3,
+            "minItems": 3,
+            "type": "array"
+          },
+          {
+            "items": {
+              "type": "integer"
+            },
+            "maxItems": 1,
+            "minItems": 1,
+            "type": "array"
+          }
+        ]
+      },
+      "maxItems": 6,
+      "minItems": 6,
+      "type": "array"
+    }
+  },
+  "required": [
+    "bridges",
+    "components"
+  ],
+  "title": "d3brg02 actor submission shape (values intentionally omitted)",
+  "type": "object"
+}

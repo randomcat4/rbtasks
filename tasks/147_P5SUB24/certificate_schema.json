@@ -1,0 +1,13 @@
+{
+  "additional_top_level_fields": "rejected",
+  "required_top_level_fields": {
+    "canonical_generators": "int[][]",
+    "completeness_multiplication_checks": "int",
+    "exhaustive_generator_closure_trace": "all subgroup-element closures",
+    "hasse_covers": "int[2][]",
+    "subgroup_bitsets": "int[]",
+    "subgroup_count": "int"
+  },
+  "schema_version": "returnbench-algebra-optimization-v1",
+  "task_id": "P5SUB24"
+}

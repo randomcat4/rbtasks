@@ -1,0 +1,13 @@
+{
+  "additional_top_level_fields": "rejected",
+  "required_top_level_fields": {
+    "dart_head": "int[2E]",
+    "dart_involution": "int[2E]",
+    "dart_tail": "int[2E]",
+    "euler": "{vertices,edges,faces,chi,orientable_genus}:int",
+    "face_orbits": "int[][]",
+    "vertex_rotations": "int[][]"
+  },
+  "schema_version": "returnbench-structural-certificate-v1",
+  "task_id": "P5ROT11"
+}

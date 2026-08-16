@@ -1,0 +1,30 @@
+{
+  "answer_boundary": "No administrator control, arm assignment, reference answer, or hidden judge is included.",
+  "certificate_type": "完整递推表、精确变换或残差证书",
+  "difficulty_basis": "本题对象是“192 点 order-24 LPC 的完整 Levinson 有理递推证书”；需核验的特有证书结构为 完整递推表、精确变换或残差证书，公开合同核心项包括 ar_rows、autocorrelations、final_coefficients、prediction_errors、reflection_coefficients、yule_walker_residuals。本题的算法与验证负担是：由 192 点数据计算 order-24 自相关，完整执行 Levinson 递推，记录每阶反射系数与正预测误差并复算正规方程。 结构等级生成规则为“高：H4/P5 新题要求跨表示的完整结构证书、针对性负控与独立重放”。该等级仅依据证书宽度、精确重放和独立验收负担评定，未做模型难度校准。",
+  "family": "p5",
+  "lane": "p5",
+  "license": "MIT for project-original material; third-party material retains upstream terms.",
+  "math_domain": "数值与信号",
+  "ordinal": 142,
+  "pilot_status": "PILOT_PENDING",
+  "public_files": [
+    "certificate_schema.json",
+    "input.json",
+    "license.json",
+    "metadata.json",
+    "package.json",
+    "provenance.json",
+    "source.json",
+    "task.md",
+    "verifier.json"
+  ],
+  "release_status": "RELEASE_READY",
+  "representation_bridge": "冻结自然语言/结构化输入 → 信号处理、张量与数值变换中的精确表示 → 完整递推表、精确变换或残差证书（核心公开字段：ar_rows、autocorrelations、final_coefficients、prediction_errors）→ 独立验收回源结论",
+  "schema": "returnbench-public-task-v1",
+  "solution_outline": "由 192 点数据计算 order-24 自相关，完整执行 Levinson 递推，记录每阶反射系数与正预测误差并复算正规方程。",
+  "structural_difficulty": "高",
+  "subdomain": "信号处理、张量与数值变换",
+  "task_id": "P5LPC08",
+  "title": "P5LPC08 — 192 点 order-24 LPC 的完整 Levinson 有理递推证书"
+}

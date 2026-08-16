@@ -1,0 +1,14 @@
+{
+  "alternative": "two-sided_probability_leq_observed",
+  "schema": "f3.fisher.v1",
+  "table": [
+    [
+      9,
+      4
+    ],
+    [
+      3,
+      11
+    ]
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "additional_top_level_fields": "rejected",
+  "required_top_level_fields": {
+    "all_endpoint_count_trace_complete": "bool",
+    "close_pair_indices": "int[2]",
+    "common_interval_denominator": "int",
+    "dimension": "int",
+    "dyadic_eigenpairs": "96 intervals + endpoint LDL traces + vectors + residuals",
+    "irreducible_offdiagonal_nonzero": "bool",
+    "minimum_interval_gap_numerator": "int"
+  },
+  "schema_version": "returnbench-exact-return-v1",
+  "task_id": "P5EIG26"
+}

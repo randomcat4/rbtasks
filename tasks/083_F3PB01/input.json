@@ -1,0 +1,63 @@
+{
+  "probabilities": [
+    {
+      "den": 7,
+      "num": 1
+    },
+    {
+      "den": 9,
+      "num": 2
+    },
+    {
+      "den": 10,
+      "num": 3
+    },
+    {
+      "den": 11,
+      "num": 4
+    },
+    {
+      "den": 12,
+      "num": 5
+    },
+    {
+      "den": 2,
+      "num": 1
+    },
+    {
+      "den": 13,
+      "num": 7
+    },
+    {
+      "den": 5,
+      "num": 3
+    },
+    {
+      "den": 13,
+      "num": 8
+    },
+    {
+      "den": 3,
+      "num": 2
+    },
+    {
+      "den": 10,
+      "num": 7
+    },
+    {
+      "den": 4,
+      "num": 3
+    },
+    {
+      "den": 5,
+      "num": 4
+    },
+    {
+      "den": 6,
+      "num": 5
+    }
+  ],
+  "schema": "f3.poisson_binomial.v1",
+  "sham_index": 4,
+  "threshold": 8
+}

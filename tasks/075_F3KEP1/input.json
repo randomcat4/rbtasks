@@ -1,0 +1,42 @@
+{
+  "energy_sign": "specific_energy = |v|^2/2 - mu/|r|",
+  "model": "two-body Kepler point mass",
+  "mu": {
+    "den": 1,
+    "num": 10
+  },
+  "orbit_class": "bound (specific energy negative)",
+  "position": [
+    {
+      "den": 1,
+      "num": 3
+    },
+    {
+      "den": 1,
+      "num": 4
+    },
+    {
+      "den": 1,
+      "num": 0
+    }
+  ],
+  "radius": {
+    "den": 1,
+    "num": 5
+  },
+  "schema": "f3.kepler_invariants.v1",
+  "velocity": [
+    {
+      "den": 1,
+      "num": -1
+    },
+    {
+      "den": 1,
+      "num": 1
+    },
+    {
+      "den": 1,
+      "num": 0
+    }
+  ]
+}

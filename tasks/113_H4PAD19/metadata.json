@@ -1,0 +1,26 @@
+{
+  "answer_boundary": "No administrator control, arm assignment, reference answer, or hidden judge is included.",
+  "certificate_type": "矩阵分解、区间、残差或后验误差证书",
+  "difficulty_basis": "本题对象是“Exact [10/10] Pade approximant of exp”；需核验的特有证书结构为 矩阵分解、区间、残差或后验误差证书，公开合同核心项包括 P_ascending、Q_ascending、first_residual_coefficient、hankel_system_determinant。本题的算法与验证负担是：令 [10/10] Padé 分子分母的级数乘积匹配 exp 到 20 阶，解精确线性方程并验证余项前 21 个系数。 结构等级生成规则为“高：H4/P5 新题要求跨表示的完整结构证书、针对性负控与独立重放”。该等级仅依据证书宽度、精确重放和独立验收负担评定，未做模型难度校准。",
+  "family": "h4",
+  "lane": "h4",
+  "license": "MIT for project-original material; third-party material retains upstream terms.",
+  "math_domain": "应用数学",
+  "ordinal": 113,
+  "pilot_status": "PILOT_PENDING",
+  "public_files": [
+    "input.json",
+    "metadata.json",
+    "output_schema.json",
+    "provenance.json",
+    "task.md"
+  ],
+  "release_status": "RELEASE_READY",
+  "representation_bridge": "冻结自然语言/结构化输入 → 数值分析与线性代数中的精确表示 → 矩阵分解、区间、残差或后验误差证书（核心公开字段：P_ascending、Q_ascending、first_residual_coefficient、hankel_system_determinant）→ 独立验收回源结论",
+  "schema": "returnbench-public-task-v1",
+  "solution_outline": "令 [10/10] Padé 分子分母的级数乘积匹配 exp 到 20 阶，解精确线性方程并验证余项前 21 个系数。",
+  "structural_difficulty": "高",
+  "subdomain": "数值分析与线性代数",
+  "task_id": "H4PAD19",
+  "title": "H4PAD19 — Exact [10/10] Pade approximant of exp"
+}

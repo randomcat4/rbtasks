@@ -1,0 +1,13 @@
+{
+  "additional_top_level_fields": "rejected",
+  "required_top_level_fields": {
+    "burnside_weighted_sum": "int",
+    "conjugacy_classes": "class certificate with complete histogram-DP layers[]",
+    "group_elements": "permutation[]",
+    "identity_histogram_dp_layers": "complete DP layers",
+    "orbit_total": "int",
+    "valid_coloring_count": "int"
+  },
+  "schema_version": "returnbench-structural-certificate-v1",
+  "task_id": "P5BRN13"
+}

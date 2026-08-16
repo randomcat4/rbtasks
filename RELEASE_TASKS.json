@@ -1,0 +1,1208 @@
+{
+  "count": 150,
+  "schema": "returnbench-public-release-v1",
+  "source_commit": "e59f784e38302353b5ac57685d4ffcde428c26b2",
+  "status": "RELEASE_READY",
+  "tasks": [
+    {
+      "ordinal": 1,
+      "path": "tasks/001_LCSP-01",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/001_LCSP-01/task.md",
+      "task_id": "LCSP-01"
+    },
+    {
+      "ordinal": 2,
+      "path": "tasks/002_LCSP-05",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/002_LCSP-05/task.md",
+      "task_id": "LCSP-05"
+    },
+    {
+      "ordinal": 3,
+      "path": "tasks/003_LCSP-08",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/003_LCSP-08/task.md",
+      "task_id": "LCSP-08"
+    },
+    {
+      "ordinal": 4,
+      "path": "tasks/004_LCSP-09",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/004_LCSP-09/task.md",
+      "task_id": "LCSP-09"
+    },
+    {
+      "ordinal": 5,
+      "path": "tasks/005_LCSP-10",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/005_LCSP-10/task.md",
+      "task_id": "LCSP-10"
+    },
+    {
+      "ordinal": 6,
+      "path": "tasks/006_LCSP-12",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/006_LCSP-12/task.md",
+      "task_id": "LCSP-12"
+    },
+    {
+      "ordinal": 7,
+      "path": "tasks/007_LCSP-13",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/007_LCSP-13/task.md",
+      "task_id": "LCSP-13"
+    },
+    {
+      "ordinal": 8,
+      "path": "tasks/008_LCSP-22",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/008_LCSP-22/task.md",
+      "task_id": "LCSP-22"
+    },
+    {
+      "ordinal": 9,
+      "path": "tasks/009_A2-MUTIL",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/009_A2-MUTIL/task.md",
+      "task_id": "A2-MUTIL"
+    },
+    {
+      "ordinal": 10,
+      "path": "tasks/010_A2-NQEQ",
+      "pilot_status": "PILOT_HOLD_EXISTING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/010_A2-NQEQ/task.md",
+      "task_id": "A2-NQEQ"
+    },
+    {
+      "ordinal": 11,
+      "path": "tasks/011_A2-PEACE",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/011_A2-PEACE/task.md",
+      "task_id": "A2-PEACE"
+    },
+    {
+      "ordinal": 12,
+      "path": "tasks/012_A2-SEND",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/012_A2-SEND/task.md",
+      "task_id": "A2-SEND"
+    },
+    {
+      "ordinal": 13,
+      "path": "tasks/013_LCSP-02",
+      "pilot_status": "PILOT_HOLD_EXISTING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/013_LCSP-02/task.md",
+      "task_id": "LCSP-02"
+    },
+    {
+      "ordinal": 14,
+      "path": "tasks/014_LCSP-03",
+      "pilot_status": "PILOT_HOLD_EXISTING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/014_LCSP-03/task.md",
+      "task_id": "LCSP-03"
+    },
+    {
+      "ordinal": 15,
+      "path": "tasks/015_LCSP-04",
+      "pilot_status": "PILOT_HOLD_EXISTING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/015_LCSP-04/task.md",
+      "task_id": "LCSP-04"
+    },
+    {
+      "ordinal": 16,
+      "path": "tasks/016_LCSP-07",
+      "pilot_status": "PILOT_HOLD_EXISTING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/016_LCSP-07/task.md",
+      "task_id": "LCSP-07"
+    },
+    {
+      "ordinal": 17,
+      "path": "tasks/017_C03AREA",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/017_C03AREA/task.md",
+      "task_id": "C03AREA"
+    },
+    {
+      "ordinal": 18,
+      "path": "tasks/018_C03HERON",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/018_C03HERON/task.md",
+      "task_id": "C03HERON"
+    },
+    {
+      "ordinal": 19,
+      "path": "tasks/019_C04INV",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/019_C04INV/task.md",
+      "task_id": "C04INV"
+    },
+    {
+      "ordinal": 20,
+      "path": "tasks/020_C04KER",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/020_C04KER/task.md",
+      "task_id": "C04KER"
+    },
+    {
+      "ordinal": 21,
+      "path": "tasks/021_C2BALLOT",
+      "pilot_status": "PILOT_HOLD_EXISTING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/021_C2BALLOT/task.md",
+      "task_id": "C2BALLOT"
+    },
+    {
+      "ordinal": 22,
+      "path": "tasks/022_C2BUFFON",
+      "pilot_status": "PILOT_HOLD_EXISTING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/022_C2BUFFON/task.md",
+      "task_id": "C2BUFFON"
+    },
+    {
+      "ordinal": 23,
+      "path": "tasks/023_C2CUBE",
+      "pilot_status": "PILOT_HOLD_EXISTING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/023_C2CUBE/task.md",
+      "task_id": "C2CUBE"
+    },
+    {
+      "ordinal": 24,
+      "path": "tasks/024_C2KONIG",
+      "pilot_status": "PILOT_HOLD_EXISTING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/024_C2KONIG/task.md",
+      "task_id": "C2KONIG"
+    },
+    {
+      "ordinal": 25,
+      "path": "tasks/025_C2LINMAP",
+      "pilot_status": "PILOT_HOLD_EXISTING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/025_C2LINMAP/task.md",
+      "task_id": "C2LINMAP"
+    },
+    {
+      "ordinal": 26,
+      "path": "tasks/026_d3arb01",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/026_d3arb01/task.md",
+      "task_id": "d3arb01"
+    },
+    {
+      "ordinal": 27,
+      "path": "tasks/027_d3bdd04",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/027_d3bdd04/task.md",
+      "task_id": "d3bdd04"
+    },
+    {
+      "ordinal": 28,
+      "path": "tasks/028_d3blm01",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/028_d3blm01/task.md",
+      "task_id": "d3blm01"
+    },
+    {
+      "ordinal": 29,
+      "path": "tasks/029_d3brg02",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/029_d3brg02/task.md",
+      "task_id": "d3brg02"
+    },
+    {
+      "ordinal": 30,
+      "path": "tasks/030_d3cho01",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/030_d3cho01/task.md",
+      "task_id": "d3cho01"
+    },
+    {
+      "ordinal": 31,
+      "path": "tasks/031_d3cor02",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/031_d3cor02/task.md",
+      "task_id": "d3cor02"
+    },
+    {
+      "ordinal": 32,
+      "path": "tasks/032_d3cut01",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/032_d3cut01/task.md",
+      "task_id": "d3cut01"
+    },
+    {
+      "ordinal": 33,
+      "path": "tasks/033_d3dfa03",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/033_d3dfa03/task.md",
+      "task_id": "d3dfa03"
+    },
+    {
+      "ordinal": 34,
+      "path": "tasks/034_d3dom01",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/034_d3dom01/task.md",
+      "task_id": "d3dom01"
+    },
+    {
+      "ordinal": 35,
+      "path": "tasks/035_d3grp03",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/035_d3grp03/task.md",
+      "task_id": "d3grp03"
+    },
+    {
+      "ordinal": 36,
+      "path": "tasks/036_d3huf04",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/036_d3huf04/task.md",
+      "task_id": "d3huf04"
+    },
+    {
+      "ordinal": 37,
+      "path": "tasks/037_d3ilp03",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/037_d3ilp03/task.md",
+      "task_id": "d3ilp03"
+    },
+    {
+      "ordinal": 38,
+      "path": "tasks/038_d3iso02",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/038_d3iso02/task.md",
+      "task_id": "d3iso02"
+    },
+    {
+      "ordinal": 39,
+      "path": "tasks/039_d3jsp03",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/039_d3jsp03/task.md",
+      "task_id": "d3jsp03"
+    },
+    {
+      "ordinal": 40,
+      "path": "tasks/040_d3lev03",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/040_d3lev03/task.md",
+      "task_id": "d3lev03"
+    },
+    {
+      "ordinal": 41,
+      "path": "tasks/041_d3lpd04",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/041_d3lpd04/task.md",
+      "task_id": "d3lpd04"
+    },
+    {
+      "ordinal": 42,
+      "path": "tasks/042_d3mat03",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/042_d3mat03/task.md",
+      "task_id": "d3mat03"
+    },
+    {
+      "ordinal": 43,
+      "path": "tasks/043_d3mcb02",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/043_d3mcb02/task.md",
+      "task_id": "d3mcb02"
+    },
+    {
+      "ordinal": 44,
+      "path": "tasks/044_d3mcf01",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/044_d3mcf01/task.md",
+      "task_id": "d3mcf01"
+    },
+    {
+      "ordinal": 45,
+      "path": "tasks/045_d3mst02",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/045_d3mst02/task.md",
+      "task_id": "d3mst02"
+    },
+    {
+      "ordinal": 46,
+      "path": "tasks/046_d3pln01",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/046_d3pln01/task.md",
+      "task_id": "d3pln01"
+    },
+    {
+      "ordinal": 47,
+      "path": "tasks/047_d3rsc03",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/047_d3rsc03/task.md",
+      "task_id": "d3rsc03"
+    },
+    {
+      "ordinal": 48,
+      "path": "tasks/048_d3scc02",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/048_d3scc02/task.md",
+      "task_id": "d3scc02"
+    },
+    {
+      "ordinal": 49,
+      "path": "tasks/049_d3smr03",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/049_d3smr03/task.md",
+      "task_id": "d3smr03"
+    },
+    {
+      "ordinal": 50,
+      "path": "tasks/050_d3spt01",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/050_d3spt01/task.md",
+      "task_id": "d3spt01"
+    },
+    {
+      "ordinal": 51,
+      "path": "tasks/051_d3top02",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/051_d3top02/task.md",
+      "task_id": "d3top02"
+    },
+    {
+      "ordinal": 52,
+      "path": "tasks/052_d3trd02",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/052_d3trd02/task.md",
+      "task_id": "d3trd02"
+    },
+    {
+      "ordinal": 53,
+      "path": "tasks/053_d3xor04",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/053_d3xor04/task.md",
+      "task_id": "d3xor04"
+    },
+    {
+      "ordinal": 54,
+      "path": "tasks/054_E3COM92",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/054_E3COM92/task.md",
+      "task_id": "E3COM92"
+    },
+    {
+      "ordinal": 55,
+      "path": "tasks/055_E3CYC58",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/055_E3CYC58/task.md",
+      "task_id": "E3CYC58"
+    },
+    {
+      "ordinal": 56,
+      "path": "tasks/056_E3GRP02",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/056_E3GRP02/task.md",
+      "task_id": "E3GRP02"
+    },
+    {
+      "ordinal": 57,
+      "path": "tasks/057_E3P43I3",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/057_E3P43I3/task.md",
+      "task_id": "E3P43I3"
+    },
+    {
+      "ordinal": 58,
+      "path": "tasks/058_E3POL46",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/058_E3POL46/task.md",
+      "task_id": "E3POL46"
+    },
+    {
+      "ordinal": 59,
+      "path": "tasks/059_E3S2S08",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/059_E3S2S08/task.md",
+      "task_id": "E3S2S08"
+    },
+    {
+      "ordinal": 60,
+      "path": "tasks/060_E3SQ88",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/060_E3SQ88/task.md",
+      "task_id": "E3SQ88"
+    },
+    {
+      "ordinal": 61,
+      "path": "tasks/061_E3SUM135",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/061_E3SUM135/task.md",
+      "task_id": "E3SUM135"
+    },
+    {
+      "ordinal": 62,
+      "path": "tasks/062_E3ZM150",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/062_E3ZM150/task.md",
+      "task_id": "E3ZM150"
+    },
+    {
+      "ordinal": 63,
+      "path": "tasks/063_F3BH01",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/063_F3BH01/task.md",
+      "task_id": "F3BH01"
+    },
+    {
+      "ordinal": 64,
+      "path": "tasks/064_F3BN01",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/064_F3BN01/task.md",
+      "task_id": "F3BN01"
+    },
+    {
+      "ordinal": 65,
+      "path": "tasks/065_F3BS01",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/065_F3BS01/task.md",
+      "task_id": "F3BS01"
+    },
+    {
+      "ordinal": 66,
+      "path": "tasks/066_F3BSP1",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/066_F3BSP1/task.md",
+      "task_id": "F3BSP1"
+    },
+    {
+      "ordinal": 67,
+      "path": "tasks/067_F3CHEM",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/067_F3CHEM/task.md",
+      "task_id": "F3CHEM"
+    },
+    {
+      "ordinal": 68,
+      "path": "tasks/068_F3CRC1",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/068_F3CRC1/task.md",
+      "task_id": "F3CRC1"
+    },
+    {
+      "ordinal": 69,
+      "path": "tasks/069_F3CV01",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/069_F3CV01/task.md",
+      "task_id": "F3CV01"
+    },
+    {
+      "ordinal": 70,
+      "path": "tasks/070_F3DFT1",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/070_F3DFT1/task.md",
+      "task_id": "F3DFT1"
+    },
+    {
+      "ordinal": 71,
+      "path": "tasks/071_F3DIM1",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/071_F3DIM1/task.md",
+      "task_id": "F3DIM1"
+    },
+    {
+      "ordinal": 72,
+      "path": "tasks/072_F3FIR1",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/072_F3FIR1/task.md",
+      "task_id": "F3FIR1"
+    },
+    {
+      "ordinal": 73,
+      "path": "tasks/073_F3HG01",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/073_F3HG01/task.md",
+      "task_id": "F3HG01"
+    },
+    {
+      "ordinal": 74,
+      "path": "tasks/074_F3HMM1",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/074_F3HMM1/task.md",
+      "task_id": "F3HMM1"
+    },
+    {
+      "ordinal": 75,
+      "path": "tasks/075_F3KEP1",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/075_F3KEP1/task.md",
+      "task_id": "F3KEP1"
+    },
+    {
+      "ordinal": 76,
+      "path": "tasks/076_F3KF01",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/076_F3KF01/task.md",
+      "task_id": "F3KF01"
+    },
+    {
+      "ordinal": 77,
+      "path": "tasks/077_F3KM01",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/077_F3KM01/task.md",
+      "task_id": "F3KM01"
+    },
+    {
+      "ordinal": 78,
+      "path": "tasks/078_F3MC01",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/078_F3MC01/task.md",
+      "task_id": "F3MC01"
+    },
+    {
+      "ordinal": 79,
+      "path": "tasks/079_F3MSH1",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/079_F3MSH1/task.md",
+      "task_id": "F3MSH1"
+    },
+    {
+      "ordinal": 80,
+      "path": "tasks/080_F3MW01",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/080_F3MW01/task.md",
+      "task_id": "F3MW01"
+    },
+    {
+      "ordinal": 81,
+      "path": "tasks/081_F3ODE1",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/081_F3ODE1/task.md",
+      "task_id": "F3ODE1"
+    },
+    {
+      "ordinal": 82,
+      "path": "tasks/082_F3P401",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/082_F3P401/task.md",
+      "task_id": "F3P401"
+    },
+    {
+      "ordinal": 83,
+      "path": "tasks/083_F3PB01",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/083_F3PB01/task.md",
+      "task_id": "F3PB01"
+    },
+    {
+      "ordinal": 84,
+      "path": "tasks/084_F3PG01",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/084_F3PG01/task.md",
+      "task_id": "F3PG01"
+    },
+    {
+      "ordinal": 85,
+      "path": "tasks/085_F3PT01",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/085_F3PT01/task.md",
+      "task_id": "F3PT01"
+    },
+    {
+      "ordinal": 86,
+      "path": "tasks/086_F3ROT1",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/086_F3ROT1/task.md",
+      "task_id": "F3ROT1"
+    },
+    {
+      "ordinal": 87,
+      "path": "tasks/087_F3ST01",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/087_F3ST01/task.md",
+      "task_id": "F3ST01"
+    },
+    {
+      "ordinal": 88,
+      "path": "tasks/088_F3UNC1",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/088_F3UNC1/task.md",
+      "task_id": "F3UNC1"
+    },
+    {
+      "ordinal": 89,
+      "path": "tasks/089_F3UNT1",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/089_F3UNT1/task.md",
+      "task_id": "F3UNT1"
+    },
+    {
+      "ordinal": 90,
+      "path": "tasks/090_F3WLS1",
+      "pilot_status": "PILOT_ELIGIBLE",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/090_F3WLS1/task.md",
+      "task_id": "F3WLS1"
+    },
+    {
+      "ordinal": 91,
+      "path": "tasks/091_H4AIF34",
+      "pilot_status": "PILOT_PENDING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/091_H4AIF34/task.md",
+      "task_id": "H4AIF34"
+    },
+    {
+      "ordinal": 92,
+      "path": "tasks/092_H4ARI12",
+      "pilot_status": "PILOT_PENDING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/092_H4ARI12/task.md",
+      "task_id": "H4ARI12"
+    },
+    {
+      "ordinal": 93,
+      "path": "tasks/093_H4BCH09",
+      "pilot_status": "PILOT_PENDING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/093_H4BCH09/task.md",
+      "task_id": "H4BCH09"
+    },
+    {
+      "ordinal": 94,
+      "path": "tasks/094_H4CFG28",
+      "pilot_status": "PILOT_PENDING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/094_H4CFG28/task.md",
+      "task_id": "H4CFG28"
+    },
+    {
+      "ordinal": 95,
+      "path": "tasks/095_H4CHN11",
+      "pilot_status": "PILOT_PENDING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/095_H4CHN11/task.md",
+      "task_id": "H4CHN11"
+    },
+    {
+      "ordinal": 96,
+      "path": "tasks/096_H4CTR01",
+      "pilot_status": "PILOT_PENDING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/096_H4CTR01/task.md",
+      "task_id": "H4CTR01"
+    },
+    {
+      "ordinal": 97,
+      "path": "tasks/097_H4CYC13",
+      "pilot_status": "PILOT_PENDING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/097_H4CYC13/task.md",
+      "task_id": "H4CYC13"
+    },
+    {
+      "ordinal": 98,
+      "path": "tasks/098_H4DBM35",
+      "pilot_status": "PILOT_PENDING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/098_H4DBM35/task.md",
+      "task_id": "H4DBM35"
+    },
+    {
+      "ordinal": 99,
+      "path": "tasks/099_H4DEL26",
+      "pilot_status": "PILOT_PENDING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/099_H4DEL26/task.md",
+      "task_id": "H4DEL26"
+    },
+    {
+      "ordinal": 100,
+      "path": "tasks/100_H4EUF36",
+      "pilot_status": "PILOT_PENDING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/100_H4EUF36/task.md",
+      "task_id": "H4EUF36"
+    },
+    {
+      "ordinal": 101,
+      "path": "tasks/101_H4FFI18",
+      "pilot_status": "PILOT_PENDING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/101_H4FFI18/task.md",
+      "task_id": "H4FFI18"
+    },
+    {
+      "ordinal": 102,
+      "path": "tasks/102_H4GBR15",
+      "pilot_status": "PILOT_PENDING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/102_H4GBR15/task.md",
+      "task_id": "H4GBR15"
+    },
+    {
+      "ordinal": 103,
+      "path": "tasks/103_H4HNF27",
+      "pilot_status": "PILOT_PENDING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/103_H4HNF27/task.md",
+      "task_id": "H4HNF27"
+    },
+    {
+      "ordinal": 104,
+      "path": "tasks/104_H4HNK04",
+      "pilot_status": "PILOT_PENDING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/104_H4HNK04/task.md",
+      "task_id": "H4HNK04"
+    },
+    {
+      "ordinal": 105,
+      "path": "tasks/105_H4HOD29",
+      "pilot_status": "PILOT_PENDING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/105_H4HOD29/task.md",
+      "task_id": "H4HOD29"
+    },
+    {
+      "ordinal": 106,
+      "path": "tasks/106_H4HPI07",
+      "pilot_status": "PILOT_PENDING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/106_H4HPI07/task.md",
+      "task_id": "H4HPI07"
+    },
+    {
+      "ordinal": 107,
+      "path": "tasks/107_H4HUL06",
+      "pilot_status": "PILOT_PENDING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/107_H4HUL06/task.md",
+      "task_id": "H4HUL06"
+    },
+    {
+      "ordinal": 108,
+      "path": "tasks/108_H4LQR03",
+      "pilot_status": "PILOT_PENDING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/108_H4LQR03/task.md",
+      "task_id": "H4LQR03"
+    },
+    {
+      "ordinal": 109,
+      "path": "tasks/109_H4LTL25",
+      "pilot_status": "PILOT_PENDING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/109_H4LTL25/task.md",
+      "task_id": "H4LTL25"
+    },
+    {
+      "ordinal": 110,
+      "path": "tasks/110_H4LYA05",
+      "pilot_status": "PILOT_PENDING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/110_H4LYA05/task.md",
+      "task_id": "H4LYA05"
+    },
+    {
+      "ordinal": 111,
+      "path": "tasks/111_H4MKS08",
+      "pilot_status": "PILOT_PENDING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/111_H4MKS08/task.md",
+      "task_id": "H4MKS08"
+    },
+    {
+      "ordinal": 112,
+      "path": "tasks/112_H4OBS02",
+      "pilot_status": "PILOT_PENDING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/112_H4OBS02/task.md",
+      "task_id": "H4OBS02"
+    },
+    {
+      "ordinal": 113,
+      "path": "tasks/113_H4PAD19",
+      "pilot_status": "PILOT_PENDING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/113_H4PAD19/task.md",
+      "task_id": "H4PAD19"
+    },
+    {
+      "ordinal": 114,
+      "path": "tasks/114_H4PET24",
+      "pilot_status": "PILOT_PENDING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/114_H4PET24/task.md",
+      "task_id": "H4PET24"
+    },
+    {
+      "ordinal": 115,
+      "path": "tasks/115_H4PLU21",
+      "pilot_status": "PILOT_PENDING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/115_H4PLU21/task.md",
+      "task_id": "H4PLU21"
+    },
+    {
+      "ordinal": 116,
+      "path": "tasks/116_H4RES16",
+      "pilot_status": "PILOT_PENDING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/116_H4RES16/task.md",
+      "task_id": "H4RES16"
+    },
+    {
+      "ordinal": 117,
+      "path": "tasks/117_H4RM110",
+      "pilot_status": "PILOT_PENDING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/117_H4RM110/task.md",
+      "task_id": "H4RM110"
+    },
+    {
+      "ordinal": 118,
+      "path": "tasks/118_H4SNF14",
+      "pilot_status": "PILOT_PENDING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/118_H4SNF14/task.md",
+      "task_id": "H4SNF14"
+    },
+    {
+      "ordinal": 119,
+      "path": "tasks/119_H4SOC30",
+      "pilot_status": "PILOT_PENDING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/119_H4SOC30/task.md",
+      "task_id": "H4SOC30"
+    },
+    {
+      "ordinal": 120,
+      "path": "tasks/120_H4SSS33",
+      "pilot_status": "PILOT_PENDING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/120_H4SSS33/task.md",
+      "task_id": "H4SSS33"
+    },
+    {
+      "ordinal": 121,
+      "path": "tasks/121_H4TEN20",
+      "pilot_status": "PILOT_PENDING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/121_H4TEN20/task.md",
+      "task_id": "H4TEN20"
+    },
+    {
+      "ordinal": 122,
+      "path": "tasks/122_H4TRS32",
+      "pilot_status": "PILOT_PENDING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/122_H4TRS32/task.md",
+      "task_id": "H4TRS32"
+    },
+    {
+      "ordinal": 123,
+      "path": "tasks/123_H4TUC22",
+      "pilot_status": "PILOT_PENDING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/123_H4TUC22/task.md",
+      "task_id": "H4TUC22"
+    },
+    {
+      "ordinal": 124,
+      "path": "tasks/124_H4TY31",
+      "pilot_status": "PILOT_PENDING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/124_H4TY31/task.md",
+      "task_id": "H4TY31"
+    },
+    {
+      "ordinal": 125,
+      "path": "tasks/125_H4WFA23",
+      "pilot_status": "PILOT_PENDING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/125_H4WFA23/task.md",
+      "task_id": "H4WFA23"
+    },
+    {
+      "ordinal": 126,
+      "path": "tasks/126_P5BIN19",
+      "pilot_status": "PILOT_PENDING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/126_P5BIN19/task.md",
+      "task_id": "P5BIN19"
+    },
+    {
+      "ordinal": 127,
+      "path": "tasks/127_P5BRN13",
+      "pilot_status": "PILOT_PENDING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/127_P5BRN13/task.md",
+      "task_id": "P5BRN13"
+    },
+    {
+      "ordinal": 128,
+      "path": "tasks/128_P5CAP18",
+      "pilot_status": "PILOT_PENDING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/128_P5CAP18/task.md",
+      "task_id": "P5CAP18"
+    },
+    {
+      "ordinal": 129,
+      "path": "tasks/129_P5CAY12",
+      "pilot_status": "PILOT_PENDING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/129_P5CAY12/task.md",
+      "task_id": "P5CAY12"
+    },
+    {
+      "ordinal": 130,
+      "path": "tasks/130_P5DES14",
+      "pilot_status": "PILOT_PENDING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/130_P5DES14/task.md",
+      "task_id": "P5DES14"
+    },
+    {
+      "ordinal": 131,
+      "path": "tasks/131_P5DMN02",
+      "pilot_status": "PILOT_PENDING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/131_P5DMN02/task.md",
+      "task_id": "P5DMN02"
+    },
+    {
+      "ordinal": 132,
+      "path": "tasks/132_P5EIG26",
+      "pilot_status": "PILOT_PENDING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/132_P5EIG26/task.md",
+      "task_id": "P5EIG26"
+    },
+    {
+      "ordinal": 133,
+      "path": "tasks/133_P5FAC23",
+      "pilot_status": "PILOT_PENDING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/133_P5FAC23/task.md",
+      "task_id": "P5FAC23"
+    },
+    {
+      "ordinal": 134,
+      "path": "tasks/134_P5FFP21",
+      "pilot_status": "PILOT_PENDING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/134_P5FFP21/task.md",
+      "task_id": "P5FFP21"
+    },
+    {
+      "ordinal": 135,
+      "path": "tasks/135_P5HAM15",
+      "pilot_status": "PILOT_PENDING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/135_P5HAM15/task.md",
+      "task_id": "P5HAM15"
+    },
+    {
+      "ordinal": 136,
+      "path": "tasks/136_P5HEA28",
+      "pilot_status": "PILOT_PENDING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/136_P5HEA28/task.md",
+      "task_id": "P5HEA28"
+    },
+    {
+      "ordinal": 137,
+      "path": "tasks/137_P5IIR09",
+      "pilot_status": "PILOT_PENDING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/137_P5IIR09/task.md",
+      "task_id": "P5IIR09"
+    },
+    {
+      "ordinal": 138,
+      "path": "tasks/138_P5ISI27",
+      "pilot_status": "PILOT_PENDING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/138_P5ISI27/task.md",
+      "task_id": "P5ISI27"
+    },
+    {
+      "ordinal": 139,
+      "path": "tasks/139_P5ISO01",
+      "pilot_status": "PILOT_PENDING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/139_P5ISO01/task.md",
+      "task_id": "P5ISO01"
+    },
+    {
+      "ordinal": 140,
+      "path": "tasks/140_P5KSX05",
+      "pilot_status": "PILOT_PENDING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/140_P5KSX05/task.md",
+      "task_id": "P5KSX05"
+    },
+    {
+      "ordinal": 141,
+      "path": "tasks/141_P5LIN10",
+      "pilot_status": "PILOT_PENDING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/141_P5LIN10/task.md",
+      "task_id": "P5LIN10"
+    },
+    {
+      "ordinal": 142,
+      "path": "tasks/142_P5LPC08",
+      "pilot_status": "PILOT_PENDING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/142_P5LPC08/task.md",
+      "task_id": "P5LPC08"
+    },
+    {
+      "ordinal": 143,
+      "path": "tasks/143_P5MRK06",
+      "pilot_status": "PILOT_PENDING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/143_P5MRK06/task.md",
+      "task_id": "P5MRK06"
+    },
+    {
+      "ordinal": 144,
+      "path": "tasks/144_P5NTT07",
+      "pilot_status": "PILOT_PENDING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/144_P5NTT07/task.md",
+      "task_id": "P5NTT07"
+    },
+    {
+      "ordinal": 145,
+      "path": "tasks/145_P5ROT11",
+      "pilot_status": "PILOT_PENDING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/145_P5ROT11/task.md",
+      "task_id": "P5ROT11"
+    },
+    {
+      "ordinal": 146,
+      "path": "tasks/146_P5RS25",
+      "pilot_status": "PILOT_PENDING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/146_P5RS25/task.md",
+      "task_id": "P5RS25"
+    },
+    {
+      "ordinal": 147,
+      "path": "tasks/147_P5SUB24",
+      "pilot_status": "PILOT_PENDING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/147_P5SUB24/task.md",
+      "task_id": "P5SUB24"
+    },
+    {
+      "ordinal": 148,
+      "path": "tasks/148_P5SYN03",
+      "pilot_status": "PILOT_PENDING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/148_P5SYN03/task.md",
+      "task_id": "P5SYN03"
+    },
+    {
+      "ordinal": 149,
+      "path": "tasks/149_P5TFV22",
+      "pilot_status": "PILOT_PENDING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/149_P5TFV22/task.md",
+      "task_id": "P5TFV22"
+    },
+    {
+      "ordinal": 150,
+      "path": "tasks/150_P5VIT04",
+      "pilot_status": "PILOT_PENDING",
+      "release_status": "RELEASE_READY",
+      "task_file": "tasks/150_P5VIT04/task.md",
+      "task_id": "P5VIT04"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+{
+  "license": "MIT",
+  "source_locator": "src/gaussian.cpp:203-218:fill_matrix from XOR clauses"
+}

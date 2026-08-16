@@ -1,0 +1,113 @@
+{
+  "jobs": [
+    [
+      {
+        "alternatives": [
+          {
+            "duration": 3,
+            "machine": 0
+          },
+          {
+            "duration": 5,
+            "machine": 1
+          }
+        ]
+      },
+      {
+        "alternatives": [
+          {
+            "duration": 6,
+            "machine": 0
+          },
+          {
+            "duration": 2,
+            "machine": 1
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "alternatives": [
+          {
+            "duration": 2,
+            "machine": 0
+          },
+          {
+            "duration": 4,
+            "machine": 1
+          }
+        ]
+      },
+      {
+        "alternatives": [
+          {
+            "duration": 5,
+            "machine": 0
+          },
+          {
+            "duration": 3,
+            "machine": 1
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "alternatives": [
+          {
+            "duration": 4,
+            "machine": 0
+          },
+          {
+            "duration": 3,
+            "machine": 1
+          }
+        ]
+      },
+      {
+        "alternatives": [
+          {
+            "duration": 2,
+            "machine": 0
+          },
+          {
+            "duration": 5,
+            "machine": 1
+          }
+        ]
+      }
+    ],
+    [
+      {
+        "alternatives": [
+          {
+            "duration": 3,
+            "machine": 0
+          },
+          {
+            "duration": 2,
+            "machine": 1
+          }
+        ]
+      },
+      {
+        "alternatives": [
+          {
+            "duration": 4,
+            "machine": 0
+          },
+          {
+            "duration": 3,
+            "machine": 1
+          }
+        ]
+      }
+    ]
+  ],
+  "machines": [
+    0,
+    1
+  ],
+  "schema": "d3.jsp.v1"
+}

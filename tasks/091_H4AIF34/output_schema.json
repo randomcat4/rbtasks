@@ -1,0 +1,55 @@
+{
+  "additional_fields": "forbidden",
+  "contract_completeness": "Every required field has an explicit JSON type, shape, defining equation or predicate, and canonicalization rule.",
+  "field_contracts": {
+    "edge_images": {
+      "canonicalization": "input edge order",
+      "definition": "each final transfer image",
+      "json_type": "array of objects",
+      "shape": "[edge count]"
+    },
+    "kleene_rounds": {
+      "canonicalization": "round order",
+      "definition": "complete synchronous Kleene sequence",
+      "json_type": "array of node-state maps",
+      "shape": "[iterations through first repeat]"
+    },
+    "least_fixpoint": {
+      "canonicalization": "string node IDs increasing",
+      "definition": "last repeated synchronous snapshot",
+      "json_type": "object node->state",
+      "shape": "[node count]"
+    },
+    "safety_certificate": {
+      "canonicalization": "must derive from least_fixpoint and public query",
+      "definition": "node,variable,abstract_interval,required_upper_bound,proved",
+      "json_type": "object",
+      "shape": "scalar"
+    },
+    "worklist_fixpoint": {
+      "canonicalization": "same representation",
+      "definition": "independent chaotic-worklist result",
+      "json_type": "object node->state",
+      "shape": "[node count]"
+    }
+  },
+  "representation_conventions": [
+    "zero-based indices",
+    "exact symbolic/integer/rational data only",
+    "no additional fields"
+  ],
+  "required_fields": [
+    "kleene_rounds",
+    "least_fixpoint",
+    "worklist_fixpoint",
+    "edge_images",
+    "safety_certificate"
+  ],
+  "schema": "h4.output-contract.v1",
+  "task_rules": [
+    "An abstract state is null for bottom or a map from every variable to [lower,upper]. Bounds use integers in the finite range plus strings -inf,+inf; arithmetic outside the range rounds outward to infinity.",
+    "Round zero maps every node to bottom. Each next synchronous round injects initial_state at entry and joins every incoming edge image. Include the first repeated snapshot, which certifies a fixed point.",
+    "The submitted fixed point must also equal an independent chaotic-worklist result, include every final edge image, and imply the public safety query."
+  ],
+  "task_schema": "h4.abstract_interval_lfp.v1"
+}

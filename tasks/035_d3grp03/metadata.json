@@ -1,0 +1,26 @@
+{
+  "answer_boundary": "No administrator control, arm assignment, reference answer, or hidden judge is included.",
+  "certificate_type": "代数恒等式、正规形、有限域或消元证书",
+  "difficulty_basis": "本题对象是“有限置换群：Schreier–Sims 稳定子链与群阶”；需核验的特有证书结构为 代数恒等式、正规形、有限域或消元证书，公开合同核心项包括 base、elements、orbit_sizes、order。本题的算法与验证负担是：从置换生成元构造 Schreier–Sims 稳定子链，逐层返回 transversal 与强生成元，并以各轨道长度乘积复算群阶。 结构等级生成规则为“中高：需要完整算法轨迹、递推表或精确多字段见证”。该等级仅依据证书宽度、精确重放和独立验收负担评定，未做模型难度校准。",
+  "family": "baseline",
+  "lane": "d3",
+  "license": "MIT for project-original material; third-party material retains upstream terms.",
+  "math_domain": "代数学",
+  "ordinal": 35,
+  "pilot_status": "PILOT_ELIGIBLE",
+  "public_files": [
+    "input.json",
+    "metadata.json",
+    "provenance.json",
+    "submission.schema.json",
+    "task.md"
+  ],
+  "release_status": "RELEASE_READY",
+  "representation_bridge": "冻结自然语言/结构化输入 → 群环域与符号计算中的精确表示 → 代数恒等式、正规形、有限域或消元证书（核心公开字段：base、elements、orbit_sizes、order）→ 独立验收回源结论",
+  "schema": "returnbench-public-task-v1",
+  "solution_outline": "从置换生成元构造 Schreier–Sims 稳定子链，逐层返回 transversal 与强生成元，并以各轨道长度乘积复算群阶。",
+  "structural_difficulty": "中高",
+  "subdomain": "群环域与符号计算",
+  "task_id": "d3grp03",
+  "title": "d3grp03 — 有限置换群：Schreier–Sims 稳定子链与群阶"
+}

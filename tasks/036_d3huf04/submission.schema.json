@@ -1,0 +1,105 @@
+{
+  "$id": "returnbench:d3huf04:submission",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "codes": {
+      "additionalProperties": false,
+      "properties": {
+        "A": {
+          "type": "string"
+        },
+        "B": {
+          "type": "string"
+        },
+        "C": {
+          "type": "string"
+        },
+        "D": {
+          "type": "string"
+        },
+        "E": {
+          "type": "string"
+        },
+        "F": {
+          "type": "string"
+        },
+        "G": {
+          "type": "string"
+        },
+        "H": {
+          "type": "string"
+        },
+        "I": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I"
+      ],
+      "type": "object"
+    },
+    "lengths": {
+      "additionalProperties": false,
+      "properties": {
+        "A": {
+          "type": "integer"
+        },
+        "B": {
+          "type": "integer"
+        },
+        "C": {
+          "type": "integer"
+        },
+        "D": {
+          "type": "integer"
+        },
+        "E": {
+          "type": "integer"
+        },
+        "F": {
+          "type": "integer"
+        },
+        "G": {
+          "type": "integer"
+        },
+        "H": {
+          "type": "integer"
+        },
+        "I": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I"
+      ],
+      "type": "object"
+    },
+    "weighted_length": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "codes",
+    "lengths",
+    "weighted_length"
+  ],
+  "title": "d3huf04 actor submission shape (values intentionally omitted)",
+  "type": "object"
+}

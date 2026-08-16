@@ -1,0 +1,23 @@
+# P5RS25 — 127 长度 Reed–Solomon 完整译码证书
+
+状态：`RELEASE_READY`（公开任务库）；四臂 Pilot 资格单独记录。
+
+## 固定对象
+
+`input.json` 是唯一权威输入，明确冻结整数或有限域对象、规模和边界条件。所有验收使用精确算术。
+
+## artifact.json 合同
+
+必须恰好返回 `certificate_schema.json` 的顶层字段和完整中间证书；禁止省略行或仅返回最终值。
+
+## 精确验收
+
+重算 36 个 syndrome、全部 BM 行、127 行 Chien 表和误差值，最后验证修正字的生成根。 验证器只使用 Python 标准库独立重算，不调用上游求解器作为 oracle。
+
+good、targeted wrong、第二 mutant、additional wrong 各双重重放；限制 512 MiB/120 秒。
+
+## 非同质性
+
+本题验收跨表示的完整中间轨迹或全场证书，不是一行库定理、最终浮点数或只换常数的包装。
+
+来源、许可和再发布边界见 `source.json` 与 `license.json`。

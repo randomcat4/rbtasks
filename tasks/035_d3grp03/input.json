@@ -1,0 +1,25 @@
+{
+  "action_note": "nonzero vectors of GF(2)^3, relabelled 0..6",
+  "degree": 7,
+  "generators": [
+    [
+      1,
+      3,
+      5,
+      2,
+      0,
+      6,
+      4
+    ],
+    [
+      1,
+      0,
+      2,
+      3,
+      5,
+      4,
+      6
+    ]
+  ],
+  "schema": "d3.group.v1"
+}

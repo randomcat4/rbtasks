@@ -1,0 +1,18 @@
+{
+  "authors": [
+    "ReturnBench contributors"
+  ],
+  "instance_origin": "ReturnBench deterministic project-original generator; no upstream fixture, proof, code, or answer copied",
+  "redistribution_analysis": "Only original integer tables/text and original standard-library verifier code are redistributed.",
+  "references": [
+    {
+      "license": "Apache-2.0",
+      "project": "PBLean",
+      "revision": "bcfe56747322f948eccc0bd79f7601c1fb2d1e68",
+      "url": "https://github.com/leansolving/pblean",
+      "use": "PB format anchor only; not installed or bundled",
+      "version": "HEAD checked 2026-08-16"
+    }
+  ],
+  "task_id": "P5TFV22"
+}

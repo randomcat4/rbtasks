@@ -1,0 +1,10 @@
+{
+  "costs": {
+    "delete": 1,
+    "insert": 1,
+    "substitute": 1
+  },
+  "schema": "d3.lev.v1",
+  "source": "characterization",
+  "target": "categorisation"
+}

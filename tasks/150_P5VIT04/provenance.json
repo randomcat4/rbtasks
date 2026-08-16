@@ -1,0 +1,18 @@
+{
+  "authors": [
+    "ReturnBench contributors"
+  ],
+  "instance_origin": "ReturnBench project-original deterministic generator; no upstream data copied",
+  "redistribution_analysis": "Only original integer/rational instance data and original text are redistributed; upstream packages are not runtime dependencies and no upstream code/data is included.",
+  "references": [
+    {
+      "license": "BSD-3-Clause",
+      "project": "scikit-commpy",
+      "revision": "refs/tags/v0.8.0 @ 9aecd7c598e1b3b868fd9d8a1d04e207b39487ad",
+      "url": "https://github.com/veeresht/CommPy",
+      "use": "encoder/Viterbi cross-check only",
+      "version": "0.8.0"
+    }
+  ],
+  "task_id": "P5VIT04"
+}

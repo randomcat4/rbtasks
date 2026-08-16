@@ -1,0 +1,59 @@
+{
+  "$id": "returnbench:F3ROT1:submission",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "composite_quaternion_xyzw": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "den": {
+            "type": "integer"
+          },
+          "num": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "den",
+          "num"
+        ],
+        "type": "object"
+      },
+      "maxItems": 4,
+      "minItems": 4,
+      "type": "array"
+    },
+    "kind": {
+      "type": "string"
+    },
+    "rotated_vector": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "den": {
+            "type": "integer"
+          },
+          "num": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "den",
+          "num"
+        ],
+        "type": "object"
+      },
+      "maxItems": 3,
+      "minItems": 3,
+      "type": "array"
+    }
+  },
+  "required": [
+    "composite_quaternion_xyzw",
+    "kind",
+    "rotated_vector"
+  ],
+  "title": "F3ROT1 actor submission shape (values intentionally omitted)",
+  "type": "object"
+}

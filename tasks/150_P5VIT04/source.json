@@ -1,0 +1,19 @@
+{
+  "task_id": "P5VIT04",
+  "instance_origin": "ReturnBench project-original deterministic generator; no upstream data copied",
+  "authors": [
+    "ReturnBench contributors"
+  ],
+  "frozen_design": "Pro-derived Batch 01 design freeze v0 (maintainer ledger; not a runtime dependency)",
+  "references": [
+    {
+      "url": "https://github.com/veeresht/CommPy",
+      "project": "scikit-commpy",
+      "version": "0.8.0",
+      "revision": "refs/tags/v0.8.0 @ 9aecd7c598e1b3b868fd9d8a1d04e207b39487ad",
+      "license": "BSD-3-Clause",
+      "use": "encoder/Viterbi cross-check only"
+    }
+  ],
+  "redistribution_analysis": "Only original integer/rational instance data and original text are redistributed; upstream packages are not runtime dependencies and no upstream code/data is included."
+}

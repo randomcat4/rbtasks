@@ -1,0 +1,37 @@
+{
+  "$id": "returnbench:d3lpd04:submission",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "dual_objective": {
+      "type": "string"
+    },
+    "dual_y": {
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 6,
+      "minItems": 6,
+      "type": "array"
+    },
+    "objective": {
+      "type": "string"
+    },
+    "primal_x": {
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 4,
+      "minItems": 4,
+      "type": "array"
+    }
+  },
+  "required": [
+    "dual_objective",
+    "dual_y",
+    "objective",
+    "primal_x"
+  ],
+  "title": "d3lpd04 actor submission shape (values intentionally omitted)",
+  "type": "object"
+}

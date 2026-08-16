@@ -1,0 +1,14 @@
+{
+  "bibliographic_context": [
+    "R. Hindley, The Principal Type-Scheme of an Object in Combinatory Logic, 1969",
+    "L. Damas and R. Milner, Principal type-schemes for functional programs, POPL 1982"
+  ],
+  "claim_provenance": "project_generated_original_fixed_instance",
+  "license": "MIT",
+  "license_authority": "root LICENSE; explicit project-owner authorization 2026-08-16",
+  "revision": "39dc7b1421e9ab6ce09b4b0adf2825a843ffbbda5741ff7f5b5b66fdbc256adb",
+  "semantic_deduplication": "No existing H4 task checks most-general type substitution; CFG/WFA tasks operate on language recognition/equivalence, not principal typing.",
+  "source_locator": "urn:rbtasks:h4:h4ty31:v1",
+  "task_id": "H4TY31",
+  "third_party_code_or_data_copied": false
+}

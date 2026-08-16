@@ -1,0 +1,27 @@
+{
+  "task_id": "P5SYN03",
+  "instance_origin": "ReturnBench project-original deterministic generator; no upstream data copied",
+  "authors": [
+    "ReturnBench contributors"
+  ],
+  "frozen_design": "Pro-derived Batch 01 design freeze v0 (maintainer ledger; not a runtime dependency)",
+  "references": [
+    {
+      "url": "https://github.com/caleb531/automata",
+      "project": "automata-lib",
+      "version": "9.1.2",
+      "revision": "refs/tags/v9.1.2 @ 67fcf0b5f78b25b604611301176242caeaea5fec",
+      "license": "MIT",
+      "use": "definition cross-check only"
+    },
+    {
+      "url": "https://pypi.org/project/pyformlang/1.0.11/",
+      "project": "pyformlang",
+      "version": "1.0.11",
+      "revision": "PyPI release 1.0.11 (upstream repository has no matching tag)",
+      "license": "MIT",
+      "use": "independent cross-check only"
+    }
+  ],
+  "redistribution_analysis": "Only original integer/rational instance data and original text are redistributed; upstream packages are not runtime dependencies and no upstream code/data is included."
+}

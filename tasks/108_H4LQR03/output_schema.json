@@ -1,0 +1,56 @@
+{
+  "additional_fields": "forbidden",
+  "contract_completeness": "Every required field has an explicit JSON type, shape, defining equation or predicate, and canonicalization rule.",
+  "field_contracts": {
+    "controls": {
+      "canonicalization": "chronological",
+      "definition": "u_0 through u_(N-1)",
+      "json_type": "array of rational vectors",
+      "shape": "[N][m]"
+    },
+    "feedback_K": {
+      "canonicalization": "chronological",
+      "definition": "K_t in u_t=-K_t*x_t",
+      "json_type": "array of rational matrices",
+      "shape": "[N][m][n]"
+    },
+    "optimal_value": {
+      "canonicalization": "reduced exact rational",
+      "definition": "full finite-horizon cost, equivalently x0^T P0 x0",
+      "json_type": "rational scalar",
+      "shape": "scalar"
+    },
+    "riccati_P": {
+      "canonicalization": "chronological, P_N=Q_terminal",
+      "definition": "P_0 through P_N from the stated Riccati recursion",
+      "json_type": "array of rational matrices",
+      "shape": "[N+1][n][n]"
+    },
+    "states": {
+      "canonicalization": "chronological, begins at input x0",
+      "definition": "x_0 through x_N under submitted feedback",
+      "json_type": "array of rational vectors",
+      "shape": "[N+1][n]"
+    }
+  },
+  "rational_encoding": "reduced string n or n/d; denominator positive",
+  "representation_conventions": [
+    "Indices are zero-based unless a mathematical exponent or degree is explicitly named. Matrices are row-major; nested tensor array order is stated per task.",
+    "A rational scalar is a reduced JSON string \"n\" or \"n/d\" with positive denominator. JSON integers are used only where the field contract says integer. Floats, decimal approximations, NaN and infinity are invalid.",
+    "The submission object has exactly required_fields, with no additional keys. Nested objects likewise use exactly the named keys."
+  ],
+  "required_fields": [
+    "riccati_P",
+    "feedback_K",
+    "states",
+    "controls",
+    "optimal_value"
+  ],
+  "schema": "h4.output-contract.v1",
+  "task_rules": [
+    "Let N=horizon, n=rows(A), m=columns(B), with x_(t+1)=A x_t+B u_t. The cost is sum_(t=0)^(N-1)(x_t^T Q x_t+u_t^T R u_t)+x_N^T Q_terminal x_N.",
+    "Use P_N=Q_terminal, M_t=R+B^T P_(t+1) B, K_t=M_t^(-1) B^T P_(t+1) A, and P_t=Q+A^T P_(t+1)A-A^T P_(t+1)B M_t^(-1)B^T P_(t+1)A.",
+    "Controls follow u_t=-K_t x_t; all time-indexed arrays are chronological."
+  ],
+  "task_schema": "h4.finite_lqr.v1"
+}

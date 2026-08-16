@@ -1,0 +1,69 @@
+{
+  "additional_fields": "forbidden",
+  "contract_completeness": "Every required field has an explicit JSON type, shape, defining equation or predicate, and canonicalization rule.",
+  "field_contracts": {
+    "ground_specializations": {
+      "canonicalization": "names all_int then all_bool",
+      "definition": "two ground instantiations of the principal quantified variables",
+      "json_type": "array of objects",
+      "shape": "[2]"
+    },
+    "let_schemes": {
+      "canonicalization": "in inference order",
+      "definition": "each let generalization with node_id,name,quantified,type",
+      "json_type": "array of objects",
+      "shape": "[let node count]"
+    },
+    "mgu_substitution": {
+      "canonicalization": "increasing variable index",
+      "definition": "each {variable,type} after transitive closure",
+      "json_type": "array of objects",
+      "shape": "[bound fresh variables]"
+    },
+    "node_types": {
+      "canonicalization": "node_id increasing",
+      "definition": "each {node_id,type} after final substitution",
+      "json_type": "array of objects",
+      "shape": "[AST node count]"
+    },
+    "principal_quantified": {
+      "canonicalization": "increasing u index",
+      "definition": "variables generalized at top level",
+      "json_type": "array of strings",
+      "shape": "[free variables of principal type]"
+    },
+    "principal_type": {
+      "canonicalization": "raw u-index convention",
+      "definition": "fully substituted top-level type",
+      "json_type": "string",
+      "shape": "scalar"
+    },
+    "unification_trace": {
+      "canonicalization": "recursive entry order",
+      "definition": "each {left,right} after current substitution",
+      "json_type": "array of objects",
+      "shape": "[entered unify equations]"
+    }
+  },
+  "representation_conventions": [
+    "zero-based indices",
+    "exact symbolic/integer/rational data only",
+    "no additional fields"
+  ],
+  "required_fields": [
+    "principal_type",
+    "principal_quantified",
+    "node_types",
+    "let_schemes",
+    "mgu_substitution",
+    "unification_trace",
+    "ground_specializations"
+  ],
+  "schema": "h4.output-contract.v1",
+  "task_rules": [
+    "Fresh variables are allocated by the preorder Algorithm-W convention stated in input. Primitive quantified variables are instantiated in listed order.",
+    "At a lambda allocate one fresh variable for its parameter; at application infer function then argument, allocate a result variable, and unify function type with argument_type -> result_type; at let, generalize exactly the variables free in the value type but not the environment.",
+    "Unification applies the current substitution, performs occurs checks, decomposes arrows and constructors left-to-right, and records every entered equation."
+  ],
+  "task_schema": "h4.hm_principal.v1"
+}

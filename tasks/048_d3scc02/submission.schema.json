@@ -1,0 +1,68 @@
+{
+  "$id": "returnbench:d3scc02:submission",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "components": {
+      "items": {
+        "anyOf": [
+          {
+            "items": {
+              "type": "integer"
+            },
+            "maxItems": 3,
+            "minItems": 3,
+            "type": "array"
+          },
+          {
+            "items": {
+              "type": "integer"
+            },
+            "maxItems": 2,
+            "minItems": 2,
+            "type": "array"
+          },
+          {
+            "items": {
+              "type": "integer"
+            },
+            "maxItems": 1,
+            "minItems": 1,
+            "type": "array"
+          }
+        ]
+      },
+      "maxItems": 6,
+      "minItems": 6,
+      "type": "array"
+    },
+    "condensation_edges": {
+      "items": {
+        "items": {
+          "type": "integer"
+        },
+        "maxItems": 2,
+        "minItems": 2,
+        "type": "array"
+      },
+      "maxItems": 7,
+      "minItems": 7,
+      "type": "array"
+    },
+    "topological_order": {
+      "items": {
+        "type": "integer"
+      },
+      "maxItems": 6,
+      "minItems": 6,
+      "type": "array"
+    }
+  },
+  "required": [
+    "components",
+    "condensation_edges",
+    "topological_order"
+  ],
+  "title": "d3scc02 actor submission shape (values intentionally omitted)",
+  "type": "object"
+}

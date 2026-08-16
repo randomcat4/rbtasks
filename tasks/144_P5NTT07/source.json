@@ -1,0 +1,19 @@
+{
+  "task_id": "P5NTT07",
+  "instance_origin": "ReturnBench deterministic project-original generator; no upstream data copied",
+  "authors": [
+    "ReturnBench contributors"
+  ],
+  "frozen_design": "Pro-derived Batch 01 design freeze v0 (maintainer ledger; not runtime dependency)",
+  "references": [
+    {
+      "project": "SymPy",
+      "url": "https://github.com/sympy/sympy",
+      "version": "1.14.0",
+      "revision": "refs/tags/sympy-1.14.0 @ 2f9c274d2021b5a43de627f703d3a8f8955a1038",
+      "license": "BSD-3-Clause",
+      "use": "definition/independent cross-check only"
+    }
+  ],
+  "redistribution_analysis": "Only original integer/rational data and original text are redistributed; upstream code/data is absent and no upstream runtime dependency is used."
+}

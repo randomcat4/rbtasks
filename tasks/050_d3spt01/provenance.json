@@ -1,0 +1,4 @@
+{
+  "license": "BSD-3-Clause",
+  "source_locator": "networkx/algorithms/shortest_paths/weighted.py:1141:bellman_ford_predecessor_and_distance"
+}

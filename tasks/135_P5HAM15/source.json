@@ -1,0 +1,27 @@
+{
+  "authors": [
+    "ReturnBench contributors"
+  ],
+  "frozen_design": "Pro-derived Batch 02 design freeze v0 (maintainer ledger; not runtime dependency)",
+  "instance_origin": "ReturnBench deterministic project-original generator; no upstream fixture, solved data, code, or answer copied",
+  "redistribution_analysis": "Only original integer/combinatorial instance data, original text, and original standard-library verifier code are redistributed; upstream code/data is absent.",
+  "references": [
+    {
+      "license": "MIT",
+      "project": "CaDiCaL",
+      "revision": "refs/tags/rel-3.0.1 @ c60730422e758ef1cebe7aeddf2dda31c996bf04",
+      "url": "https://github.com/arminbiere/cadical",
+      "use": "frozen SAT-tool anchor; unavailable on validation host and not used as verifier oracle",
+      "version": "3.0.1"
+    },
+    {
+      "license": "MIT",
+      "project": "drat-trim",
+      "revision": "2e3b2dc0ecf938addbd779d42877b6ed69d9a985",
+      "url": "https://github.com/marijnheule/drat-trim",
+      "use": "frozen proof-tool anchor; unavailable on validation host and not bundled",
+      "version": "HEAD checked 2026-08-16"
+    }
+  ],
+  "task_id": "P5HAM15"
+}

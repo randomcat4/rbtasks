@@ -1,0 +1,15 @@
+{
+  "schema_version": "returnbench-exact-certificate-v1",
+  "task_id": "P5LPC08",
+  "integer": "JSON integer",
+  "rational": "reduced [numerator,denominator], denominator>0",
+  "additional_top_level_fields": "rejected",
+  "required_top_level_fields": {
+    "autocorrelations": "rational[25]",
+    "reflection_coefficients": "rational[24]",
+    "ar_rows": "rational rows of lengths 0..24",
+    "prediction_errors": "rational[25]",
+    "final_coefficients": "rational[24]",
+    "yule_walker_residuals": "rational[24]"
+  }
+}

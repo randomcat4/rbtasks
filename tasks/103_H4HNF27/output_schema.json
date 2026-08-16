@@ -1,0 +1,76 @@
+{
+  "additional_fields": "forbidden",
+  "contract_completeness": "Every required field has an explicit JSON type, shape, defining equation or predicate, and canonicalization rule.",
+  "field_contracts": {
+    "hermite_H": {
+      "canonicalization": "positive diagonal and reduced upper entries",
+      "definition": "upper Hermite matrix under task convention",
+      "json_type": "integer matrix",
+      "shape": "[n][n]"
+    },
+    "lattice_index": {
+      "canonicalization": "positive exact integer",
+      "definition": "absolute determinant of A",
+      "json_type": "integer",
+      "shape": "scalar"
+    },
+    "member_coefficients": {
+      "canonicalization": "input basis-column order",
+      "definition": "z with A*z=member_query",
+      "json_type": "array of integers",
+      "shape": "[n]"
+    },
+    "member_residue": {
+      "canonicalization": "0<=value<p",
+      "definition": "least nonnegative w dot member_query mod p",
+      "json_type": "integer",
+      "shape": "scalar"
+    },
+    "nonmember_residue": {
+      "canonicalization": "0<=value<p and differs from member_residue",
+      "definition": "least nonnegative w dot nonmember_query mod p",
+      "json_type": "integer",
+      "shape": "scalar"
+    },
+    "separator_modulus": {
+      "canonicalization": "p>1",
+      "definition": "modulus p for separating homomorphism",
+      "json_type": "integer",
+      "shape": "scalar"
+    },
+    "separator_vector": {
+      "canonicalization": "input coordinate order",
+      "definition": "w with w^T A=0 mod p and w nonzero mod p",
+      "json_type": "array of integers",
+      "shape": "[n]"
+    },
+    "unimodular_U": {
+      "canonicalization": "determinant +/-1",
+      "definition": "U in U*A=H",
+      "json_type": "integer matrix",
+      "shape": "[n][n]"
+    }
+  },
+  "representation_conventions": [
+    "Indices are zero-based unless a mathematical exponent or degree is explicitly named. Matrices are row-major; nested tensor array order is stated per task.",
+    "A rational scalar is a reduced JSON string \"n\" or \"n/d\" with positive denominator. JSON integers are used only where the field contract says integer. Floats, decimal approximations, NaN and infinity are invalid.",
+    "The submission object has exactly required_fields, with no additional keys. Nested objects likewise use exactly the named keys."
+  ],
+  "required_fields": [
+    "unimodular_U",
+    "hermite_H",
+    "lattice_index",
+    "member_coefficients",
+    "separator_modulus",
+    "separator_vector",
+    "member_residue",
+    "nonmember_residue"
+  ],
+  "schema": "h4.output-contract.v1",
+  "task_rules": [
+    "Let A=basis_matrix and n=rows(A). U,H are n by n integer matrices with det(U)=+1 or -1 and U*A=H.",
+    "H is upper triangular, H[i,i]>0, and for every i<j, 0<=H[i,j]<H[j,j].",
+    "member_coefficients z is an integer vector with A*z=member_query. For modulus p>1, separator w is nonzero modulo p and w^T A=0 modulo p; residues are least nonnegative values w dot query mod p and must differ."
+  ],
+  "task_schema": "h4.hermite_lattice.v1"
+}

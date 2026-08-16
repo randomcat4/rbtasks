@@ -1,0 +1,15 @@
+{
+  "additional_top_level_fields": "rejected",
+  "required_top_level_fields": {
+    "assignment_cost_total": "int",
+    "client_assignment": "int[]",
+    "cost_capacity_tables": "exact copied source tables",
+    "exact_total_cost": "int",
+    "facility_loads": "int[]",
+    "lower_cost_infeasibility_branch_bound": "complete subset/flow search metrics",
+    "opened_facilities": "int[]",
+    "opening_cost_total": "int"
+  },
+  "schema_version": "returnbench-algebra-optimization-v1",
+  "task_id": "P5FAC23"
+}

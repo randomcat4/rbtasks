@@ -1,0 +1,83 @@
+{
+  "frozen_factorization_ascending": [
+    [
+      3,
+      1
+    ],
+    [
+      -2,
+      1
+    ],
+    [
+      -4,
+      1
+    ],
+    [
+      -2,
+      0,
+      1
+    ]
+  ],
+  "interval_semantics": "closed [lower,upper]",
+  "intervals": [
+    [
+      {
+        "den": 1,
+        "num": -3
+      },
+      {
+        "den": 2,
+        "num": -5
+      }
+    ],
+    [
+      {
+        "den": 2,
+        "num": -3
+      },
+      {
+        "den": 1,
+        "num": -1
+      }
+    ],
+    [
+      {
+        "den": 1,
+        "num": 1
+      },
+      {
+        "den": 2,
+        "num": 3
+      }
+    ],
+    [
+      {
+        "den": 1,
+        "num": 2
+      },
+      {
+        "den": 2,
+        "num": 5
+      }
+    ],
+    [
+      {
+        "den": 1,
+        "num": 4
+      },
+      {
+        "den": 2,
+        "num": 9
+      }
+    ]
+  ],
+  "polynomial_ascending": [
+    -48,
+    20,
+    30,
+    -12,
+    -3,
+    1
+  ],
+  "schema": "f3.sturm.v1"
+}

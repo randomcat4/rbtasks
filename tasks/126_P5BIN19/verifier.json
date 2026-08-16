@@ -1,0 +1,13 @@
+{
+  "accept_exit_code": 0,
+  "command": [
+    "python3",
+    "../_shared/exhaustive_certificate_judge.py",
+    ".",
+    "artifact.json"
+  ],
+  "memory_limit_mib": 512,
+  "python": ">=3.11 standard library only",
+  "timeout_seconds": 120,
+  "type": "shared_exhaustive_certificate"
+}

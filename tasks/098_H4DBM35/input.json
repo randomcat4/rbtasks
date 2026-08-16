@@ -1,0 +1,174 @@
+{
+  "bound_encoding": "[c,strict] means x_i-x_j<c if strict, otherwise <=c; null is infinity",
+  "clocks": [
+    "0",
+    "x",
+    "y",
+    "z",
+    "w",
+    "u"
+  ],
+  "initial_constraints": [
+    {
+      "bound": [
+        0,
+        false
+      ],
+      "i": 0,
+      "j": 1
+    },
+    {
+      "bound": [
+        0,
+        false
+      ],
+      "i": 0,
+      "j": 2
+    },
+    {
+      "bound": [
+        0,
+        false
+      ],
+      "i": 0,
+      "j": 3
+    },
+    {
+      "bound": [
+        0,
+        false
+      ],
+      "i": 0,
+      "j": 4
+    },
+    {
+      "bound": [
+        0,
+        false
+      ],
+      "i": 0,
+      "j": 5
+    },
+    {
+      "bound": [
+        20,
+        false
+      ],
+      "i": 1,
+      "j": 0
+    },
+    {
+      "bound": [
+        5,
+        false
+      ],
+      "i": 2,
+      "j": 1
+    },
+    {
+      "bound": [
+        2,
+        false
+      ],
+      "i": 1,
+      "j": 2
+    },
+    {
+      "bound": [
+        4,
+        false
+      ],
+      "i": 3,
+      "j": 2
+    },
+    {
+      "bound": [
+        6,
+        false
+      ],
+      "i": 4,
+      "j": 3
+    },
+    {
+      "bound": [
+        3,
+        false
+      ],
+      "i": 5,
+      "j": 4
+    },
+    {
+      "bound": [
+        1,
+        false
+      ],
+      "i": 1,
+      "j": 5
+    }
+  ],
+  "operations": [
+    {
+      "constraints": [
+        {
+          "bound": [
+            12,
+            true
+          ],
+          "i": 2,
+          "j": 0
+        },
+        {
+          "bound": [
+            10,
+            false
+          ],
+          "i": 1,
+          "j": 0
+        }
+      ],
+      "name": "after_guard_1",
+      "op": "guard"
+    },
+    {
+      "clock": 3,
+      "name": "after_reset_z",
+      "op": "reset"
+    },
+    {
+      "name": "after_time_elapse",
+      "op": "elapse"
+    },
+    {
+      "constraints": [
+        {
+          "bound": [
+            18,
+            true
+          ],
+          "i": 5,
+          "j": 0
+        },
+        {
+          "bound": [
+            -3,
+            false
+          ],
+          "i": 0,
+          "j": 1
+        },
+        {
+          "bound": [
+            7,
+            false
+          ],
+          "i": 4,
+          "j": 1
+        }
+      ],
+      "name": "after_guard_2",
+      "op": "guard"
+    }
+  ],
+  "reference_clock": 0,
+  "schema": "h4.timed_dbm.v1"
+}

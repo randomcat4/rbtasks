@@ -1,0 +1,91 @@
+{
+  "proposer_preferences": {
+    "Ari": [
+      "Yara",
+      "Xia",
+      "Uma",
+      "Wyn",
+      "Vee"
+    ],
+    "Bo": [
+      "Vee",
+      "Uma",
+      "Xia",
+      "Wyn",
+      "Yara"
+    ],
+    "Cy": [
+      "Yara",
+      "Wyn",
+      "Vee",
+      "Xia",
+      "Uma"
+    ],
+    "Dee": [
+      "Xia",
+      "Yara",
+      "Vee",
+      "Uma",
+      "Wyn"
+    ],
+    "Eli": [
+      "Uma",
+      "Vee",
+      "Yara",
+      "Xia",
+      "Wyn"
+    ]
+  },
+  "proposers": [
+    "Ari",
+    "Bo",
+    "Cy",
+    "Dee",
+    "Eli"
+  ],
+  "reviewer_preferences": {
+    "Uma": [
+      "Dee",
+      "Ari",
+      "Eli",
+      "Cy",
+      "Bo"
+    ],
+    "Vee": [
+      "Eli",
+      "Cy",
+      "Dee",
+      "Bo",
+      "Ari"
+    ],
+    "Wyn": [
+      "Cy",
+      "Dee",
+      "Ari",
+      "Eli",
+      "Bo"
+    ],
+    "Xia": [
+      "Ari",
+      "Cy",
+      "Bo",
+      "Eli",
+      "Dee"
+    ],
+    "Yara": [
+      "Ari",
+      "Dee",
+      "Bo",
+      "Eli",
+      "Cy"
+    ]
+  },
+  "reviewers": [
+    "Uma",
+    "Vee",
+    "Wyn",
+    "Xia",
+    "Yara"
+  ],
+  "schema": "d3.stable.v1"
+}

@@ -1,0 +1,62 @@
+{
+  "conservation": "initial = visible_1 + visible_2 + missing",
+  "initial": [
+    {
+      "den": 1,
+      "num": 20
+    },
+    {
+      "den": 1,
+      "num": 3
+    },
+    {
+      "den": 1,
+      "num": 4
+    },
+    {
+      "den": 1,
+      "num": 5
+    }
+  ],
+  "metric": "(+,-,-,-)",
+  "order": "[E,px,py,pz]",
+  "schema": "f3.four_momentum.v1",
+  "visible": [
+    [
+      {
+        "den": 1,
+        "num": 6
+      },
+      {
+        "den": 1,
+        "num": 1
+      },
+      {
+        "den": 1,
+        "num": 2
+      },
+      {
+        "den": 1,
+        "num": 1
+      }
+    ],
+    [
+      {
+        "den": 1,
+        "num": 5
+      },
+      {
+        "den": 1,
+        "num": 1
+      },
+      {
+        "den": 1,
+        "num": -1
+      },
+      {
+        "den": 1,
+        "num": 2
+      }
+    ]
+  ]
+}

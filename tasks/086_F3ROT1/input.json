@@ -1,0 +1,57 @@
+{
+  "active_rotation": true,
+  "canonical_sign": "composite w > 0",
+  "component_order": "[x,y,z,w] scalar-last",
+  "composition": "apply first_quaternion, then second_quaternion; composite = q2*q1",
+  "first_quaternion_xyzw": [
+    {
+      "den": 5,
+      "num": 3
+    },
+    {
+      "den": 1,
+      "num": 0
+    },
+    {
+      "den": 1,
+      "num": 0
+    },
+    {
+      "den": 5,
+      "num": 4
+    }
+  ],
+  "schema": "f3.rotation_compose.v1",
+  "second_quaternion_xyzw": [
+    {
+      "den": 1,
+      "num": 0
+    },
+    {
+      "den": 13,
+      "num": 5
+    },
+    {
+      "den": 1,
+      "num": 0
+    },
+    {
+      "den": 13,
+      "num": 12
+    }
+  ],
+  "vector": [
+    {
+      "den": 1,
+      "num": 1
+    },
+    {
+      "den": 1,
+      "num": 2
+    },
+    {
+      "den": 1,
+      "num": 3
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "$id": "returnbench:F3BH01:submission",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "adjusted": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "den": {
+            "type": "integer"
+          },
+          "num": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "den",
+          "num"
+        ],
+        "type": "object"
+      },
+      "maxItems": 17,
+      "minItems": 17,
+      "type": "array"
+    },
+    "kind": {
+      "type": "string"
+    },
+    "order": {
+      "items": {
+        "type": "integer"
+      },
+      "maxItems": 17,
+      "minItems": 17,
+      "type": "array"
+    },
+    "raw_sorted": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "den": {
+            "type": "integer"
+          },
+          "num": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "den",
+          "num"
+        ],
+        "type": "object"
+      },
+      "maxItems": 17,
+      "minItems": 17,
+      "type": "array"
+    },
+    "rejected_indices": {
+      "items": {
+        "type": "integer"
+      },
+      "maxItems": 1,
+      "minItems": 1,
+      "type": "array"
+    }
+  },
+  "required": [
+    "adjusted",
+    "kind",
+    "order",
+    "raw_sorted",
+    "rejected_indices"
+  ],
+  "title": "F3BH01 actor submission shape (values intentionally omitted)",
+  "type": "object"
+}

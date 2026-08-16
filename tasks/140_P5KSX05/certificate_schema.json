@@ -1,0 +1,14 @@
+{
+  "schema_version": "returnbench-exact-certificate-v1",
+  "task_id": "P5KSX05",
+  "integer": "JSON integer",
+  "rational": "reduced [numerator,denominator], denominator>0",
+  "additional_top_level_fields": "rejected",
+  "required_top_level_fields": {
+    "statistic": "rational",
+    "forbidden": "bool[138][150]",
+    "dp_mod": "three {prime:int,table:int[138][150]}",
+    "crt": "{modulus_product,safe_count,total_paths,tail_count}:int",
+    "probability": "rational"
+  }
+}

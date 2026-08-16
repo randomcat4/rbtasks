@@ -1,0 +1,12 @@
+{
+  "bibliographic_context": [
+    "C. E. Shannon, A Mathematical Theory of Communication, Bell System Technical Journal 27 (1948)"
+  ],
+  "claim_provenance": "project_generated_original_fixed_instance",
+  "license": "MIT",
+  "license_authority": "root LICENSE; explicit project-owner authorization 2026-08-16",
+  "revision": "3d205687b4d09e4bccc1d9d5f6f0d5a48797af5ff48e4008e919099fe9a5100b",
+  "source_locator": "urn:rbtasks:h4:h4chn11:v1",
+  "task_id": "H4CHN11",
+  "third_party_code_or_data_copied": false
+}

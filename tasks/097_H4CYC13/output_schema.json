@@ -1,0 +1,55 @@
+{
+  "additional_fields": "forbidden",
+  "contract_completeness": "Every required field has an explicit JSON type, shape, defining equation or predicate, and canonicalization rule.",
+  "field_contracts": {
+    "check_polynomial_ascending": {
+      "canonicalization": "ascending canonical residues",
+      "definition": "quotient (x^n-1)/g in GF(p)",
+      "json_type": "array of integers",
+      "shape": "[n-degree(g)+1]"
+    },
+    "generator_matrix": {
+      "canonicalization": "i increasing; residues 0..p-1",
+      "definition": "rows are coefficients of x^i g",
+      "json_type": "array of integer arrays",
+      "shape": "[k][n]"
+    },
+    "generator_rank": {
+      "canonicalization": "must equal k",
+      "definition": "exact GF(p) rank of generator_matrix",
+      "json_type": "integer",
+      "shape": "scalar"
+    },
+    "parity_check_matrix": {
+      "canonicalization": "free columns increasing; residues 0..p-1",
+      "definition": "canonical RREF nullspace basis of generator_matrix",
+      "json_type": "array of integer arrays",
+      "shape": "[n-k][n]"
+    },
+    "parity_rank": {
+      "canonicalization": "must equal n-k",
+      "definition": "exact GF(p) rank of parity matrix",
+      "json_type": "integer",
+      "shape": "scalar"
+    }
+  },
+  "representation_conventions": [
+    "Indices are zero-based unless a mathematical exponent or degree is explicitly named. Matrices are row-major; nested tensor array order is stated per task.",
+    "A rational scalar is a reduced JSON string \"n\" or \"n/d\" with positive denominator. JSON integers are used only where the field contract says integer. Floats, decimal approximations, NaN and infinity are invalid.",
+    "The submission object has exactly required_fields, with no additional keys. Nested objects likewise use exactly the named keys."
+  ],
+  "required_fields": [
+    "check_polynomial_ascending",
+    "generator_matrix",
+    "parity_check_matrix",
+    "generator_rank",
+    "parity_rank"
+  ],
+  "schema": "h4.output-contract.v1",
+  "task_rules": [
+    "All polynomial and matrix coefficients are canonical integers 0,...,p-1 in GF(p); polynomial lists are ascending. Let g be the input generator and k=n-deg(g).",
+    "check_polynomial is the exact ascending quotient h with g*h=x^n-1. generator_matrix row i is the length-n coefficient vector of x^i g for i=0,...,k-1.",
+    "parity_check_matrix is the canonical RREF nullspace basis of generator_matrix: free columns increasing, one unit free coordinate, pivot coordinates determined by RREF. Its rows are orthogonal to every generator row modulo p."
+  ],
+  "task_schema": "h4.cyclic_dual.v1"
+}

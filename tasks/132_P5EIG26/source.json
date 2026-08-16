@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "ReturnBench contributors"
+  ],
+  "frozen_design": "Pro-derived Batch 03 design freeze v0",
+  "instance_origin": "ReturnBench deterministic project-original generator; no upstream fixture, proof, code, or answer copied",
+  "redistribution_analysis": "Only original integer tables/text and original Python standard-library verifier code are redistributed.",
+  "references": [
+    {
+      "license": "BSD-3-Clause",
+      "project": "LAPACK",
+      "revision": "v3.12.1",
+      "url": "https://github.com/Reference-LAPACK/lapack",
+      "use": "tridiagonal spectrum terminology anchor only; no code or fixture bundled",
+      "version": "3.12.1"
+    }
+  ],
+  "task_id": "P5EIG26"
+}

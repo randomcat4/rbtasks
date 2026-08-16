@@ -1,0 +1,76 @@
+{
+  "additional_fields": "forbidden",
+  "contract_completeness": "Every required field has an explicit JSON type, shape, defining equation or predicate, and canonicalization rule.",
+  "field_contracts": {
+    "dual_norm_square": {
+      "canonicalization": "derive exactly as sum_i dual_vector[i]^2",
+      "definition": "sum_i dual_vector[i]^2",
+      "json_type": "rational scalar",
+      "shape": "scalar"
+    },
+    "dual_vector": {
+      "canonicalization": "input coordinate order",
+      "definition": "M^(-T)c, coordinate c_i/d_i",
+      "json_type": "array of rationals",
+      "shape": "[len(M_diagonal)]"
+    },
+    "kkt_multiplier": {
+      "canonicalization": "nonnegative",
+      "definition": "mu in stated boundary stationarity",
+      "json_type": "rational scalar",
+      "shape": "scalar"
+    },
+    "norm_square": {
+      "canonicalization": "derive exactly as sum_i transformed_y[i]^2; enforce norm_square<=radius^2 and KKT complementarity",
+      "definition": "sum_i y_i^2",
+      "json_type": "rational scalar",
+      "shape": "scalar"
+    },
+    "objective_value": {
+      "canonicalization": "exact optimal value",
+      "definition": "objective_c dot x",
+      "json_type": "rational scalar",
+      "shape": "scalar"
+    },
+    "primal_x": {
+      "canonicalization": "input coordinate order",
+      "definition": "candidate minimizer x",
+      "json_type": "array of rationals",
+      "shape": "[len(M_diagonal)]"
+    },
+    "stationarity_residual": {
+      "canonicalization": "all entries exact zero",
+      "definition": "c_i+mu*d_i*y_i/radius",
+      "json_type": "array of rationals",
+      "shape": "[len(M_diagonal)]"
+    },
+    "transformed_y": {
+      "canonicalization": "input coordinate order",
+      "definition": "y_i=M_diagonal[i]*x_i",
+      "json_type": "array of rationals",
+      "shape": "[len(M_diagonal)]"
+    }
+  },
+  "representation_conventions": [
+    "Indices are zero-based unless a mathematical exponent or degree is explicitly named. Matrices are row-major; nested tensor array order is stated per task.",
+    "A rational scalar is a reduced JSON string \"n\" or \"n/d\" with positive denominator. JSON integers are used only where the field contract says integer. Floats, decimal approximations, NaN and infinity are invalid.",
+    "The submission object has exactly required_fields, with no additional keys. Nested objects likewise use exactly the named keys."
+  ],
+  "required_fields": [
+    "primal_x",
+    "transformed_y",
+    "norm_square",
+    "objective_value",
+    "kkt_multiplier",
+    "stationarity_residual",
+    "dual_vector",
+    "dual_norm_square"
+  ],
+  "schema": "h4.output-contract.v1",
+  "task_rules": [
+    "Let d=M_diagonal, R=radius, y_i=d_i*x_i, and minimize c dot x subject to sum_i y_i^2<=R^2. All vectors have length len(d).",
+    "At the nonzero boundary, multiplier mu uses stationarity c_i+mu*d_i*y_i/R=0 and mu>=0. stationarity_residual lists these left sides.",
+    "dual_vector is M^(-T)c, i.e. c_i/d_i. Certify primal feasibility, complementary slackness, exact stationarity, and the support equality objective_value=-radius*sqrt(dual_norm_square); all submitted squares remain derived fields."
+  ],
+  "task_schema": "h4.socp.v1"
+}

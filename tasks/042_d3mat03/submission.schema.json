@@ -1,0 +1,41 @@
+{
+  "$id": "returnbench:d3mat03:submission",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "objective": {
+      "type": "integer"
+    },
+    "rank_linear_X": {
+      "type": "integer"
+    },
+    "rank_partition_complement": {
+      "type": "integer"
+    },
+    "selected": {
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 5,
+      "minItems": 5,
+      "type": "array"
+    },
+    "witness_X": {
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 2,
+      "minItems": 2,
+      "type": "array"
+    }
+  },
+  "required": [
+    "objective",
+    "rank_linear_X",
+    "rank_partition_complement",
+    "selected",
+    "witness_X"
+  ],
+  "title": "d3mat03 actor submission shape (values intentionally omitted)",
+  "type": "object"
+}

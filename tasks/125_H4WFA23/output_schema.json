@@ -1,0 +1,48 @@
+{
+  "additional_fields": "forbidden",
+  "contract_completeness": "Every required field has an explicit JSON type, shape, defining equation or predicate, and canonicalization rule.",
+  "field_contracts": {
+    "output_pairings": {
+      "canonicalization": "basis order; every entry zero",
+      "definition": "basis_i dot (beta_A,beta_B)",
+      "json_type": "array of rationals",
+      "shape": "[r]"
+    },
+    "reachable_difference_basis": {
+      "canonicalization": "nonzero RREF rows in pivot order",
+      "definition": "canonical RREF basis of least transition-closed difference space",
+      "json_type": "rational matrix",
+      "shape": "[r][dA+dB]"
+    },
+    "reachable_rank": {
+      "canonicalization": "must equal matrix row count",
+      "definition": "number r of basis rows",
+      "json_type": "integer",
+      "shape": "scalar"
+    },
+    "transition_closure_coordinates": {
+      "canonicalization": "keys exactly input alphabet; basis order",
+      "definition": "row i gives coordinates of D_symbol^T*basis_i",
+      "json_type": "object mapping each alphabet symbol to rational matrix",
+      "shape": "each symbol -> [r][r]"
+    }
+  },
+  "representation_conventions": [
+    "Indices are zero-based unless a mathematical exponent or degree is explicitly named. Matrices are row-major; nested tensor array order is stated per task.",
+    "A rational scalar is a reduced JSON string \"n\" or \"n/d\" with positive denominator. JSON integers are used only where the field contract says integer. Floats, decimal approximations, NaN and infinity are invalid.",
+    "The submission object has exactly required_fields, with no additional keys. Nested objects likewise use exactly the named keys."
+  ],
+  "required_fields": [
+    "reachable_difference_basis",
+    "transition_closure_coordinates",
+    "output_pairings",
+    "reachable_rank"
+  ],
+  "schema": "h4.output-contract.v1",
+  "task_rules": [
+    "An automaton value on word w is alpha^T M_w beta. Build block D_a=diag(M_A,a,M_B,a), start s=(alpha_A,-alpha_B), and output o=(beta_A,beta_B).",
+    "reachable_difference_basis is the unique nonzero-row RREF basis of the least row space containing s and closed under v -> D_a^T v for symbols in input alphabet order.",
+    "For each symbol, transition_closure_coordinates gives one coordinate row per basis row, satisfying coordinates*B=D_a^T basis_row. output_pairings[i]=basis_row_i dot o and must all be zero."
+  ],
+  "task_schema": "h4.weighted_automata.v1"
+}

@@ -1,0 +1,176 @@
+{
+  "$id": "returnbench:F3KF01:submission",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "final_covariance": {
+      "items": {
+        "items": {
+          "additionalProperties": false,
+          "properties": {
+            "den": {
+              "type": "integer"
+            },
+            "num": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "den",
+            "num"
+          ],
+          "type": "object"
+        },
+        "maxItems": 2,
+        "minItems": 2,
+        "type": "array"
+      },
+      "maxItems": 2,
+      "minItems": 2,
+      "type": "array"
+    },
+    "final_mean": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "den": {
+            "type": "integer"
+          },
+          "num": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "den",
+          "num"
+        ],
+        "type": "object"
+      },
+      "maxItems": 2,
+      "minItems": 2,
+      "type": "array"
+    },
+    "kind": {
+      "type": "string"
+    },
+    "trajectory": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "predicted_covariance": {
+            "items": {
+              "items": {
+                "additionalProperties": false,
+                "properties": {
+                  "den": {
+                    "type": "integer"
+                  },
+                  "num": {
+                    "type": "integer"
+                  }
+                },
+                "required": [
+                  "den",
+                  "num"
+                ],
+                "type": "object"
+              },
+              "maxItems": 2,
+              "minItems": 2,
+              "type": "array"
+            },
+            "maxItems": 2,
+            "minItems": 2,
+            "type": "array"
+          },
+          "predicted_mean": {
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "den": {
+                  "type": "integer"
+                },
+                "num": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "den",
+                "num"
+              ],
+              "type": "object"
+            },
+            "maxItems": 2,
+            "minItems": 2,
+            "type": "array"
+          },
+          "updated_covariance": {
+            "items": {
+              "items": {
+                "additionalProperties": false,
+                "properties": {
+                  "den": {
+                    "type": "integer"
+                  },
+                  "num": {
+                    "type": "integer"
+                  }
+                },
+                "required": [
+                  "den",
+                  "num"
+                ],
+                "type": "object"
+              },
+              "maxItems": 2,
+              "minItems": 2,
+              "type": "array"
+            },
+            "maxItems": 2,
+            "minItems": 2,
+            "type": "array"
+          },
+          "updated_mean": {
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "den": {
+                  "type": "integer"
+                },
+                "num": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "den",
+                "num"
+              ],
+              "type": "object"
+            },
+            "maxItems": 2,
+            "minItems": 2,
+            "type": "array"
+          }
+        },
+        "required": [
+          "predicted_covariance",
+          "predicted_mean",
+          "updated_covariance",
+          "updated_mean"
+        ],
+        "type": "object"
+      },
+      "maxItems": 3,
+      "minItems": 3,
+      "type": "array"
+    }
+  },
+  "required": [
+    "final_covariance",
+    "final_mean",
+    "kind",
+    "trajectory"
+  ],
+  "title": "F3KF01 actor submission shape (values intentionally omitted)",
+  "type": "object"
+}

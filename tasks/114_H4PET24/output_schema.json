@@ -1,0 +1,62 @@
+{
+  "additional_fields": "forbidden",
+  "contract_completeness": "Every required field has an explicit JSON type, shape, defining equation or predicate, and canonicalization rule.",
+  "field_contracts": {
+    "decoy_invariant": {
+      "canonicalization": "must differ from initial_invariant",
+      "definition": "y dot decoy",
+      "json_type": "integer",
+      "shape": "scalar"
+    },
+    "firing_counts": {
+      "canonicalization": "input transition order",
+      "definition": "exact occurrence count of each transition",
+      "json_type": "array of integers",
+      "shape": "[transition count]"
+    },
+    "firing_sequence": {
+      "canonicalization": "chronological, zero-based",
+      "definition": "enabled transition indices taking initial to target",
+      "json_type": "array of integers",
+      "shape": "[variable]"
+    },
+    "initial_invariant": {
+      "canonicalization": "exact integer",
+      "definition": "y dot initial",
+      "json_type": "integer",
+      "shape": "scalar"
+    },
+    "place_invariant": {
+      "canonicalization": "input place order",
+      "definition": "y with y^T(post-pre)=0",
+      "json_type": "array of integers",
+      "shape": "[place count]"
+    },
+    "target_invariant": {
+      "canonicalization": "must equal initial_invariant",
+      "definition": "y dot target",
+      "json_type": "integer",
+      "shape": "scalar"
+    }
+  },
+  "representation_conventions": [
+    "Indices are zero-based unless a mathematical exponent or degree is explicitly named. Matrices are row-major; nested tensor array order is stated per task.",
+    "A rational scalar is a reduced JSON string \"n\" or \"n/d\" with positive denominator. JSON integers are used only where the field contract says integer. Floats, decimal approximations, NaN and infinity are invalid.",
+    "The submission object has exactly required_fields, with no additional keys. Nested objects likewise use exactly the named keys."
+  ],
+  "required_fields": [
+    "firing_sequence",
+    "firing_counts",
+    "place_invariant",
+    "initial_invariant",
+    "target_invariant",
+    "decoy_invariant"
+  ],
+  "schema": "h4.output-contract.v1",
+  "task_rules": [
+    "Places and transitions use zero-based input order. A transition t is enabled when marking>=pre[t] componentwise and fires to marking-pre[t]+post[t].",
+    "firing_sequence must reach target; firing_counts has one entry per transition and exactly counts the sequence.",
+    "place_invariant y has one integer per place and satisfies y^T(post-pre)=0 for every transition. Report its dot products with initial, target and decoy; initial=target and differs from decoy."
+  ],
+  "task_schema": "h4.petri.v1"
+}

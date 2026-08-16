@@ -1,0 +1,76 @@
+{
+  "$id": "returnbench:F3HMM1:submission",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "forward": {
+      "items": {
+        "items": {
+          "additionalProperties": false,
+          "properties": {
+            "den": {
+              "type": "integer"
+            },
+            "num": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "den",
+            "num"
+          ],
+          "type": "object"
+        },
+        "maxItems": 3,
+        "minItems": 3,
+        "type": "array"
+      },
+      "maxItems": 9,
+      "minItems": 9,
+      "type": "array"
+    },
+    "kind": {
+      "type": "string"
+    },
+    "likelihood": {
+      "additionalProperties": false,
+      "properties": {
+        "den": {
+          "type": "integer"
+        },
+        "num": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "den",
+        "num"
+      ],
+      "type": "object"
+    },
+    "posterior_final": {
+      "additionalProperties": false,
+      "properties": {
+        "den": {
+          "type": "integer"
+        },
+        "num": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "den",
+        "num"
+      ],
+      "type": "object"
+    }
+  },
+  "required": [
+    "forward",
+    "kind",
+    "likelihood",
+    "posterior_final"
+  ],
+  "title": "F3HMM1 actor submission shape (values intentionally omitted)",
+  "type": "object"
+}

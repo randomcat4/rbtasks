@@ -1,0 +1,75 @@
+{
+  "coefficients": [
+    {
+      "den": 1,
+      "num": 0
+    },
+    {
+      "den": 1,
+      "num": 1
+    },
+    {
+      "den": 1,
+      "num": 4
+    },
+    {
+      "den": 1,
+      "num": 2
+    },
+    {
+      "den": 1,
+      "num": 5
+    },
+    {
+      "den": 1,
+      "num": 1
+    }
+  ],
+  "degeneracy": "nondecreasing clamped knots; frozen repeated interior knot has multiplicity 2",
+  "degree": 2,
+  "evaluation_side": "right: base intervals [t_i,t_i+1), except the final domain endpoint",
+  "knots": [
+    {
+      "den": 1,
+      "num": 0
+    },
+    {
+      "den": 1,
+      "num": 0
+    },
+    {
+      "den": 1,
+      "num": 0
+    },
+    {
+      "den": 1,
+      "num": 1
+    },
+    {
+      "den": 1,
+      "num": 1
+    },
+    {
+      "den": 1,
+      "num": 2
+    },
+    {
+      "den": 1,
+      "num": 3
+    },
+    {
+      "den": 1,
+      "num": 3
+    },
+    {
+      "den": 1,
+      "num": 3
+    }
+  ],
+  "requested_derivative": 1,
+  "schema": "f3.bspline_knot.v1",
+  "x": {
+    "den": 1,
+    "num": 1
+  }
+}

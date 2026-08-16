@@ -1,0 +1,37 @@
+{
+  "$id": "returnbench:d3dfa03:submission",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "length": {
+      "type": "integer"
+    },
+    "trace_a": {
+      "items": {
+        "type": "integer"
+      },
+      "maxItems": 6,
+      "minItems": 6,
+      "type": "array"
+    },
+    "trace_b": {
+      "items": {
+        "type": "integer"
+      },
+      "maxItems": 6,
+      "minItems": 6,
+      "type": "array"
+    },
+    "word": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "length",
+    "trace_a",
+    "trace_b",
+    "word"
+  ],
+  "title": "d3dfa03 actor submission shape (values intentionally omitted)",
+  "type": "object"
+}

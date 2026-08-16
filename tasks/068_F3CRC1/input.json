@@ -1,0 +1,11 @@
+{
+  "byte_reflection": true,
+  "data_hex": "436F6465782D46332D4352432D32303236",
+  "init_hex": "FFFFFFFF",
+  "normal_polynomial_hex": "04C11DB7",
+  "output_hex": "8 uppercase hexadecimal digits",
+  "reflected_polynomial_hex": "EDB88320",
+  "schema": "f3.crc32.v1",
+  "width": 32,
+  "xorout_hex": "FFFFFFFF"
+}

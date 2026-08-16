@@ -1,0 +1,48 @@
+{
+  "additional_fields": "forbidden",
+  "contract_completeness": "Every required field has an explicit JSON type, shape, defining equation or predicate, and canonicalization rule.",
+  "field_contracts": {
+    "D": {
+      "canonicalization": "positive divisibility chain then zeros",
+      "definition": "canonical Smith diagonal in U*A*V=D",
+      "json_type": "integer matrix",
+      "shape": "[n][n]"
+    },
+    "U": {
+      "canonicalization": "determinant +/-1",
+      "definition": "left unimodular transform",
+      "json_type": "integer matrix",
+      "shape": "[n][n]"
+    },
+    "V": {
+      "canonicalization": "determinant +/-1",
+      "definition": "right unimodular transform",
+      "json_type": "integer matrix",
+      "shape": "[n][n]"
+    },
+    "determinantal_divisors": {
+      "canonicalization": "nonnegative, k=1,...,rank",
+      "definition": "gcds of all k-minors for increasing k",
+      "json_type": "array of integers",
+      "shape": "[rank(D)]"
+    }
+  },
+  "representation_conventions": [
+    "Indices are zero-based unless a mathematical exponent or degree is explicitly named. Matrices are row-major; nested tensor array order is stated per task.",
+    "A rational scalar is a reduced JSON string \"n\" or \"n/d\" with positive denominator. JSON integers are used only where the field contract says integer. Floats, decimal approximations, NaN and infinity are invalid.",
+    "The submission object has exactly required_fields, with no additional keys. Nested objects likewise use exactly the named keys."
+  ],
+  "required_fields": [
+    "U",
+    "D",
+    "V",
+    "determinantal_divisors"
+  ],
+  "schema": "h4.output-contract.v1",
+  "task_rules": [
+    "For n=rows(matrix), U,D,V are n by n integer matrices, det(U),det(V) in {+1,-1}, and U*matrix*V=D.",
+    "D is diagonal; nonzero diagonal entries are positive, precede zeros, and each divides the next nonzero entry.",
+    "determinantal_divisors[k-1] is the nonnegative gcd of absolute values of all k by k minors of the input, for k=1,...,rank(D), in increasing k."
+  ],
+  "task_schema": "h4.smith.v1"
+}

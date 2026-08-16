@@ -1,0 +1,24 @@
+{
+  "answer_boundary": "No administrator control, arm assignment, reference answer, or hidden judge is included.",
+  "certificate_type": "素数构造、赋值奇偶或整除证书",
+  "difficulty_basis": "本题对象是“任意界以上都存在模 4 为 3 的素数”；需核验的特有证书结构为 素数构造、赋值奇偶或整除证书，公开合同核心项包括 形式声明、定义展开与内核检查。本题的算法与验证负担是：假设界以上无 4k+3 素数，构造由已有素数乘积得到的 4m−1，分析其素因子模 4 类产生矛盾。 结构等级生成规则为“中：以单一形式声明或较窄证书为主，但仍需内核或精确裁判闭合”。该等级仅依据证书宽度、精确重放和独立验收负担评定，未做模型难度校准。",
+  "family": "baseline",
+  "lane": "e3",
+  "license": "MIT for project-original material; third-party material retains upstream terms.",
+  "math_domain": "数论",
+  "ordinal": 57,
+  "pilot_status": "PILOT_ELIGIBLE",
+  "public_files": [
+    "metadata.json",
+    "provenance.json",
+    "task.md"
+  ],
+  "release_status": "RELEASE_READY",
+  "representation_bridge": "冻结自然语言/结构化输入 → 素数、赋值与整除中的精确表示 → 素数构造、赋值奇偶或整除证书（核心公开字段：题面指定的形式声明或证书对象）→ 独立验收回源结论",
+  "schema": "returnbench-public-task-v1",
+  "solution_outline": "假设界以上无 4k+3 素数，构造由已有素数乘积得到的 4m−1，分析其素因子模 4 类产生矛盾。",
+  "structural_difficulty": "中",
+  "subdomain": "素数、赋值与整除",
+  "task_id": "E3P43I3",
+  "title": "E3P43I3 — 任意界以上都存在模 4 为 3 的素数"
+}

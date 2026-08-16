@@ -1,0 +1,15 @@
+{
+  "schema_version": "returnbench-exact-certificate-v1",
+  "task_id": "P5DMN02",
+  "integer": "JSON integer",
+  "rational": "two-element reduced [numerator,denominator], denominator > 0",
+  "additional_top_level_fields": "rejected",
+  "required_top_level_fields": {
+    "old_to_quotient": "int[73] with contiguous zero-based quotient labels",
+    "quotient_transitions": "int[quotient_count][6]",
+    "quotient_accepting": "bool[quotient_count]",
+    "refinement_rounds": "array of int[73], canonical first-occurrence class labels",
+    "reachability_parents": "array[73] of null at start or [parent_state,symbol]",
+    "distinguishing_words": "array in lexicographic p<q order of {pair:[p,q],word:int[]}"
+  }
+}

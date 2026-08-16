@@ -1,0 +1,41 @@
+{
+  "additional_fields": "forbidden",
+  "contract_completeness": "Every required field has an explicit JSON type, shape, defining equation or predicate, and canonicalization rule.",
+  "field_contracts": {
+    "convex_hull_ccw": {
+      "canonicalization": "CCW from minimum (x,y,id)",
+      "definition": "strict convex-hull IDs",
+      "json_type": "array of strings",
+      "shape": "[hull vertex count]"
+    },
+    "triangle_count": {
+      "canonicalization": "must equal triangles length",
+      "definition": "number of triangle records",
+      "json_type": "integer",
+      "shape": "scalar"
+    },
+    "triangles": {
+      "canonicalization": "triangles lexicographic by vertex list; vertices CCW",
+      "definition": "each {vertices:[3 IDs],min_negative_incircle:rational,lifted_plane:[A,B,C],minimum_lifted_slack:rational}",
+      "json_type": "array of objects",
+      "shape": "[Delaunay face count]"
+    }
+  },
+  "representation_conventions": [
+    "Indices are zero-based unless a mathematical exponent or degree is explicitly named. Matrices are row-major; nested tensor array order is stated per task.",
+    "A rational scalar is a reduced JSON string \"n\" or \"n/d\" with positive denominator. JSON integers are used only where the field contract says integer. Floats, decimal approximations, NaN and infinity are invalid.",
+    "The submission object has exactly required_fields, with no additional keys. Nested objects likewise use exactly the named keys."
+  ],
+  "required_fields": [
+    "triangles",
+    "convex_hull_ccw",
+    "triangle_count"
+  ],
+  "schema": "h4.output-contract.v1",
+  "task_rules": [
+    "Point order is input order. For each index triple a<b<c, orient it CCW (swap b,c if needed). For q=p, write ax=a_x-q_x, ay=a_y-q_y and similarly b,c; incircle(a,b,c,q)=(ax^2+ay^2)(bx*cy-by*cx)-(bx^2+by^2)(ax*cy-ay*cx)+(cx^2+cy^2)(ax*by-ay*bx). A triple is a Delaunay face exactly when this is <0 for every other input point.",
+    "Each triangle lists the resulting CCW vertex IDs. min_negative_incircle is the maximum (closest to zero) of those strictly negative values. lifted_plane=[A,B,C] satisfies x^2+y^2=A*x+B*y+C at its three vertices; minimum_lifted_slack is the minimum of x^2+y^2-A*x-B*y-C over nonvertices.",
+    "Sort triangles lexicographically by their vertex-ID lists. convex_hull_ccw is the strict monotone-chain hull beginning at minimum (x,y,id). triangle_count is the list length."
+  ],
+  "task_schema": "h4.delaunay.v1"
+}

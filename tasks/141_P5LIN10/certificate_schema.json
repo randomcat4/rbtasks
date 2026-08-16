@@ -1,0 +1,15 @@
+{
+  "schema_version": "returnbench-exact-certificate-v1",
+  "task_id": "P5LIN10",
+  "integer": "JSON integer",
+  "rational": "two-element reduced [numerator,denominator], denominator > 0",
+  "additional_top_level_fields": "rejected",
+  "required_top_level_fields": {
+    "x_dyadic": "rational[180], every denominator a power of two",
+    "residual": "rational[180]",
+    "dominance_margins": "rational[180]",
+    "gamma": "positive rational",
+    "error_bound": "nonnegative rational",
+    "modular_solutions": "three rows {prime:int,indices:int[12],residues:int[12]} in input prime order"
+  }
+}

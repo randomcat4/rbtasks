@@ -1,0 +1,61 @@
+{
+  "coefficient_bound": 8,
+  "conserved_elements": [
+    "Mn",
+    "O",
+    "Fe",
+    "H"
+  ],
+  "normalization": "primitive positive integer vector, reactants then products",
+  "products": [
+    "Mn2+",
+    "Fe3+",
+    "H2O"
+  ],
+  "reactants": [
+    "MnO4-",
+    "Fe2+",
+    "H+"
+  ],
+  "schema": "f3.stoichiometry.v1",
+  "species": {
+    "Fe2+": {
+      "charge": 2,
+      "elements": {
+        "Fe": 1
+      }
+    },
+    "Fe3+": {
+      "charge": 3,
+      "elements": {
+        "Fe": 1
+      }
+    },
+    "H+": {
+      "charge": 1,
+      "elements": {
+        "H": 1
+      }
+    },
+    "H2O": {
+      "charge": 0,
+      "elements": {
+        "H": 2,
+        "O": 1
+      }
+    },
+    "Mn2+": {
+      "charge": 2,
+      "elements": {
+        "Mn": 1
+      }
+    },
+    "MnO4-": {
+      "charge": -1,
+      "elements": {
+        "Mn": 1,
+        "O": 4
+      }
+    }
+  }
+}

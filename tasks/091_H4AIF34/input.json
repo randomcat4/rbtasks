@@ -1,0 +1,159 @@
+{
+  "bound_values": "integers -64..64 plus -inf,+inf; arithmetic rounds outward to infinities",
+  "edges": [
+    {
+      "from": 0,
+      "id": "e00",
+      "operations": [
+        {
+          "op": "noop"
+        }
+      ],
+      "to": 1
+    },
+    {
+      "from": 1,
+      "id": "e01",
+      "operations": [
+        {
+          "bound": 11,
+          "op": "assume_le",
+          "var": "x"
+        }
+      ],
+      "to": 2
+    },
+    {
+      "from": 2,
+      "id": "e02",
+      "operations": [
+        {
+          "dst": "y",
+          "offset": -2,
+          "op": "assign_affine",
+          "scale": 3,
+          "src": "x"
+        }
+      ],
+      "to": 3
+    },
+    {
+      "from": 3,
+      "id": "e03",
+      "operations": [
+        {
+          "dst": "z",
+          "offset": 5,
+          "op": "assign_affine",
+          "scale": -2,
+          "src": "x"
+        }
+      ],
+      "to": 4
+    },
+    {
+      "from": 4,
+      "id": "e04",
+      "operations": [
+        {
+          "dst": "x",
+          "offset": 1,
+          "op": "assign_affine",
+          "scale": 1,
+          "src": "x"
+        }
+      ],
+      "to": 5
+    },
+    {
+      "from": 5,
+      "id": "e05",
+      "operations": [
+        {
+          "op": "noop"
+        }
+      ],
+      "to": 1
+    },
+    {
+      "from": 1,
+      "id": "e06",
+      "operations": [
+        {
+          "bound": 12,
+          "op": "assume_ge",
+          "var": "x"
+        }
+      ],
+      "to": 6
+    },
+    {
+      "from": 6,
+      "id": "e07",
+      "operations": [
+        {
+          "dst": "w",
+          "left": "y",
+          "op": "assign_sum",
+          "right": "z"
+        }
+      ],
+      "to": 7
+    },
+    {
+      "from": 7,
+      "id": "e08",
+      "operations": [
+        {
+          "bound": 38,
+          "op": "assume_le",
+          "var": "w"
+        }
+      ],
+      "to": 8
+    }
+  ],
+  "entry": 0,
+  "finite_bound": 64,
+  "initial_state": {
+    "w": [
+      0,
+      0
+    ],
+    "x": [
+      0,
+      0
+    ],
+    "y": [
+      0,
+      0
+    ],
+    "z": [
+      0,
+      0
+    ]
+  },
+  "nodes": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "safety_query": {
+    "node": 8,
+    "upper_bound": 38,
+    "variable": "w"
+  },
+  "schema": "h4.abstract_interval_lfp.v1",
+  "variables": [
+    "x",
+    "y",
+    "z",
+    "w"
+  ]
+}

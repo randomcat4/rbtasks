@@ -1,0 +1,13 @@
+{
+  "bibliographic_context": [
+    "R. Alur and D. Dill, A theory of timed automata, Theoretical Computer Science 126, 1994"
+  ],
+  "claim_provenance": "project_generated_original_fixed_instance",
+  "license": "MIT",
+  "license_authority": "root LICENSE; explicit project-owner authorization 2026-08-16",
+  "revision": "1fe2caf8691195ace75f8f9932e52dc0dd33f9288a9fb26b49a8c3cfc12e67d4",
+  "semantic_deduplication": "Uses a difference-constraint semiring, but reset, delay elapse, strict bounds and canonical timed zones are absent from negative-cycle tasks.",
+  "source_locator": "urn:rbtasks:h4:h4dbm35:v1",
+  "task_id": "H4DBM35",
+  "third_party_code_or_data_copied": false
+}

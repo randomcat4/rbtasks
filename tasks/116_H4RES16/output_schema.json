@@ -1,0 +1,48 @@
+{
+  "additional_fields": "forbidden",
+  "contract_completeness": "Every required field has an explicit JSON type, shape, defining equation or predicate, and canonicalization rule.",
+  "field_contracts": {
+    "bezout_a_ascending": {
+      "canonicalization": "ascending, trailing zeros omitted",
+      "definition": "a coefficients in a*f+b*g=resultant",
+      "json_type": "array of rationals",
+      "shape": "[variable]"
+    },
+    "bezout_b_ascending": {
+      "canonicalization": "ascending, trailing zeros omitted",
+      "definition": "b coefficients in a*f+b*g=resultant",
+      "json_type": "array of rationals",
+      "shape": "[variable]"
+    },
+    "resultant": {
+      "canonicalization": "exact value",
+      "definition": "determinant of the stated Sylvester matrix",
+      "json_type": "rational scalar",
+      "shape": "scalar"
+    },
+    "sylvester_determinant": {
+      "canonicalization": "must equal resultant",
+      "definition": "independently named determinant of Sylvester(f,g)",
+      "json_type": "rational scalar",
+      "shape": "scalar"
+    }
+  },
+  "representation_conventions": [
+    "Indices are zero-based unless a mathematical exponent or degree is explicitly named. Matrices are row-major; nested tensor array order is stated per task.",
+    "A rational scalar is a reduced JSON string \"n\" or \"n/d\" with positive denominator. JSON integers are used only where the field contract says integer. Floats, decimal approximations, NaN and infinity are invalid.",
+    "The submission object has exactly required_fields, with no additional keys. Nested objects likewise use exactly the named keys."
+  ],
+  "required_fields": [
+    "resultant",
+    "bezout_a_ascending",
+    "bezout_b_ascending",
+    "sylvester_determinant"
+  ],
+  "schema": "h4.output-contract.v1",
+  "task_rules": [
+    "Input and output univariate polynomials use ascending coefficients. If deg(f)=m and deg(g)=n, the Sylvester matrix has n shifted rows of descending f coefficients followed by m shifted rows of descending g coefficients.",
+    "resultant and sylvester_determinant are the same exact rational integer det(Sylvester(f,g)).",
+    "Bezout lists a,b satisfy a(x)f(x)+b(x)g(x)=resultant as an exact coefficient identity; trailing zeros are omitted."
+  ],
+  "task_schema": "h4.resultant.v1"
+}

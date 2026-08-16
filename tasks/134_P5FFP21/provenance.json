@@ -1,0 +1,18 @@
+{
+  "authors": [
+    "ReturnBench contributors"
+  ],
+  "instance_origin": "ReturnBench deterministic project-original generator; no upstream fixture, proof, code, or answer copied",
+  "redistribution_analysis": "Only original integer tables/text and original standard-library verifier code are redistributed.",
+  "references": [
+    {
+      "license": "Apache-2.0",
+      "project": "Mathlib",
+      "revision": "81a5d257c8e410db227a6665ed08f64fea08e997",
+      "url": "https://github.com/leanprover-community/mathlib4",
+      "use": "finite-field definition anchor only; no code/data bundled",
+      "version": "4.32.0"
+    }
+  ],
+  "task_id": "P5FFP21"
+}

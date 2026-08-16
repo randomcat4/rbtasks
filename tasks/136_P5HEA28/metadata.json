@@ -1,0 +1,30 @@
+{
+  "answer_boundary": "No administrator control, arm assignment, reference answer, or hidden judge is included.",
+  "certificate_type": "守恒量、量纲、传递矩阵或完整场证书",
+  "difficulty_basis": "本题对象是“32×32 稳态热反应精确场证书”；需核验的特有证书结构为 守恒量、量纲、传递矩阵或完整场证书，公开合同核心项包括 boundary_contribution_table、boundary_values、energy_denominator、energy_lhs_numerator、energy_rhs_numerator、exact_error_bound_numerator、field_denominator、field_numerators。本题的算法与验证负担是：在 32×32 内点上返回完整稳态温度场，逐点复算离散扩散—反应残差、边界条件、M-matrix 单调性和离散能量。 结构等级生成规则为“高：H4/P5 新题要求跨表示的完整结构证书、针对性负控与独立重放”。该等级仅依据证书宽度、精确重放和独立验收负担评定，未做模型难度校准。",
+  "family": "p5",
+  "lane": "p5",
+  "license": "MIT for project-original material; third-party material retains upstream terms.",
+  "math_domain": "数学物理",
+  "ordinal": 136,
+  "pilot_status": "PILOT_PENDING",
+  "public_files": [
+    "certificate_schema.json",
+    "input.json",
+    "license.json",
+    "metadata.json",
+    "package.json",
+    "provenance.json",
+    "source.json",
+    "task.md",
+    "verifier.json"
+  ],
+  "release_status": "RELEASE_READY",
+  "representation_bridge": "冻结自然语言/结构化输入 → 物理、化学与科学计算中的精确表示 → 守恒量、量纲、传递矩阵或完整场证书（核心公开字段：boundary_contribution_table、boundary_values、energy_denominator、energy_lhs_numerator）→ 独立验收回源结论",
+  "schema": "returnbench-public-task-v1",
+  "solution_outline": "在 32×32 内点上返回完整稳态温度场，逐点复算离散扩散—反应残差、边界条件、M-matrix 单调性和离散能量。",
+  "structural_difficulty": "高",
+  "subdomain": "物理、化学与科学计算",
+  "task_id": "P5HEA28",
+  "title": "P5HEA28 — 32×32 稳态热反应精确场证书"
+}

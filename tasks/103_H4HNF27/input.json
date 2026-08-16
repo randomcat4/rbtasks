@@ -1,0 +1,55 @@
+{
+  "basis_matrix": [
+    [
+      2,
+      1,
+      44,
+      16,
+      74
+    ],
+    [
+      0,
+      0,
+      -20,
+      -5,
+      -32
+    ],
+    [
+      0,
+      0,
+      -5,
+      -3,
+      -9
+    ],
+    [
+      0,
+      3,
+      2,
+      5,
+      -15
+    ],
+    [
+      6,
+      3,
+      12,
+      18,
+      41
+    ]
+  ],
+  "hnf_convention": "upper triangular; positive diagonal; 0<=H[i,j]<H[j,j] for i<j",
+  "member_query": [
+    -56,
+    23,
+    8,
+    69,
+    -74
+  ],
+  "nonmember_query": [
+    -56,
+    24,
+    8,
+    69,
+    -74
+  ],
+  "schema": "h4.hermite_lattice.v1"
+}

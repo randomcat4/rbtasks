@@ -1,0 +1,13 @@
+{
+  "bibliographic_context": [
+    "G. Nelson and D. Oppen, Fast decision procedures based on congruence closure, JACM 27(2), 1980"
+  ],
+  "claim_provenance": "project_generated_original_fixed_instance",
+  "license": "MIT",
+  "license_authority": "root LICENSE; explicit project-owner authorization 2026-08-16",
+  "revision": "f430a11259bb6283fb20de1bc713b699f42625206127b174727a840b2c4eba66",
+  "semantic_deduplication": "No existing task supplies congruence explanations and a deletion-minimal EUF core; it is not propositional SAT/PB or a Lean theorem wrapper.",
+  "source_locator": "urn:rbtasks:h4:h4euf36:v1",
+  "task_id": "H4EUF36",
+  "third_party_code_or_data_copied": false
+}

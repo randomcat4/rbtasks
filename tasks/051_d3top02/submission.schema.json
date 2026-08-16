@@ -1,0 +1,27 @@
+{
+  "$id": "returnbench:d3top02:submission",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "count": {
+      "type": "integer"
+    },
+    "dp": {
+      "additionalProperties": {
+        "type": "integer"
+      },
+      "maxProperties": 2048,
+      "minProperties": 2048,
+      "propertyNames": {
+        "pattern": "^(0|[1-9][0-9]*)$"
+      },
+      "type": "object"
+    }
+  },
+  "required": [
+    "count",
+    "dp"
+  ],
+  "title": "d3top02 actor submission shape (values intentionally omitted)",
+  "type": "object"
+}

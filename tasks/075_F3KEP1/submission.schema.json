@@ -1,0 +1,144 @@
+{
+  "$id": "returnbench:F3KEP1:submission",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "angular_momentum": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "den": {
+            "type": "integer"
+          },
+          "num": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "den",
+          "num"
+        ],
+        "type": "object"
+      },
+      "maxItems": 3,
+      "minItems": 3,
+      "type": "array"
+    },
+    "angular_momentum_squared": {
+      "additionalProperties": false,
+      "properties": {
+        "den": {
+          "type": "integer"
+        },
+        "num": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "den",
+        "num"
+      ],
+      "type": "object"
+    },
+    "eccentricity_squared": {
+      "additionalProperties": false,
+      "properties": {
+        "den": {
+          "type": "integer"
+        },
+        "num": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "den",
+        "num"
+      ],
+      "type": "object"
+    },
+    "eccentricity_vector": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "den": {
+            "type": "integer"
+          },
+          "num": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "den",
+          "num"
+        ],
+        "type": "object"
+      },
+      "maxItems": 3,
+      "minItems": 3,
+      "type": "array"
+    },
+    "kind": {
+      "type": "string"
+    },
+    "semi_major_axis": {
+      "additionalProperties": false,
+      "properties": {
+        "den": {
+          "type": "integer"
+        },
+        "num": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "den",
+        "num"
+      ],
+      "type": "object"
+    },
+    "semilatus_rectum": {
+      "additionalProperties": false,
+      "properties": {
+        "den": {
+          "type": "integer"
+        },
+        "num": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "den",
+        "num"
+      ],
+      "type": "object"
+    },
+    "specific_energy": {
+      "additionalProperties": false,
+      "properties": {
+        "den": {
+          "type": "integer"
+        },
+        "num": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "den",
+        "num"
+      ],
+      "type": "object"
+    }
+  },
+  "required": [
+    "angular_momentum",
+    "angular_momentum_squared",
+    "eccentricity_squared",
+    "eccentricity_vector",
+    "kind",
+    "semi_major_axis",
+    "semilatus_rectum",
+    "specific_energy"
+  ],
+  "title": "F3KEP1 actor submission shape (values intentionally omitted)",
+  "type": "object"
+}

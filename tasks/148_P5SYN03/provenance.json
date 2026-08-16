@@ -1,0 +1,26 @@
+{
+  "authors": [
+    "ReturnBench contributors"
+  ],
+  "instance_origin": "ReturnBench project-original deterministic generator; no upstream data copied",
+  "redistribution_analysis": "Only original integer/rational instance data and original text are redistributed; upstream packages are not runtime dependencies and no upstream code/data is included.",
+  "references": [
+    {
+      "license": "MIT",
+      "project": "automata-lib",
+      "revision": "refs/tags/v9.1.2 @ 67fcf0b5f78b25b604611301176242caeaea5fec",
+      "url": "https://github.com/caleb531/automata",
+      "use": "definition cross-check only",
+      "version": "9.1.2"
+    },
+    {
+      "license": "MIT",
+      "project": "pyformlang",
+      "revision": "PyPI release 1.0.11 (upstream repository has no matching tag)",
+      "url": "https://pypi.org/project/pyformlang/1.0.11/",
+      "use": "independent cross-check only",
+      "version": "1.0.11"
+    }
+  ],
+  "task_id": "P5SYN03"
+}

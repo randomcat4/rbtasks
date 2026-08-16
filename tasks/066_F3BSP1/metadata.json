@@ -1,0 +1,26 @@
+{
+  "answer_boundary": "No administrator control, arm assignment, reference answer, or hidden judge is included.",
+  "certificate_type": "完整递推表、精确变换或残差证书",
+  "difficulty_basis": "本题对象是“Repeated-knot B-spline: exact value and right derivative”；需核验的特有证书结构为 完整递推表、精确变换或残差证书，公开合同核心项包括 first_derivative_right、kind、value。本题的算法与验证负担是：按 Cox–de Boor 递推在重复节点处计算 B-spline 基值，并从右侧区间递推导数，保持全部结果为精确有理数。 结构等级生成规则为“中高：需要完整算法轨迹、递推表或精确多字段见证”。该等级仅依据证书宽度、精确重放和独立验收负担评定，未做模型难度校准。",
+  "family": "baseline",
+  "lane": "f3",
+  "license": "MIT for project-original material; third-party material retains upstream terms.",
+  "math_domain": "数值与信号",
+  "ordinal": 66,
+  "pilot_status": "PILOT_ELIGIBLE",
+  "public_files": [
+    "input.json",
+    "metadata.json",
+    "provenance.json",
+    "submission.schema.json",
+    "task.md"
+  ],
+  "release_status": "RELEASE_READY",
+  "representation_bridge": "冻结自然语言/结构化输入 → 信号处理、张量与数值变换中的精确表示 → 完整递推表、精确变换或残差证书（核心公开字段：first_derivative_right、kind、value）→ 独立验收回源结论",
+  "schema": "returnbench-public-task-v1",
+  "solution_outline": "按 Cox–de Boor 递推在重复节点处计算 B-spline 基值，并从右侧区间递推导数，保持全部结果为精确有理数。",
+  "structural_difficulty": "中高",
+  "subdomain": "信号处理、张量与数值变换",
+  "task_id": "F3BSP1",
+  "title": "F3BSP1 — Repeated-knot B-spline: exact value and right derivative"
+}

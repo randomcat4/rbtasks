@@ -1,0 +1,186 @@
+{
+  "design": [
+    [
+      {
+        "den": 1,
+        "num": 1
+      },
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 1
+      }
+    ],
+    [
+      {
+        "den": 1,
+        "num": 1
+      },
+      {
+        "den": 1,
+        "num": 1
+      },
+      {
+        "den": 1,
+        "num": 0
+      }
+    ],
+    [
+      {
+        "den": 1,
+        "num": 1
+      },
+      {
+        "den": 1,
+        "num": 2
+      },
+      {
+        "den": 1,
+        "num": 1
+      }
+    ],
+    [
+      {
+        "den": 1,
+        "num": 1
+      },
+      {
+        "den": 1,
+        "num": 3
+      },
+      {
+        "den": 1,
+        "num": 2
+      }
+    ],
+    [
+      {
+        "den": 1,
+        "num": 1
+      },
+      {
+        "den": 1,
+        "num": 4
+      },
+      {
+        "den": 1,
+        "num": 1
+      }
+    ],
+    [
+      {
+        "den": 1,
+        "num": 1
+      },
+      {
+        "den": 1,
+        "num": 5
+      },
+      {
+        "den": 1,
+        "num": 3
+      }
+    ],
+    [
+      {
+        "den": 1,
+        "num": 1
+      },
+      {
+        "den": 1,
+        "num": 6
+      },
+      {
+        "den": 1,
+        "num": 2
+      }
+    ],
+    [
+      {
+        "den": 1,
+        "num": 1
+      },
+      {
+        "den": 1,
+        "num": 7
+      },
+      {
+        "den": 1,
+        "num": 4
+      }
+    ]
+  ],
+  "response": [
+    {
+      "den": 1,
+      "num": 2
+    },
+    {
+      "den": 1,
+      "num": 3
+    },
+    {
+      "den": 1,
+      "num": 5
+    },
+    {
+      "den": 1,
+      "num": 8
+    },
+    {
+      "den": 1,
+      "num": 8
+    },
+    {
+      "den": 1,
+      "num": 13
+    },
+    {
+      "den": 1,
+      "num": 13
+    },
+    {
+      "den": 1,
+      "num": 18
+    }
+  ],
+  "schema": "f3.wls.v1",
+  "weight_semantics": "inverse-variance weights; whitening uses sqrt(weight)",
+  "weights": [
+    {
+      "den": 1,
+      "num": 1
+    },
+    {
+      "den": 2,
+      "num": 3
+    },
+    {
+      "den": 1,
+      "num": 2
+    },
+    {
+      "den": 2,
+      "num": 5
+    },
+    {
+      "den": 1,
+      "num": 1
+    },
+    {
+      "den": 1,
+      "num": 3
+    },
+    {
+      "den": 2,
+      "num": 3
+    },
+    {
+      "den": 1,
+      "num": 2
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "authors": [
+    "ReturnBench contributors"
+  ],
+  "instance_origin": "ReturnBench deterministic project-original generator; no upstream fixture, proof, code, or answer copied",
+  "redistribution_analysis": "Only original integer tables/text and original Python standard-library verifier code are redistributed.",
+  "references": [
+    {
+      "license": "GPL-2.0-or-later",
+      "project": "SageMath",
+      "revision": "10.7",
+      "url": "https://github.com/sagemath/sage",
+      "use": "Reed-Solomon/Berlekamp-Massey terminology anchor only; no code or fixture bundled",
+      "version": "10.7"
+    }
+  ],
+  "task_id": "P5RS25"
+}

@@ -1,0 +1,4 @@
+{
+  "license": "BSD-3-Clause",
+  "source_locator": "networkx/algorithms/graph_hashing.py:73:weisfeiler_lehman_graph_hash"
+}

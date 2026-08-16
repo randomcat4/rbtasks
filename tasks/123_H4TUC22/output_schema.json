@@ -1,0 +1,62 @@
+{
+  "additional_fields": "forbidden",
+  "contract_completeness": "Every required field has an explicit JSON type, shape, defining equation or predicate, and canonicalization rule.",
+  "field_contracts": {
+    "core": {
+      "canonicalization": "literal index order",
+      "definition": "Tucker core indexed [a][b][c]",
+      "json_type": "3D rational array",
+      "shape": "[r1][r2][r3]"
+    },
+    "factor_A": {
+      "canonicalization": "row-major",
+      "definition": "mode-0 Tucker factor",
+      "json_type": "rational matrix",
+      "shape": "[I][r1]"
+    },
+    "factor_B": {
+      "canonicalization": "row-major",
+      "definition": "mode-1 Tucker factor",
+      "json_type": "rational matrix",
+      "shape": "[J][r2]"
+    },
+    "factor_C": {
+      "canonicalization": "row-major",
+      "definition": "mode-2 Tucker factor",
+      "json_type": "rational matrix",
+      "shape": "[K][r3]"
+    },
+    "unfolding_pivots": {
+      "canonicalization": "mode order; each list strictly increasing",
+      "definition": "zero-based RREF pivot columns of each unfolding",
+      "json_type": "array of integer arrays",
+      "shape": "[3][rank per mode]"
+    },
+    "unfolding_ranks": {
+      "canonicalization": "mode order 0,1,2",
+      "definition": "exact ranks of mode 0,1,2 unfoldings",
+      "json_type": "array of integers",
+      "shape": "[3]"
+    }
+  },
+  "representation_conventions": [
+    "Indices are zero-based unless a mathematical exponent or degree is explicitly named. Matrices are row-major; nested tensor array order is stated per task.",
+    "A rational scalar is a reduced JSON string \"n\" or \"n/d\" with positive denominator. JSON integers are used only where the field contract says integer. Floats, decimal approximations, NaN and infinity are invalid.",
+    "The submission object has exactly required_fields, with no additional keys. Nested objects likewise use exactly the named keys."
+  ],
+  "required_fields": [
+    "factor_A",
+    "factor_B",
+    "factor_C",
+    "core",
+    "unfolding_ranks",
+    "unfolding_pivots"
+  ],
+  "schema": "h4.output-contract.v1",
+  "task_rules": [
+    "If tensor has shape I by J by K and target ranks are (r1,r2,r3), factors have shapes I*r1, J*r2, K*r3 and core has shape r1*r2*r3.",
+    "Reconstruction is T[i][j][k]=sum_(a,b,c) A[i,a]B[j,b]C[k,c]core[a,b,c].",
+    "Mode-0 unfolding rows i and columns (j,k) with j outer; mode-1 rows j and columns (i,k); mode-2 rows k and columns (i,j). Ranks and zero-based RREF pivot columns are listed in mode order 0,1,2."
+  ],
+  "task_schema": "h4.tucker.v1"
+}

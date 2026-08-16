@@ -1,0 +1,48 @@
+{
+  "additional_fields": "forbidden",
+  "contract_completeness": "Every required field has an explicit JSON type, shape, defining equation or predicate, and canonicalization rule.",
+  "field_contracts": {
+    "P_ascending": {
+      "canonicalization": "ascending powers",
+      "definition": "numerator coefficients p_0,...,p_n",
+      "json_type": "array of rationals",
+      "shape": "[n+1]"
+    },
+    "Q_ascending": {
+      "canonicalization": "ascending powers, q_0=1",
+      "definition": "denominator coefficients q_0,...,q_m",
+      "json_type": "array of rationals",
+      "shape": "[m+1]"
+    },
+    "first_residual_coefficient": {
+      "canonicalization": "exact reduced rational",
+      "definition": "coefficient x^(n+m+1) of Q*exp-P",
+      "json_type": "rational scalar",
+      "shape": "scalar"
+    },
+    "hankel_system_determinant": {
+      "canonicalization": "exact and nonzero",
+      "definition": "determinant of the specified m by m coefficient system",
+      "json_type": "rational scalar",
+      "shape": "scalar"
+    }
+  },
+  "representation_conventions": [
+    "Indices are zero-based unless a mathematical exponent or degree is explicitly named. Matrices are row-major; nested tensor array order is stated per task.",
+    "A rational scalar is a reduced JSON string \"n\" or \"n/d\" with positive denominator. JSON integers are used only where the field contract says integer. Floats, decimal approximations, NaN and infinity are invalid.",
+    "The submission object has exactly required_fields, with no additional keys. Nested objects likewise use exactly the named keys."
+  ],
+  "required_fields": [
+    "P_ascending",
+    "Q_ascending",
+    "first_residual_coefficient",
+    "hankel_system_determinant"
+  ],
+  "schema": "h4.output-contract.v1",
+  "task_rules": [
+    "Let n=numerator_degree, m=denominator_degree, a_k=1/k!, P=sum_(k=0)^n p_k x^k, Q=sum_(j=0)^m q_j x^j with q_0=1.",
+    "Require coefficients of Q*exp-P to vanish through degree n+m. For k<=n, p_k=sum_(j=0)^min(k,m) q_j a_(k-j).",
+    "first_residual_coefficient is coefficient n+m+1 of Q*exp-P. hankel_system_determinant is det([a_(n+i-j)]_(i,j=1..m)) and must be nonzero."
+  ],
+  "task_schema": "h4.pade_exp.v1"
+}

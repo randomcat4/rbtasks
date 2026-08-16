@@ -1,0 +1,16 @@
+{
+  "schema_version": "returnbench-exact-certificate-v1",
+  "task_id": "P5VIT04",
+  "integer": "JSON integer",
+  "rational": "two-element reduced [numerator,denominator], denominator > 0",
+  "additional_top_level_fields": "rejected",
+  "required_top_level_fields": {
+    "information_bits": "bit[156]",
+    "decoded_bits": "bit[160]",
+    "state_path": "int[161] in 0..15",
+    "branch_metrics": "int[160][16][2]",
+    "survivor_metrics": "array[161][16] of null|int",
+    "survivor_predecessors": "array[161][16] of null|[predecessor_state,input_bit]",
+    "final_metric": "int"
+  }
+}

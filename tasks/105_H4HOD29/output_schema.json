@@ -1,0 +1,48 @@
+{
+  "additional_fields": "forbidden",
+  "contract_completeness": "Every required field has an explicit JSON type, shape, defining equation or predicate, and canonicalization rule.",
+  "field_contracts": {
+    "alpha_wedge_star_scalar": {
+      "canonicalization": "exact reduced rational",
+      "definition": "positive-volume coefficient of alpha wedge star(alpha)",
+      "json_type": "rational scalar",
+      "shape": "scalar"
+    },
+    "star_alpha": {
+      "canonicalization": "keys increasing i,j,k; exactly nonzero terms",
+      "definition": "coefficients of Hodge star(alpha)",
+      "json_type": "object from index triples to rationals",
+      "shape": "nonzero complement triples"
+    },
+    "star_square_sign": {
+      "canonicalization": "evaluate (-1)^(degree*(dimension-degree)) from the public input",
+      "definition": "sign in star^2=(-1)^(k(n-k))",
+      "json_type": "integer",
+      "shape": "scalar"
+    },
+    "star_star_alpha": {
+      "canonicalization": "keys increasing; equals star_square_sign times alpha",
+      "definition": "coefficients of star(star(alpha))",
+      "json_type": "object from index triples to rationals",
+      "shape": "same support as alpha"
+    }
+  },
+  "representation_conventions": [
+    "Indices are zero-based unless a mathematical exponent or degree is explicitly named. Matrices are row-major; nested tensor array order is stated per task.",
+    "A rational scalar is a reduced JSON string \"n\" or \"n/d\" with positive denominator. JSON integers are used only where the field contract says integer. Floats, decimal approximations, NaN and infinity are invalid.",
+    "The submission object has exactly required_fields, with no additional keys. Nested objects likewise use exactly the named keys."
+  ],
+  "required_fields": [
+    "star_alpha",
+    "alpha_wedge_star_scalar",
+    "star_star_alpha",
+    "star_square_sign"
+  ],
+  "schema": "h4.output-contract.v1",
+  "task_rules": [
+    "A form map key i,j,k means coefficient of e^i wedge e^j wedge e^k, with 0<=i<j<k<6. Orientation e^0 wedge ... wedge e^5 is positive.",
+    "For diagonal metric g, let rho=sqrt(product_i g_i). For ordered I and increasing complement J, star(e^I)=sign(I concatenated J)*rho/(product_(i in I)g_i)*e^J.",
+    "Maps contain exactly the nonzero coefficients in increasing key order. alpha_wedge_star_scalar is the coefficient of the positive volume form in alpha wedge star(alpha). The second star satisfies star(star(alpha))=(-1)^(degree*(dimension-degree))*alpha."
+  ],
+  "task_schema": "h4.hodge.v1"
+}

@@ -1,0 +1,4 @@
+{
+  "license": "BSD-3-Clause",
+  "source_locator": "networkx/algorithms/dag.py:457:all_topological_sorts"
+}

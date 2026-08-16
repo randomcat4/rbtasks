@@ -1,0 +1,42 @@
+{
+  "additional_fields": "forbidden",
+  "contract_completeness": "Every required field has an explicit JSON type, shape, defining equation or predicate, and canonicalization rule.",
+  "field_contracts": {
+    "doubled_area": {
+      "canonicalization": "exact positive value",
+      "definition": "positive shoelace doubled area",
+      "json_type": "rational scalar",
+      "shape": "scalar"
+    },
+    "vertex_count": {
+      "canonicalization": "must equal array length",
+      "definition": "number of vertices_ccw entries",
+      "json_type": "integer",
+      "shape": "scalar"
+    },
+    "vertices_ccw": {
+      "canonicalization": "CCW from minimum point; lexicographically least witness pair",
+      "definition": "each {point:[x,y], p_vertex:i, q_vertex:j} with P[i]+Q[j]=point",
+      "json_type": "array of objects",
+      "shape": "[sum hull vertex count]"
+    }
+  },
+  "rational_encoding": "reduced string n or n/d; denominator positive",
+  "representation_conventions": [
+    "Indices are zero-based unless a mathematical exponent or degree is explicitly named. Matrices are row-major; nested tensor array order is stated per task.",
+    "A rational scalar is a reduced JSON string \"n\" or \"n/d\" with positive denominator. JSON integers are used only where the field contract says integer. Floats, decimal approximations, NaN and infinity are invalid.",
+    "The submission object has exactly required_fields, with no additional keys. Nested objects likewise use exactly the named keys."
+  ],
+  "required_fields": [
+    "vertices_ccw",
+    "doubled_area",
+    "vertex_count"
+  ],
+  "schema": "h4.output-contract.v1",
+  "task_rules": [
+    "Canonicalize P and Q independently to strict CCW convex hulls with collinear interior points removed, beginning at minimum (x,y). Canonical summand indices refer to these hull arrays, not original input positions.",
+    "Form every canonical vertex sum. The output is the strict CCW hull of these sums beginning at minimum (x,y).",
+    "For each output vertex choose the lexicographically smallest pair (p_vertex,q_vertex) that sums to it. Doubled area is the positive shoelace value."
+  ],
+  "task_schema": "h4.minkowski_vertex.v1"
+}

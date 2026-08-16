@@ -1,0 +1,12 @@
+{
+  "claimed_optimum": 9,
+  "dimension": 3,
+  "generator": "project-original complete F3^3 point universe and normalized affine-line family",
+  "pre_scale_metrics": {
+    "dimension": 3,
+    "expected_lines": 117,
+    "points": 27,
+    "status": "PRE_GATE_DIFFICULTY_REVIEW_REQUIRED"
+  },
+  "task_id": "P5CAP18"
+}

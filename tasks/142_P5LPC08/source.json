@@ -1,0 +1,19 @@
+{
+  "task_id": "P5LPC08",
+  "instance_origin": "ReturnBench deterministic project-original generator; no upstream data copied",
+  "authors": [
+    "ReturnBench contributors"
+  ],
+  "frozen_design": "Pro-derived Batch 01 design freeze v0 (maintainer ledger; not runtime dependency)",
+  "references": [
+    {
+      "project": "SciPy",
+      "url": "https://github.com/scipy/scipy",
+      "version": "1.17.1",
+      "revision": "refs/tags/v1.17.1 @ c59ed93db11e721de841c00f44b8d8b9c16a2548",
+      "license": "BSD-3-Clause",
+      "use": "definition/independent cross-check only"
+    }
+  ],
+  "redistribution_analysis": "Only original integer/rational data and original text are redistributed; upstream code/data is absent and no upstream runtime dependency is used."
+}

@@ -1,0 +1,98 @@
+{
+  "$id": "returnbench:d3cho01:submission",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "chromatic_number": {
+      "type": "integer"
+    },
+    "color": {
+      "additionalProperties": false,
+      "properties": {
+        "0": {
+          "type": "integer"
+        },
+        "1": {
+          "type": "integer"
+        },
+        "10": {
+          "type": "integer"
+        },
+        "11": {
+          "type": "integer"
+        },
+        "12": {
+          "type": "integer"
+        },
+        "13": {
+          "type": "integer"
+        },
+        "2": {
+          "type": "integer"
+        },
+        "3": {
+          "type": "integer"
+        },
+        "4": {
+          "type": "integer"
+        },
+        "5": {
+          "type": "integer"
+        },
+        "6": {
+          "type": "integer"
+        },
+        "7": {
+          "type": "integer"
+        },
+        "8": {
+          "type": "integer"
+        },
+        "9": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "0",
+        "1",
+        "10",
+        "11",
+        "12",
+        "13",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "type": "object"
+    },
+    "max_clique": {
+      "items": {
+        "type": "integer"
+      },
+      "maxItems": 4,
+      "minItems": 4,
+      "type": "array"
+    },
+    "peo": {
+      "items": {
+        "type": "integer"
+      },
+      "maxItems": 14,
+      "minItems": 14,
+      "type": "array"
+    }
+  },
+  "required": [
+    "chromatic_number",
+    "color",
+    "max_clique",
+    "peo"
+  ],
+  "title": "d3cho01 actor submission shape (values intentionally omitted)",
+  "type": "object"
+}

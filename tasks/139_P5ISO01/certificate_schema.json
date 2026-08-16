@@ -1,0 +1,14 @@
+{
+  "schema_version": "returnbench-exact-certificate-v1",
+  "task_id": "P5ISO01",
+  "integer": "JSON integer",
+  "rational": "two-element reduced [numerator,denominator], denominator > 0",
+  "additional_top_level_fields": "rejected",
+  "required_top_level_fields": {
+    "fit": "rational[96]",
+    "blocks": "nonempty array of {start:int,end:int,sum_w:rational,sum_wy:rational,mean:rational}; half-open maximal partition of [0,96)",
+    "dual_multipliers": "rational[95]",
+    "objective": "rational",
+    "dual_objective": "rational"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "additional_fields": "forbidden",
+  "contract_completeness": "Every required field has an explicit JSON type, shape, defining equation or predicate, and canonicalization rule.",
+  "field_contracts": {
+    "cycle": {
+      "canonicalization": "cycle[0]=loop_entry",
+      "definition": "loop-entry path whose last state returns by one edge to first",
+      "json_type": "array of integers",
+      "shape": "[at least 1]"
+    },
+    "loop_entry": {
+      "canonicalization": "prefix[-1]=cycle[0]",
+      "definition": "shared prefix end and cycle start",
+      "json_type": "integer",
+      "shape": "scalar"
+    },
+    "monitor_trace": {
+      "canonicalization": "entries exactly clear or pending",
+      "definition": "pending-response monitor along prefix+cycle[1:]",
+      "json_type": "array of strings",
+      "shape": "[len(prefix)+len(cycle)-1]"
+    },
+    "prefix": {
+      "canonicalization": "starts at input initial, follows edges",
+      "definition": "initial-to-loop-entry path",
+      "json_type": "array of integers",
+      "shape": "[at least 1]"
+    }
+  },
+  "representation_conventions": [
+    "Indices are zero-based unless a mathematical exponent or degree is explicitly named. Matrices are row-major; nested tensor array order is stated per task.",
+    "A rational scalar is a reduced JSON string \"n\" or \"n/d\" with positive denominator. JSON integers are used only where the field contract says integer. Floats, decimal approximations, NaN and infinity are invalid.",
+    "The submission object has exactly required_fields, with no additional keys. Nested objects likewise use exactly the named keys."
+  ],
+  "required_fields": [
+    "prefix",
+    "cycle",
+    "loop_entry",
+    "monitor_trace"
+  ],
+  "schema": "h4.output-contract.v1",
+  "task_rules": [
+    "State identifiers are input integers. prefix starts at initial; prefix[-1]=loop_entry=cycle[0]. Consecutive prefix/cycle states follow input edges, and cycle[-1] has an edge back to cycle[0].",
+    "The finite displayed path is prefix followed by cycle[1:] (do not duplicate the loop entry). It contains no state labelled bad, contains a request with no later grant, and the cycle contains no grant.",
+    "monitor_trace aligns with the displayed path. At each state process grant first (clear pending), then req (set pending); emit exactly clear or pending."
+  ],
+  "task_schema": "h4.ltl_response.v1"
+}

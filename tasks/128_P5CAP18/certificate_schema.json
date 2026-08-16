@@ -1,0 +1,12 @@
+{
+  "additional_top_level_fields": "rejected",
+  "required_top_level_fields": {
+    "affine_line_constraints": "all normalized affine lines",
+    "branch_bound_optimality": "complete maximum search metrics",
+    "cap_point_ids": "int[]",
+    "cap_vectors": "F3 vector[]",
+    "source_to_constraint_bridge": "counts/normalization"
+  },
+  "schema_version": "returnbench-exhaustive-certificate-v1",
+  "task_id": "P5CAP18"
+}

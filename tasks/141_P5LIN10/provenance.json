@@ -1,0 +1,26 @@
+{
+  "authors": [
+    "ReturnBench contributors"
+  ],
+  "instance_origin": "ReturnBench project-original deterministic generator; no upstream data copied",
+  "redistribution_analysis": "Only original integer/rational instance data and original text are redistributed; upstream packages are not runtime dependencies and no upstream code/data is included.",
+  "references": [
+    {
+      "license": "BSD-3-Clause",
+      "project": "SciPy",
+      "revision": "refs/tags/v1.17.1 @ c59ed93db11e721de841c00f44b8d8b9c16a2548",
+      "url": "https://github.com/scipy/scipy",
+      "use": "numeric cross-check only",
+      "version": "1.17.1"
+    },
+    {
+      "license": "BSD-3-Clause",
+      "project": "SymPy",
+      "revision": "refs/tags/sympy-1.14.0 @ 2f9c274d2021b5a43de627f703d3a8f8955a1038",
+      "url": "https://github.com/sympy/sympy",
+      "use": "exact cross-check only",
+      "version": "1.14.0"
+    }
+  ],
+  "task_id": "P5LIN10"
+}

@@ -1,0 +1,23 @@
+{
+  "$id": "returnbench:d3lev03:submission",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "aligned_source": {
+      "type": "string"
+    },
+    "aligned_target": {
+      "type": "string"
+    },
+    "distance": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "aligned_source",
+    "aligned_target",
+    "distance"
+  ],
+  "title": "d3lev03 actor submission shape (values intentionally omitted)",
+  "type": "object"
+}

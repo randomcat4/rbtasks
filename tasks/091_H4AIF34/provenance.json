@@ -1,0 +1,13 @@
+{
+  "bibliographic_context": [
+    "P. Cousot and R. Cousot, Abstract interpretation: a unified lattice model, POPL 1977"
+  ],
+  "claim_provenance": "project_generated_original_fixed_instance",
+  "license": "MIT",
+  "license_authority": "root LICENSE; explicit project-owner authorization 2026-08-16",
+  "revision": "8541f6244ae584caabd9d449fa7f821820a07c7621b29a740ea58c368f4f0c72",
+  "semantic_deduplication": "Distinct from path/lasso tasks because the certificate is the least solution of all dataflow equations plus an inductive post-fixpoint.",
+  "source_locator": "urn:rbtasks:h4:h4aif34:v1",
+  "task_id": "H4AIF34",
+  "third_party_code_or_data_copied": false
+}

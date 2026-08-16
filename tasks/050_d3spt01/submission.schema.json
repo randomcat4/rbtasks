@@ -1,0 +1,105 @@
+{
+  "$id": "returnbench:d3spt01:submission",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "distance": {
+      "additionalProperties": false,
+      "properties": {
+        "0": {
+          "type": "integer"
+        },
+        "1": {
+          "type": "integer"
+        },
+        "2": {
+          "type": "integer"
+        },
+        "3": {
+          "type": "integer"
+        },
+        "4": {
+          "type": "integer"
+        },
+        "5": {
+          "type": "integer"
+        },
+        "6": {
+          "type": "integer"
+        },
+        "7": {
+          "type": "integer"
+        },
+        "8": {
+          "type": "integer"
+        },
+        "9": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "type": "object"
+    },
+    "parent": {
+      "additionalProperties": false,
+      "properties": {
+        "1": {
+          "type": "integer"
+        },
+        "2": {
+          "type": "integer"
+        },
+        "3": {
+          "type": "integer"
+        },
+        "4": {
+          "type": "integer"
+        },
+        "5": {
+          "type": "integer"
+        },
+        "6": {
+          "type": "integer"
+        },
+        "7": {
+          "type": "integer"
+        },
+        "8": {
+          "type": "integer"
+        },
+        "9": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "type": "object"
+    }
+  },
+  "required": [
+    "distance",
+    "parent"
+  ],
+  "title": "d3spt01 actor submission shape (values intentionally omitted)",
+  "type": "object"
+}

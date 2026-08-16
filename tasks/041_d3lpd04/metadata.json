@@ -1,0 +1,26 @@
+{
+  "answer_boundary": "No administrator control, arm assignment, reference answer, or hidden judge is included.",
+  "certificate_type": "原始—对偶、KKT、动态规划或分支界证书",
+  "difficulty_basis": "本题对象是“有理线性规划：原始—对偶强对偶证书”；需核验的特有证书结构为 原始—对偶、KKT、动态规划或分支界证书，公开合同核心项包括 dual_objective、dual_y、objective、primal_x。本题的算法与验证负担是：以有理数分别构造线性规划原始可行解和对偶可行解，逐约束复算，并用相等目标值闭合强对偶。 结构等级生成规则为“中高：需要完整算法轨迹、递推表或精确多字段见证”。该等级仅依据证书宽度、精确重放和独立验收负担评定，未做模型难度校准。",
+  "family": "baseline",
+  "lane": "d3",
+  "license": "MIT for project-original material; third-party material retains upstream terms.",
+  "math_domain": "运筹与优化",
+  "ordinal": 41,
+  "pilot_status": "PILOT_ELIGIBLE",
+  "public_files": [
+    "input.json",
+    "metadata.json",
+    "provenance.json",
+    "submission.schema.json",
+    "task.md"
+  ],
+  "release_status": "RELEASE_READY",
+  "representation_bridge": "冻结自然语言/结构化输入 → 离散与凸优化中的精确表示 → 原始—对偶、KKT、动态规划或分支界证书（核心公开字段：dual_objective、dual_y、objective、primal_x）→ 独立验收回源结论",
+  "schema": "returnbench-public-task-v1",
+  "solution_outline": "以有理数分别构造线性规划原始可行解和对偶可行解，逐约束复算，并用相等目标值闭合强对偶。",
+  "structural_difficulty": "中高",
+  "subdomain": "离散与凸优化",
+  "task_id": "d3lpd04",
+  "title": "d3lpd04 — 有理线性规划：原始—对偶强对偶证书"
+}

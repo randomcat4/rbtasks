@@ -1,0 +1,25 @@
+{
+  "$id": "returnbench:d3rsc03:submission",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "shards": {
+      "items": {
+        "items": {
+          "type": "integer"
+        },
+        "maxItems": 8,
+        "minItems": 8,
+        "type": "array"
+      },
+      "maxItems": 6,
+      "minItems": 6,
+      "type": "array"
+    }
+  },
+  "required": [
+    "shards"
+  ],
+  "title": "d3rsc03 actor submission shape (values intentionally omitted)",
+  "type": "object"
+}

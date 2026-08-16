@@ -1,0 +1,62 @@
+{
+  "additional_fields": "forbidden",
+  "contract_completeness": "Every required field has an explicit JSON type, shape, defining equation or predicate, and canonicalization rule.",
+  "field_contracts": {
+    "V_positive_set": {
+      "canonicalization": "strictly increasing",
+      "definition": "columns y with V[i,y]>V[j,y]",
+      "json_type": "array of integers",
+      "shape": "[variable]"
+    },
+    "W_positive_set": {
+      "canonicalization": "strictly increasing",
+      "definition": "columns y with W[i,y]>W[j,y]",
+      "json_type": "array of integers",
+      "shape": "[variable]"
+    },
+    "garbling_matrix": {
+      "canonicalization": "row-major, nonnegative, each row sum 1",
+      "definition": "row-stochastic T with W*T=V",
+      "json_type": "rational matrix",
+      "shape": "[columns(W)][columns(V)]"
+    },
+    "tv_V": {
+      "canonicalization": "exact rational, strictly smaller than tv_W",
+      "definition": "half L1 distance between selected V rows",
+      "json_type": "rational scalar",
+      "shape": "scalar"
+    },
+    "tv_W": {
+      "canonicalization": "exact rational",
+      "definition": "half L1 distance between selected W rows",
+      "json_type": "rational scalar",
+      "shape": "scalar"
+    },
+    "witness_row_pair": {
+      "canonicalization": "i<j, max gap then smallest pair",
+      "definition": "tie-broken pair [i,j] witnessing strict TV contraction",
+      "json_type": "array of integers",
+      "shape": "[2]"
+    }
+  },
+  "representation_conventions": [
+    "Indices are zero-based unless a mathematical exponent or degree is explicitly named. Matrices are row-major; nested tensor array order is stated per task.",
+    "A rational scalar is a reduced JSON string \"n\" or \"n/d\" with positive denominator. JSON integers are used only where the field contract says integer. Floats, decimal approximations, NaN and infinity are invalid.",
+    "The submission object has exactly required_fields, with no additional keys. Nested objects likewise use exactly the named keys."
+  ],
+  "required_fields": [
+    "garbling_matrix",
+    "witness_row_pair",
+    "W_positive_set",
+    "V_positive_set",
+    "tv_W",
+    "tv_V"
+  ],
+  "schema": "h4.output-contract.v1",
+  "task_rules": [
+    "Rows are input symbols and columns are output symbols. A garbling T has shape columns(W) by columns(V), nonnegative rational entries, every row summing to 1, and W*T=V.",
+    "For rows i<j, TV_W=1/2 sum_y |W[i,y]-W[j,y]| and similarly for V. Select the pair maximizing TV_W-TV_V, breaking ties by smaller i then smaller j.",
+    "Positive sets list, in increasing column order, exactly those columns where row i is strictly larger than row j; the selected witness must have TV_W>TV_V."
+  ],
+  "task_schema": "h4.channel_degradation.v1"
+}

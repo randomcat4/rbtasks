@@ -1,0 +1,127 @@
+{
+  "edges": [
+    {
+      "capacity": 20,
+      "cost": 11,
+      "u": "v7",
+      "v": "v8"
+    },
+    {
+      "capacity": 20,
+      "cost": 7,
+      "u": "v5",
+      "v": "v7"
+    },
+    {
+      "capacity": 20,
+      "cost": 38,
+      "u": "v2",
+      "v": "v7"
+    },
+    {
+      "capacity": 20,
+      "cost": -7,
+      "u": "v5",
+      "v": "v8"
+    },
+    {
+      "capacity": 20,
+      "cost": -34,
+      "u": "v2",
+      "v": "v5"
+    },
+    {
+      "capacity": 20,
+      "cost": 31,
+      "u": "v8",
+      "v": "v1"
+    },
+    {
+      "capacity": 20,
+      "cost": 14,
+      "u": "v6",
+      "v": "v5"
+    },
+    {
+      "capacity": 20,
+      "cost": 4,
+      "u": "v6",
+      "v": "v3"
+    },
+    {
+      "capacity": 20,
+      "cost": 32,
+      "u": "v4",
+      "v": "v2"
+    },
+    {
+      "capacity": 20,
+      "cost": 39,
+      "u": "v3",
+      "v": "v1"
+    },
+    {
+      "capacity": 20,
+      "cost": 57,
+      "u": "v3",
+      "v": "v4"
+    },
+    {
+      "capacity": 20,
+      "cost": 57,
+      "u": "v9",
+      "v": "v1"
+    },
+    {
+      "capacity": 20,
+      "cost": 2,
+      "u": "v3",
+      "v": "v9"
+    },
+    {
+      "capacity": 20,
+      "cost": -40,
+      "u": "v4",
+      "v": "v9"
+    }
+  ],
+  "nodes": [
+    {
+      "demand": 1,
+      "id": "v7"
+    },
+    {
+      "demand": -2,
+      "id": "v2"
+    },
+    {
+      "demand": -2,
+      "id": "v8"
+    },
+    {
+      "demand": 3,
+      "id": "v1"
+    },
+    {
+      "demand": -4,
+      "id": "v6"
+    },
+    {
+      "demand": -4,
+      "id": "v3"
+    },
+    {
+      "demand": 3,
+      "id": "v9"
+    },
+    {
+      "demand": 2,
+      "id": "v4"
+    },
+    {
+      "demand": 3,
+      "id": "v5"
+    }
+  ],
+  "schema": "d3.mincost.v1"
+}

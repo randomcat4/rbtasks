@@ -1,0 +1,9 @@
+{
+  "source": {
+    "kind": "public_frozen",
+    "license": "Apache-2.0",
+    "locator": "https://github.com/frenzymath/mathlib4/blob/5ec827af70600fe99052b8ed26c53a8c053f8b72/Archive/Wiedijk100Theorems/AreaOfACircle.lean",
+    "revision": "5ec827af70600fe99052b8ed26c53a8c053f8b72"
+  },
+  "task_id": "C03AREA"
+}

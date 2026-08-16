@@ -1,0 +1,55 @@
+{
+  "additional_fields": "forbidden",
+  "contract_completeness": "Every required field has an explicit JSON type, shape, defining equation or predicate, and canonicalization rule.",
+  "field_contracts": {
+    "decoded_message": {
+      "canonicalization": "must reproduce input message",
+      "definition": "decoding of the canonical dyadic tag",
+      "json_type": "array of strings",
+      "shape": "[message length]"
+    },
+    "integer_trace": {
+      "canonicalization": "chronological, positive denominator",
+      "definition": "each {low_numerator:int,high_numerator:int,denominator:int} from integer recursion",
+      "json_type": "array of objects",
+      "shape": "[message length]"
+    },
+    "interval_trace": {
+      "canonicalization": "chronological; half-open intervals",
+      "definition": "each {low:rational,high:rational} after that symbol",
+      "json_type": "array of objects",
+      "shape": "[message length]"
+    },
+    "tag_bits": {
+      "canonicalization": "positive integer",
+      "definition": "smallest positive b with final_low<=k/2^b<final_high",
+      "json_type": "integer",
+      "shape": "scalar"
+    },
+    "tag_numerator": {
+      "canonicalization": "paired with tag_bits",
+      "definition": "least k at the shortest dyadic precision",
+      "json_type": "integer",
+      "shape": "scalar"
+    }
+  },
+  "representation_conventions": [
+    "Indices are zero-based unless a mathematical exponent or degree is explicitly named. Matrices are row-major; nested tensor array order is stated per task.",
+    "A rational scalar is a reduced JSON string \"n\" or \"n/d\" with positive denominator. JSON integers are used only where the field contract says integer. Floats, decimal approximations, NaN and infinity are invalid.",
+    "The submission object has exactly required_fields, with no additional keys. Nested objects likewise use exactly the named keys."
+  ],
+  "required_fields": [
+    "interval_trace",
+    "integer_trace",
+    "tag_numerator",
+    "tag_bits",
+    "decoded_message"
+  ],
+  "schema": "h4.output-contract.v1",
+  "task_rules": [
+    "alphabet[j] has integer weight weights[j], total T=sum weights, and cumulative C_0=0, C_(j+1)=C_j+weights[j]. Start [l_0,h_0)=[0,1).",
+    "For message symbol j at step t, l_(t+1)=l_t+(h_t-l_t)C_j/T and h_(t+1)=l_t(old)+(h_t-l_t)C_(j+1)/T. Integer trace starts L_0=0,H_0=1,D_0=1 and updates L,H by L*T+(H-L)C_j and L*T+(H-L)C_(j+1), with D*=T.",
+    "tag_bits is the smallest positive b for which an integer k exists with final_low<=k/2^b<final_high; tag_numerator is the smallest such k. Decode that tag for exactly message length symbols using the same half-open intervals."
+  ],
+  "task_schema": "h4.arithmetic_coding.v1"
+}

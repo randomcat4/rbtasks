@@ -1,0 +1,49 @@
+{
+  "$id": "returnbench:d3jsp03:submission",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "makespan": {
+      "type": "integer"
+    },
+    "operations": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "end": {
+            "type": "integer"
+          },
+          "job": {
+            "type": "integer"
+          },
+          "machine": {
+            "type": "integer"
+          },
+          "op": {
+            "type": "integer"
+          },
+          "start": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "end",
+          "job",
+          "machine",
+          "op",
+          "start"
+        ],
+        "type": "object"
+      },
+      "maxItems": 8,
+      "minItems": 8,
+      "type": "array"
+    }
+  },
+  "required": [
+    "makespan",
+    "operations"
+  ],
+  "title": "d3jsp03 actor submission shape (values intentionally omitted)",
+  "type": "object"
+}

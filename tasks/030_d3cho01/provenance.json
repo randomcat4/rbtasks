@@ -1,0 +1,4 @@
+{
+  "license": "BSD-3-Clause",
+  "source_locator": "networkx/algorithms/chordal.py:33:is_chordal / chordal_graph_cliques"
+}

@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "ReturnBench contributors"
+  ],
+  "frozen_design": "Pro-derived Batch 03 design freeze v0",
+  "instance_origin": "ReturnBench deterministic project-original generator; no upstream fixture, proof, code, or answer copied",
+  "redistribution_analysis": "Only original integer tables/text and original standard-library verifier code are redistributed.",
+  "references": [
+    {
+      "license": "GPL-2.0-or-later",
+      "project": "GAP",
+      "revision": "01c52771c24808bf81a012c2df29d0a59c72d193",
+      "url": "https://github.com/gap-system/gap",
+      "use": "separated group-definition cross-check anchor only; not installed or bundled",
+      "version": "4.16.0"
+    }
+  ],
+  "task_id": "P5SUB24"
+}

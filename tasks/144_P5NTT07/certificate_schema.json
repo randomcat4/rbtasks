@@ -1,0 +1,14 @@
+{
+  "schema_version": "returnbench-exact-certificate-v1",
+  "task_id": "P5NTT07",
+  "integer": "JSON integer",
+  "rational": "reduced [numerator,denominator], denominator>0",
+  "additional_top_level_fields": "rejected",
+  "required_top_level_fields": {
+    "padded_length": "1024",
+    "coefficient_bound": "int",
+    "prime_traces": "two complete trace records",
+    "crt_coefficients": "639 {residues:int[2],signed:int}",
+    "convolution": "int[639]"
+  }
+}

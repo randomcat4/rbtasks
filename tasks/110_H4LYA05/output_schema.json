@@ -1,0 +1,49 @@
+{
+  "additional_fields": "forbidden",
+  "contract_completeness": "Every required field has an explicit JSON type, shape, defining equation or predicate, and canonicalization rule.",
+  "field_contracts": {
+    "LDL_D": {
+      "canonicalization": "in pivot order, all positive",
+      "definition": "diagonal pivots D with P=L diag(D)L^T",
+      "json_type": "array of rationals",
+      "shape": "[n]"
+    },
+    "LDL_L": {
+      "canonicalization": "diagonal 1, entries above diagonal 0",
+      "definition": "unit lower-triangular L from unpivoted LDL",
+      "json_type": "rational matrix",
+      "shape": "[n][n]"
+    },
+    "P": {
+      "canonicalization": "row-major exact matrix",
+      "definition": "unique symmetric P with P-A^T P A=Q",
+      "json_type": "rational matrix",
+      "shape": "[n][n]"
+    },
+    "leading_principal_minors": {
+      "canonicalization": "k=1,...,n order",
+      "definition": "determinants of leading k by k blocks",
+      "json_type": "array of rationals",
+      "shape": "[n]"
+    }
+  },
+  "rational_encoding": "reduced string n or n/d; denominator positive",
+  "representation_conventions": [
+    "Indices are zero-based unless a mathematical exponent or degree is explicitly named. Matrices are row-major; nested tensor array order is stated per task.",
+    "A rational scalar is a reduced JSON string \"n\" or \"n/d\" with positive denominator. JSON integers are used only where the field contract says integer. Floats, decimal approximations, NaN and infinity are invalid.",
+    "The submission object has exactly required_fields, with no additional keys. Nested objects likewise use exactly the named keys."
+  ],
+  "required_fields": [
+    "P",
+    "LDL_L",
+    "LDL_D",
+    "leading_principal_minors"
+  ],
+  "schema": "h4.output-contract.v1",
+  "task_rules": [
+    "Let n=rows(A). P is the unique symmetric exact solution of P-A^T P A=Q.",
+    "LDL uses a unit lower-triangular L and diagonal vector D in increasing pivot order, with no symmetric pivoting: P=L diag(D)L^T.",
+    "Leading principal minors are determinants of P[0:k,0:k] for k=1,...,n."
+  ],
+  "task_schema": "h4.lyapunov_ldlt.v1"
+}

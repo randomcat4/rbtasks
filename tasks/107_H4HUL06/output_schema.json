@@ -1,0 +1,42 @@
+{
+  "additional_fields": "forbidden",
+  "contract_completeness": "Every required field has an explicit JSON type, shape, defining equation or predicate, and canonicalization rule.",
+  "field_contracts": {
+    "doubled_area": {
+      "canonicalization": "exact positive value",
+      "definition": "positive shoelace doubled area",
+      "json_type": "rational scalar",
+      "shape": "scalar"
+    },
+    "edge_support": {
+      "canonicalization": "aligned with cyclic hull edges; edge order equals hull order",
+      "definition": "each {edge:[start_id,end_id], minimum_oriented_area:rational}",
+      "json_type": "array of objects",
+      "shape": "[hull vertex count]"
+    },
+    "hull_ids_ccw": {
+      "canonicalization": "CCW from minimum (x,y,id)",
+      "definition": "IDs of strict convex-hull vertices",
+      "json_type": "array of strings",
+      "shape": "[hull vertex count]"
+    }
+  },
+  "rational_encoding": "reduced string n or n/d; denominator positive",
+  "representation_conventions": [
+    "Indices are zero-based unless a mathematical exponent or degree is explicitly named. Matrices are row-major; nested tensor array order is stated per task.",
+    "A rational scalar is a reduced JSON string \"n\" or \"n/d\" with positive denominator. JSON integers are used only where the field contract says integer. Floats, decimal approximations, NaN and infinity are invalid.",
+    "The submission object has exactly required_fields, with no additional keys. Nested objects likewise use exactly the named keys."
+  ],
+  "required_fields": [
+    "hull_ids_ccw",
+    "doubled_area",
+    "edge_support"
+  ],
+  "schema": "h4.output-contract.v1",
+  "task_rules": [
+    "orient(a,b,p)=(b_x-a_x)(p_y-a_y)-(b_y-a_y)(p_x-a_x).",
+    "The hull is strict CCW, removes collinear interior boundary points, and begins at the minimum input point under (x,y,id).",
+    "Each support entry is aligned with one cyclic directed hull edge and reports min_p orient(edge_start,edge_end,p). Doubled area is the positive shoelace sum."
+  ],
+  "task_schema": "h4.convex_hull_support.v1"
+}

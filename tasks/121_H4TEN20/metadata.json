@@ -1,0 +1,26 @@
+{
+  "answer_boundary": "No administrator control, arm assignment, reference answer, or hidden judge is included.",
+  "certificate_type": "完整递推表、精确变换或残差证书",
+  "difficulty_basis": "本题对象是“Tensor-network contraction across two parenthesizations”；需核验的特有证书结构为 完整递推表、精确变换或残差证书，公开合同核心项包括 AB_over_k、CD_over_n、Y。本题的算法与验证负担是：按两种括号化顺序逐指标收缩同一张量网络，返回全部中间张量，并逐输出分量验证两路线完全相等。 结构等级生成规则为“高：H4/P5 新题要求跨表示的完整结构证书、针对性负控与独立重放”。该等级仅依据证书宽度、精确重放和独立验收负担评定，未做模型难度校准。",
+  "family": "h4",
+  "lane": "h4",
+  "license": "MIT for project-original material; third-party material retains upstream terms.",
+  "math_domain": "数值与信号",
+  "ordinal": 121,
+  "pilot_status": "PILOT_PENDING",
+  "public_files": [
+    "input.json",
+    "metadata.json",
+    "output_schema.json",
+    "provenance.json",
+    "task.md"
+  ],
+  "release_status": "RELEASE_READY",
+  "representation_bridge": "冻结自然语言/结构化输入 → 信号处理、张量与数值变换中的精确表示 → 完整递推表、精确变换或残差证书（核心公开字段：AB_over_k、CD_over_n、Y）→ 独立验收回源结论",
+  "schema": "returnbench-public-task-v1",
+  "solution_outline": "按两种括号化顺序逐指标收缩同一张量网络，返回全部中间张量，并逐输出分量验证两路线完全相等。",
+  "structural_difficulty": "高",
+  "subdomain": "信号处理、张量与数值变换",
+  "task_id": "H4TEN20",
+  "title": "H4TEN20 — Tensor-network contraction across two parenthesizations"
+}

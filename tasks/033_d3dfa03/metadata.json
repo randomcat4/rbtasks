@@ -1,0 +1,26 @@
+{
+  "answer_boundary": "No administrator control, arm assignment, reference answer, or hidden judge is included.",
+  "certificate_type": "形式推导、轨迹、闭包或不可满足性证书",
+  "difficulty_basis": "本题对象是“DFA 不等价：最短区分词与双状态轨迹”；需核验的特有证书结构为 形式推导、轨迹、闭包或不可满足性证书，公开合同核心项包括 length、trace_a、trace_b、word。本题的算法与验证负担是：在两 DFA 的乘积图上按词长 BFS，返回首个接受性不同的状态对及逐字符双轨迹，从而证明区分词最短。 结构等级生成规则为“中高：需要完整算法轨迹、递推表或精确多字段见证”。该等级仅依据证书宽度、精确重放和独立验收负担评定，未做模型难度校准。",
+  "family": "baseline",
+  "lane": "d3",
+  "license": "MIT for project-original material; third-party material retains upstream terms.",
+  "math_domain": "理论计算机科学",
+  "ordinal": 33,
+  "pilot_status": "PILOT_ELIGIBLE",
+  "public_files": [
+    "input.json",
+    "metadata.json",
+    "provenance.json",
+    "submission.schema.json",
+    "task.md"
+  ],
+  "release_status": "RELEASE_READY",
+  "representation_bridge": "冻结自然语言/结构化输入 → 自动机、形式语言与程序语义中的精确表示 → 形式推导、轨迹、闭包或不可满足性证书（核心公开字段：length、trace_a、trace_b、word）→ 独立验收回源结论",
+  "schema": "returnbench-public-task-v1",
+  "solution_outline": "在两 DFA 的乘积图上按词长 BFS，返回首个接受性不同的状态对及逐字符双轨迹，从而证明区分词最短。",
+  "structural_difficulty": "中高",
+  "subdomain": "自动机、形式语言与程序语义",
+  "task_id": "d3dfa03",
+  "title": "d3dfa03 — DFA 不等价：最短区分词与双状态轨迹"
+}

@@ -1,0 +1,58 @@
+{
+  "$id": "returnbench:F3PT01:submission",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "distribution": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "count": {
+            "type": "integer"
+          },
+          "signed_sum": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "count",
+          "signed_sum"
+        ],
+        "type": "object"
+      },
+      "maxItems": 47,
+      "minItems": 47,
+      "type": "array"
+    },
+    "kind": {
+      "type": "string"
+    },
+    "observed_statistic": {
+      "type": "integer"
+    },
+    "p_value": {
+      "additionalProperties": false,
+      "properties": {
+        "den": {
+          "type": "integer"
+        },
+        "num": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "den",
+        "num"
+      ],
+      "type": "object"
+    }
+  },
+  "required": [
+    "distribution",
+    "kind",
+    "observed_statistic",
+    "p_value"
+  ],
+  "title": "F3PT01 actor submission shape (values intentionally omitted)",
+  "type": "object"
+}

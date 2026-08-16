@@ -1,0 +1,12 @@
+{
+  "bibliographic_context": [
+    "J. Cocke, D. Younger, and T. Kasami, dynamic programming recognition for context-free grammars"
+  ],
+  "claim_provenance": "project_generated_original_fixed_instance",
+  "license": "MIT",
+  "license_authority": "root LICENSE; explicit project-owner authorization 2026-08-16",
+  "revision": "d96834a0332300efaa1b00d471e4d6881633f6333847fa0569ae6dd656455174",
+  "source_locator": "urn:rbtasks:h4:h4cfg28:v1",
+  "task_id": "H4CFG28",
+  "third_party_code_or_data_copied": false
+}

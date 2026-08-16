@@ -1,0 +1,26 @@
+{
+  "answer_boundary": "No administrator control, arm assignment, reference answer, or hidden judge is included.",
+  "certificate_type": "Gramian、Riccati、Lyapunov、Hankel 或不变量证书",
+  "difficulty_basis": "本题对象是“Exact discrete Lyapunov equation with an LDL positivity witness”；需核验的特有证书结构为 Gramian、Riccati、Lyapunov、Hankel 或不变量证书，公开合同核心项包括 LDL_D、LDL_L、P、leading_principal_minors。本题的算法与验证负担是：精确求解离散 Lyapunov 方程 P−AᵀPA=Q，返回 P 的 LDLᵀ 分解，并用正对角 D 证明正定与稳定性见证。 结构等级生成规则为“高：H4/P5 新题要求跨表示的完整结构证书、针对性负控与独立重放”。该等级仅依据证书宽度、精确重放和独立验收负担评定，未做模型难度校准。",
+  "family": "h4",
+  "lane": "h4",
+  "license": "MIT for project-original material; third-party material retains upstream terms.",
+  "math_domain": "系统与控制",
+  "ordinal": 110,
+  "pilot_status": "PILOT_PENDING",
+  "public_files": [
+    "input.json",
+    "metadata.json",
+    "output_schema.json",
+    "provenance.json",
+    "task.md"
+  ],
+  "release_status": "RELEASE_READY",
+  "representation_bridge": "冻结自然语言/结构化输入 → 线性系统与矩阵证书中的精确表示 → Gramian、Riccati、Lyapunov、Hankel 或不变量证书（核心公开字段：LDL_D、LDL_L、P、leading_principal_minors）→ 独立验收回源结论",
+  "schema": "returnbench-public-task-v1",
+  "solution_outline": "精确求解离散 Lyapunov 方程 P−AᵀPA=Q，返回 P 的 LDLᵀ 分解，并用正对角 D 证明正定与稳定性见证。",
+  "structural_difficulty": "高",
+  "subdomain": "线性系统与矩阵证书",
+  "task_id": "H4LYA05",
+  "title": "H4LYA05 — Exact discrete Lyapunov equation with an LDL positivity witness"
+}

@@ -1,0 +1,69 @@
+{
+  "additional_fields": "forbidden",
+  "contract_completeness": "Every required field has an explicit JSON type, shape, defining equation or predicate, and canonicalization rule.",
+  "field_contracts": {
+    "class_representatives": {
+      "canonicalization": "keys term ID order",
+      "definition": "lexicographically smallest member of each full closure class",
+      "json_type": "object term_id->term_id",
+      "shape": "[term count]"
+    },
+    "conflict_terms": {
+      "canonicalization": "left then right",
+      "definition": "endpoints of conflicting disequality",
+      "json_type": "array of strings",
+      "shape": "[2]"
+    },
+    "conflicting_disequality": {
+      "canonicalization": "smallest violated ID",
+      "definition": "canonical violated disequality ID",
+      "json_type": "string",
+      "shape": "scalar"
+    },
+    "core_merge_proof_forest": {
+      "canonicalization": "canonical merge order",
+      "definition": "closure proof using only core assumptions",
+      "json_type": "array of merge objects",
+      "shape": "[successful core merges]"
+    },
+    "deletion_separations": {
+      "canonicalization": "core equality order",
+      "definition": "representatives after deleting each core equality and conflict_removed flag",
+      "json_type": "array of objects",
+      "shape": "[core size]"
+    },
+    "merge_proof_forest": {
+      "canonicalization": "canonical merge order",
+      "definition": "assumption/congruence explanations",
+      "json_type": "array of merge objects",
+      "shape": "[successful full merges]"
+    },
+    "minimal_unsat_core_equalities": {
+      "canonicalization": "input ID order",
+      "definition": "canonical equality subset causing conflict",
+      "json_type": "array of strings",
+      "shape": "[core size]"
+    }
+  },
+  "representation_conventions": [
+    "zero-based indices",
+    "exact symbolic/integer/rational data only",
+    "no additional fields"
+  ],
+  "required_fields": [
+    "class_representatives",
+    "merge_proof_forest",
+    "conflicting_disequality",
+    "conflict_terms",
+    "minimal_unsat_core_equalities",
+    "core_merge_proof_forest",
+    "deletion_separations"
+  ],
+  "schema": "h4.output-contract.v1",
+  "task_rules": [
+    "Terms form a ground DAG in input order. Assumption equalities merge first in assertion order; then repeatedly merge the lexicographically first unequal same-symbol term pair whose corresponding arguments are equivalent.",
+    "Each merge record is either an assumption with its source ID or a congruence with ordered argument pairs. Representatives are the lexicographically smallest term IDs in each final class.",
+    "The core is the smallest-cardinality, then lexicographically first equality-ID subset that violates a disequality. Removing each core equality must separate the recorded conflict terms."
+  ],
+  "task_schema": "h4.euf_unsat_core.v1"
+}

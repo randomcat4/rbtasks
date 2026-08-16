@@ -1,0 +1,128 @@
+{
+  "event": "among times 1..8, visit success exactly twice and never visit failure",
+  "forbidden_state": 3,
+  "horizon": 8,
+  "schema": "f3.markov_temporal.v1",
+  "start_state": 0,
+  "states": [
+    "idle",
+    "review",
+    "rework",
+    "failure",
+    "success"
+  ],
+  "target_state": 4,
+  "target_visits": 2,
+  "transition": [
+    [
+      {
+        "den": 5,
+        "num": 1
+      },
+      {
+        "den": 10,
+        "num": 3
+      },
+      {
+        "den": 4,
+        "num": 1
+      },
+      {
+        "den": 10,
+        "num": 1
+      },
+      {
+        "den": 20,
+        "num": 3
+      }
+    ],
+    [
+      {
+        "den": 10,
+        "num": 1
+      },
+      {
+        "den": 4,
+        "num": 1
+      },
+      {
+        "den": 5,
+        "num": 1
+      },
+      {
+        "den": 20,
+        "num": 3
+      },
+      {
+        "den": 10,
+        "num": 3
+      }
+    ],
+    [
+      {
+        "den": 8,
+        "num": 1
+      },
+      {
+        "den": 4,
+        "num": 1
+      },
+      {
+        "den": 4,
+        "num": 1
+      },
+      {
+        "den": 8,
+        "num": 1
+      },
+      {
+        "den": 4,
+        "num": 1
+      }
+    ],
+    [
+      {
+        "den": 5,
+        "num": 1
+      },
+      {
+        "den": 5,
+        "num": 1
+      },
+      {
+        "den": 5,
+        "num": 1
+      },
+      {
+        "den": 5,
+        "num": 1
+      },
+      {
+        "den": 5,
+        "num": 1
+      }
+    ],
+    [
+      {
+        "den": 10,
+        "num": 1
+      },
+      {
+        "den": 5,
+        "num": 1
+      },
+      {
+        "den": 10,
+        "num": 1
+      },
+      {
+        "den": 10,
+        "num": 1
+      },
+      {
+        "den": 2,
+        "num": 1
+      }
+    ]
+  ]
+}

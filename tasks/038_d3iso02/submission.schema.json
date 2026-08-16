@@ -1,0 +1,119 @@
+{
+  "$id": "returnbench:d3iso02:submission",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "rounds": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "g": {
+            "additionalProperties": false,
+            "properties": {
+              "0": {
+                "type": "integer"
+              },
+              "1": {
+                "type": "integer"
+              },
+              "2": {
+                "type": "integer"
+              },
+              "3": {
+                "type": "integer"
+              },
+              "4": {
+                "type": "integer"
+              },
+              "5": {
+                "type": "integer"
+              },
+              "6": {
+                "type": "integer"
+              },
+              "7": {
+                "type": "integer"
+              },
+              "8": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8"
+            ],
+            "type": "object"
+          },
+          "h": {
+            "additionalProperties": false,
+            "properties": {
+              "0": {
+                "type": "integer"
+              },
+              "1": {
+                "type": "integer"
+              },
+              "2": {
+                "type": "integer"
+              },
+              "3": {
+                "type": "integer"
+              },
+              "4": {
+                "type": "integer"
+              },
+              "5": {
+                "type": "integer"
+              },
+              "6": {
+                "type": "integer"
+              },
+              "7": {
+                "type": "integer"
+              },
+              "8": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "0",
+              "1",
+              "2",
+              "3",
+              "4",
+              "5",
+              "6",
+              "7",
+              "8"
+            ],
+            "type": "object"
+          }
+        },
+        "required": [
+          "g",
+          "h"
+        ],
+        "type": "object"
+      },
+      "maxItems": 10,
+      "minItems": 10,
+      "type": "array"
+    },
+    "witness_round": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "rounds",
+    "witness_round"
+  ],
+  "title": "d3iso02 actor submission shape (values intentionally omitted)",
+  "type": "object"
+}

@@ -1,0 +1,26 @@
+{
+  "authors": [
+    "ReturnBench contributors"
+  ],
+  "instance_origin": "ReturnBench deterministic project-original generator; no upstream data copied",
+  "redistribution_analysis": "Only original integer/rational data and original text are redistributed; upstream code/data is absent and no upstream runtime dependency is used.",
+  "references": [
+    {
+      "license": "BSD-3-Clause",
+      "project": "statsmodels",
+      "revision": "refs/tags/v0.14.6 @ 40e6a84d26ac74623c6b94b718f0987ef0351c53",
+      "url": "https://github.com/statsmodels/statsmodels",
+      "use": "definition/independent cross-check only",
+      "version": "0.14.6"
+    },
+    {
+      "license": "BSD-3-Clause",
+      "project": "SciPy",
+      "revision": "refs/tags/v1.17.1 @ c59ed93db11e721de841c00f44b8d8b9c16a2548",
+      "url": "https://github.com/scipy/scipy",
+      "use": "definition/independent cross-check only",
+      "version": "1.17.1"
+    }
+  ],
+  "task_id": "P5MRK06"
+}

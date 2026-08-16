@@ -1,0 +1,33 @@
+{
+  "$id": "returnbench:F3CHEM:submission",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "balances": {
+      "items": {
+        "type": "integer"
+      },
+      "maxItems": 5,
+      "minItems": 5,
+      "type": "array"
+    },
+    "coefficients": {
+      "items": {
+        "type": "integer"
+      },
+      "maxItems": 6,
+      "minItems": 6,
+      "type": "array"
+    },
+    "kind": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "balances",
+    "coefficients",
+    "kind"
+  ],
+  "title": "F3CHEM actor submission shape (values intentionally omitted)",
+  "type": "object"
+}

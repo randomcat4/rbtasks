@@ -1,0 +1,26 @@
+{
+  "answer_boundary": "No administrator control, arm assignment, reference answer, or hidden judge is included.",
+  "certificate_type": "完整递推表、精确变换或残差证书",
+  "difficulty_basis": "本题对象是“Polyphase resampling: upsample-filter-downsample to exact phase-zero output”；需核验的特有证书结构为 完整递推表、精确变换或残差证书，公开合同核心项包括 kind、output。本题的算法与验证负担是：把上采样后的零插入与 FIR 相位分组，直接计算被下采样保留的 phase-zero 输出，并与全序列卷积索引对应。 结构等级生成规则为“中高：需要完整算法轨迹、递推表或精确多字段见证”。该等级仅依据证书宽度、精确重放和独立验收负担评定，未做模型难度校准。",
+  "family": "baseline",
+  "lane": "f3",
+  "license": "MIT for project-original material; third-party material retains upstream terms.",
+  "math_domain": "数值与信号",
+  "ordinal": 72,
+  "pilot_status": "PILOT_ELIGIBLE",
+  "public_files": [
+    "input.json",
+    "metadata.json",
+    "provenance.json",
+    "submission.schema.json",
+    "task.md"
+  ],
+  "release_status": "RELEASE_READY",
+  "representation_bridge": "冻结自然语言/结构化输入 → 信号处理、张量与数值变换中的精确表示 → 完整递推表、精确变换或残差证书（核心公开字段：kind、output）→ 独立验收回源结论",
+  "schema": "returnbench-public-task-v1",
+  "solution_outline": "把上采样后的零插入与 FIR 相位分组，直接计算被下采样保留的 phase-zero 输出，并与全序列卷积索引对应。",
+  "structural_difficulty": "中高",
+  "subdomain": "信号处理、张量与数值变换",
+  "task_id": "F3FIR1",
+  "title": "F3FIR1 — Polyphase resampling: upsample-filter-downsample to exact phase-zero output"
+}

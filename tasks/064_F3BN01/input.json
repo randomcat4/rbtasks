@@ -1,0 +1,184 @@
+{
+  "cpd_indexing": "parents listed left-to-right as most-significant to least-significant bits",
+  "evidence": {
+    "C": 1,
+    "G": 0
+  },
+  "nodes": {
+    "A": {
+      "p1": [
+        {
+          "den": 5,
+          "num": 2
+        }
+      ],
+      "parents": []
+    },
+    "B": {
+      "p1": [
+        {
+          "den": 3,
+          "num": 1
+        }
+      ],
+      "parents": []
+    },
+    "C": {
+      "p1": [
+        {
+          "den": 10,
+          "num": 1
+        },
+        {
+          "den": 5,
+          "num": 2
+        },
+        {
+          "den": 5,
+          "num": 3
+        },
+        {
+          "den": 10,
+          "num": 9
+        }
+      ],
+      "parents": [
+        "A",
+        "B"
+      ]
+    },
+    "D": {
+      "p1": [
+        {
+          "den": 5,
+          "num": 1
+        },
+        {
+          "den": 4,
+          "num": 3
+        }
+      ],
+      "parents": [
+        "A"
+      ]
+    },
+    "E": {
+      "p1": [
+        {
+          "den": 8,
+          "num": 1
+        },
+        {
+          "den": 2,
+          "num": 1
+        },
+        {
+          "den": 3,
+          "num": 1
+        },
+        {
+          "den": 6,
+          "num": 5
+        }
+      ],
+      "parents": [
+        "B",
+        "C"
+      ]
+    },
+    "F": {
+      "p1": [
+        {
+          "den": 6,
+          "num": 1
+        },
+        {
+          "den": 5,
+          "num": 2
+        },
+        {
+          "den": 5,
+          "num": 3
+        },
+        {
+          "den": 8,
+          "num": 7
+        }
+      ],
+      "parents": [
+        "C",
+        "D"
+      ]
+    },
+    "G": {
+      "p1": [
+        {
+          "den": 10,
+          "num": 1
+        },
+        {
+          "den": 2,
+          "num": 1
+        },
+        {
+          "den": 3,
+          "num": 2
+        },
+        {
+          "den": 10,
+          "num": 9
+        }
+      ],
+      "parents": [
+        "E",
+        "F"
+      ]
+    },
+    "H": {
+      "p1": [
+        {
+          "den": 20,
+          "num": 1
+        },
+        {
+          "den": 4,
+          "num": 1
+        },
+        {
+          "den": 3,
+          "num": 1
+        },
+        {
+          "den": 5,
+          "num": 3
+        },
+        {
+          "den": 5,
+          "num": 2
+        },
+        {
+          "den": 10,
+          "num": 7
+        },
+        {
+          "den": 5,
+          "num": 4
+        },
+        {
+          "den": 20,
+          "num": 19
+        }
+      ],
+      "parents": [
+        "D",
+        "F",
+        "G"
+      ]
+    }
+  },
+  "query": {
+    "node": "H",
+    "value": 1
+  },
+  "schema": "f3.bayes_net.v1"
+}

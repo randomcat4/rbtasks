@@ -1,0 +1,37 @@
+{
+  "$id": "returnbench:F3FIR1:submission",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "kind": {
+      "type": "string"
+    },
+    "output": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "den": {
+            "type": "integer"
+          },
+          "num": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "den",
+          "num"
+        ],
+        "type": "object"
+      },
+      "maxItems": 12,
+      "minItems": 12,
+      "type": "array"
+    }
+  },
+  "required": [
+    "kind",
+    "output"
+  ],
+  "title": "F3FIR1 actor submission shape (values intentionally omitted)",
+  "type": "object"
+}

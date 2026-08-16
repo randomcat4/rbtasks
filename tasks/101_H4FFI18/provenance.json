@@ -1,0 +1,12 @@
+{
+  "bibliographic_context": [
+    "M. O. Rabin, Probabilistic algorithms in finite fields, SIAM Journal on Computing 9 (1980)"
+  ],
+  "claim_provenance": "project_generated_original_fixed_instance",
+  "license": "MIT",
+  "license_authority": "root LICENSE; explicit project-owner authorization 2026-08-16",
+  "revision": "6a7f1739f557e594d53bd170abb9fb0356ec23b3a4ad09447f669e97cd201ed8",
+  "source_locator": "urn:rbtasks:h4:h4ffi18:v1",
+  "task_id": "H4FFI18",
+  "third_party_code_or_data_copied": false
+}

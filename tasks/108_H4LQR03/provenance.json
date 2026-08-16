@@ -1,0 +1,13 @@
+{
+  "bibliographic_context": [
+    "R. Bellman, Dynamic Programming, Princeton University Press, 1957",
+    "R. E. Kalman, Contributions to the theory of optimal control, 1960"
+  ],
+  "claim_provenance": "project_generated_original_fixed_instance",
+  "license": "MIT",
+  "license_authority": "root LICENSE; explicit project-owner authorization 2026-08-16",
+  "revision": "e71c72fbed395cb244e9c15ad84ee4fde2ba230a48b52e5d54afd21d2938427a",
+  "source_locator": "urn:rbtasks:h4:h4lqr03:v1",
+  "task_id": "H4LQR03",
+  "third_party_code_or_data_copied": false
+}

@@ -1,0 +1,45 @@
+{
+  "$id": "returnbench:F3MW01:submission",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "counts": {
+      "items": {
+        "type": "integer"
+      },
+      "maxItems": 57,
+      "minItems": 57,
+      "type": "array"
+    },
+    "kind": {
+      "type": "string"
+    },
+    "p_value": {
+      "additionalProperties": false,
+      "properties": {
+        "den": {
+          "type": "integer"
+        },
+        "num": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "den",
+        "num"
+      ],
+      "type": "object"
+    },
+    "u1": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "counts",
+    "kind",
+    "p_value",
+    "u1"
+  ],
+  "title": "F3MW01 actor submission shape (values intentionally omitted)",
+  "type": "object"
+}

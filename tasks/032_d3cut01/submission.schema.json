@@ -1,0 +1,38 @@
+{
+  "$id": "returnbench:d3cut01:submission",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "connectivity": {
+      "type": "integer"
+    },
+    "cut": {
+      "items": {
+        "type": "integer"
+      },
+      "maxItems": 2,
+      "minItems": 2,
+      "type": "array"
+    },
+    "paths": {
+      "items": {
+        "items": {
+          "type": "integer"
+        },
+        "maxItems": 5,
+        "minItems": 5,
+        "type": "array"
+      },
+      "maxItems": 2,
+      "minItems": 2,
+      "type": "array"
+    }
+  },
+  "required": [
+    "connectivity",
+    "cut",
+    "paths"
+  ],
+  "title": "d3cut01 actor submission shape (values intentionally omitted)",
+  "type": "object"
+}

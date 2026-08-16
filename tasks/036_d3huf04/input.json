@@ -1,0 +1,15 @@
+{
+  "code_convention": "canonical: sort by (length,symbol), first code all zeros",
+  "schema": "d3.huffman.v1",
+  "weights": {
+    "A": 5,
+    "B": 7,
+    "C": 10,
+    "D": 15,
+    "E": 20,
+    "F": 29,
+    "G": 31,
+    "H": 44,
+    "I": 61
+  }
+}

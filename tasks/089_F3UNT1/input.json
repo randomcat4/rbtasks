@@ -1,0 +1,36 @@
+{
+  "btu_to_joule": {
+    "den": 125,
+    "num": 131882
+  },
+  "deltaF_to_K": {
+    "den": 9,
+    "num": 5
+  },
+  "fahrenheit_absolute_offset": {
+    "den": 100,
+    "num": 45967
+  },
+  "final_degF": {
+    "den": 1,
+    "num": 212
+  },
+  "initial_degF": {
+    "den": 1,
+    "num": 68
+  },
+  "mass_lb": {
+    "den": 1,
+    "num": 10
+  },
+  "pound_to_kg": {
+    "den": 100000000,
+    "num": 45359237
+  },
+  "schema": "f3.affine_units.v1",
+  "semantics": "temperature difference uses delta_degF scale without absolute offset",
+  "specific_heat_btu_per_lb_deltaF": {
+    "den": 25,
+    "num": 3
+  }
+}

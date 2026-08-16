@@ -1,0 +1,144 @@
+{
+  "elements": [
+    {
+      "color": "amber",
+      "column": [
+        0,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "id": "e0"
+    },
+    {
+      "color": "blue",
+      "column": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "id": "e1"
+    },
+    {
+      "color": "amber",
+      "column": [
+        0,
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "id": "e2"
+    },
+    {
+      "color": "red",
+      "column": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "id": "e3"
+    },
+    {
+      "color": "amber",
+      "column": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "id": "e4"
+    },
+    {
+      "color": "red",
+      "column": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "id": "e5"
+    },
+    {
+      "color": "blue",
+      "column": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "id": "e6"
+    },
+    {
+      "color": "amber",
+      "column": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "id": "e7"
+    },
+    {
+      "color": "green",
+      "column": [
+        1,
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "id": "e8"
+    },
+    {
+      "color": "amber",
+      "column": [
+        1,
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "id": "e9"
+    },
+    {
+      "color": "amber",
+      "column": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "id": "e10"
+    }
+  ],
+  "field": "GF(2)",
+  "partition_capacities": {
+    "amber": 2,
+    "blue": 2,
+    "green": 1,
+    "red": 1
+  },
+  "schema": "d3.matint.v1"
+}

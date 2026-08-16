@@ -1,0 +1,29 @@
+{
+  "$id": "returnbench:d3blm01:submission",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "matching": {
+      "items": {
+        "items": {
+          "type": "integer"
+        },
+        "maxItems": 2,
+        "minItems": 2,
+        "type": "array"
+      },
+      "maxItems": 6,
+      "minItems": 6,
+      "type": "array"
+    },
+    "weight": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "matching",
+    "weight"
+  ],
+  "title": "d3blm01 actor submission shape (values intentionally omitted)",
+  "type": "object"
+}

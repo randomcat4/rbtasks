@@ -1,0 +1,4 @@
+{
+  "license": "BSD-3-Clause",
+  "source_locator": "networkx/algorithms/dag.py:869:transitive_reduction"
+}

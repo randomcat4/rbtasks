@@ -1,0 +1,22 @@
+{
+  "equation": "y_prime=-lambda*y",
+  "initial": {
+    "den": 1,
+    "num": 2
+  },
+  "lambda": {
+    "den": 5,
+    "num": 3
+  },
+  "max_terms": 40,
+  "max_width": {
+    "den": 1000000000000,
+    "num": 1
+  },
+  "rounding": "outward rational endpoints",
+  "schema": "f3.ode_interval.v1",
+  "time": {
+    "den": 1,
+    "num": 1
+  }
+}

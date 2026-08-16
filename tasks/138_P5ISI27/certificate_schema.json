@@ -1,0 +1,13 @@
+{
+  "additional_top_level_fields": "rejected",
+  "required_top_level_fields": {
+    "final_partition_value": "int",
+    "length": "int",
+    "periodic_boundary_contributions": "int[40][1024]",
+    "symmetry_checks": "40 complement-asymmetry/checksum rows",
+    "transfer_vectors": "int[40][1024]",
+    "width": "int"
+  },
+  "schema_version": "returnbench-exact-return-v1",
+  "task_id": "P5ISI27"
+}

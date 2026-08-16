@@ -1,0 +1,18 @@
+{
+  "additional_top_level_fields": "rejected",
+  "required_top_level_fields": {
+    "boundary_contribution_table": "int[32][32]",
+    "boundary_values": "all four edges",
+    "energy_denominator": "int",
+    "energy_lhs_numerator": "int",
+    "energy_rhs_numerator": "int",
+    "exact_error_bound_numerator": "int",
+    "field_denominator": "int",
+    "field_numerators": "int[32][32]",
+    "m_matrix_margin": "int",
+    "stencil_residual_denominator": "int",
+    "stencil_residual_numerators": "int[32][32]"
+  },
+  "schema_version": "returnbench-exact-return-v1",
+  "task_id": "P5HEA28"
+}

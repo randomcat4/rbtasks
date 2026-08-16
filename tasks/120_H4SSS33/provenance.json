@@ -1,0 +1,13 @@
+{
+  "bibliographic_context": [
+    "A. Shamir, How to Share a Secret, Communications of the ACM 22(11), 1979"
+  ],
+  "claim_provenance": "project_generated_original_fixed_instance",
+  "license": "MIT",
+  "license_authority": "root LICENSE; explicit project-owner authorization 2026-08-16",
+  "revision": "b7217f763d720af06ec07e0e243ff12185cecae2b8b8980a0c2889316c55956a",
+  "semantic_deduplication": "Shares finite-field evaluation machinery with coding tasks, but its decisive obligation is k-1 coalition privacy via two indistinguishable polynomials, not decoding.",
+  "source_locator": "urn:rbtasks:h4:h4sss33:v1",
+  "task_id": "H4SSS33",
+  "third_party_code_or_data_copied": false
+}

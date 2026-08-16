@@ -1,0 +1,25 @@
+{
+  "$id": "returnbench:d3trd02:submission",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "reduction": {
+      "items": {
+        "items": {
+          "type": "integer"
+        },
+        "maxItems": 2,
+        "minItems": 2,
+        "type": "array"
+      },
+      "maxItems": 16,
+      "minItems": 16,
+      "type": "array"
+    }
+  },
+  "required": [
+    "reduction"
+  ],
+  "title": "d3trd02 actor submission shape (values intentionally omitted)",
+  "type": "object"
+}

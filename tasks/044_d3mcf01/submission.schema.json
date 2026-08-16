@@ -1,0 +1,86 @@
+{
+  "$id": "returnbench:d3mcf01:submission",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "cost": {
+      "type": "integer"
+    },
+    "flow": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "u": {
+            "type": "string"
+          },
+          "v": {
+            "type": "string"
+          },
+          "value": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "u",
+          "v",
+          "value"
+        ],
+        "type": "object"
+      },
+      "maxItems": 14,
+      "minItems": 14,
+      "type": "array"
+    },
+    "potential": {
+      "additionalProperties": false,
+      "properties": {
+        "v1": {
+          "type": "integer"
+        },
+        "v2": {
+          "type": "integer"
+        },
+        "v3": {
+          "type": "integer"
+        },
+        "v4": {
+          "type": "integer"
+        },
+        "v5": {
+          "type": "integer"
+        },
+        "v6": {
+          "type": "integer"
+        },
+        "v7": {
+          "type": "integer"
+        },
+        "v8": {
+          "type": "integer"
+        },
+        "v9": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "v1",
+        "v2",
+        "v3",
+        "v4",
+        "v5",
+        "v6",
+        "v7",
+        "v8",
+        "v9"
+      ],
+      "type": "object"
+    }
+  },
+  "required": [
+    "cost",
+    "flow",
+    "potential"
+  ],
+  "title": "d3mcf01 actor submission shape (values intentionally omitted)",
+  "type": "object"
+}

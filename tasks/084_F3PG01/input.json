@@ -1,0 +1,101 @@
+{
+  "degeneracy": "rings simple, nonzero signed area, total area positive",
+  "holes": [
+    [
+      [
+        {
+          "den": 1,
+          "num": 2
+        },
+        {
+          "den": 1,
+          "num": 2
+        }
+      ],
+      [
+        {
+          "den": 1,
+          "num": 2
+        },
+        {
+          "den": 1,
+          "num": 4
+        }
+      ],
+      [
+        {
+          "den": 1,
+          "num": 4
+        },
+        {
+          "den": 1,
+          "num": 4
+        }
+      ],
+      [
+        {
+          "den": 1,
+          "num": 4
+        },
+        {
+          "den": 1,
+          "num": 2
+        }
+      ]
+    ]
+  ],
+  "orientation": "outer CCW, holes CW",
+  "outer": [
+    [
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 0
+      }
+    ],
+    [
+      {
+        "den": 1,
+        "num": 8
+      },
+      {
+        "den": 1,
+        "num": 0
+      }
+    ],
+    [
+      {
+        "den": 1,
+        "num": 8
+      },
+      {
+        "den": 1,
+        "num": 6
+      }
+    ],
+    [
+      {
+        "den": 1,
+        "num": 5
+      },
+      {
+        "den": 1,
+        "num": 8
+      }
+    ],
+    [
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 1,
+        "num": 6
+      }
+    ]
+  ],
+  "schema": "f3.polygon_moments.v1"
+}

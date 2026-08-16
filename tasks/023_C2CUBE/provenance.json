@@ -1,0 +1,9 @@
+{
+  "source": {
+    "kind": "public_frozen",
+    "license": "Apache-2.0",
+    "locator": "https://github.com/leanprover-community/mathlib4/blob/c5ea00351c28e24afc9f0f84379aa41082b1188f/Archive/Wiedijk100Theorems/CubingACube.lean",
+    "revision": "c5ea00351c28e24afc9f0f84379aa41082b1188f"
+  },
+  "task_id": "C2CUBE"
+}

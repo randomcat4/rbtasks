@@ -1,0 +1,11 @@
+{
+  "source": {
+    "kind": "public_frozen",
+    "license": "MIT",
+    "license_sha256": "b6d57a76ad35bf6b9c537ddd67a761d5aa139b626ff352496396c90cd60c08c5",
+    "locator": "https://github.com/frenzymath/FATE-M/blob/4eb33c8ccd0ff058b461cd763cc406509129743f/FATEM/150.lean",
+    "revision": "4eb33c8ccd0ff058b461cd763cc406509129743f",
+    "source_file_sha256": "258a86103b7eacfc9a940a88b7fdfd136906806c442719749f34a3fc35bc5b77"
+  },
+  "task_id": "E3ZM150"
+}

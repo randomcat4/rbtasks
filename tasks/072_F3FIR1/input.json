@@ -1,0 +1,59 @@
+{
+  "down": 2,
+  "filter": [
+    {
+      "den": 2,
+      "num": 1
+    },
+    {
+      "den": 1,
+      "num": -1
+    },
+    {
+      "den": 2,
+      "num": 3
+    },
+    {
+      "den": 1,
+      "num": 2
+    },
+    {
+      "den": 2,
+      "num": -1
+    }
+  ],
+  "mode": "constant zero",
+  "phase": 0,
+  "schema": "f3.upfirdn.v1",
+  "signal": [
+    {
+      "den": 1,
+      "num": 2
+    },
+    {
+      "den": 1,
+      "num": -1
+    },
+    {
+      "den": 1,
+      "num": 3
+    },
+    {
+      "den": 1,
+      "num": 0
+    },
+    {
+      "den": 1,
+      "num": 4
+    },
+    {
+      "den": 1,
+      "num": -2
+    },
+    {
+      "den": 1,
+      "num": 1
+    }
+  ],
+  "up": 3
+}

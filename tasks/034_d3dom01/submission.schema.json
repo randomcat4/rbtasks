@@ -1,0 +1,24 @@
+{
+  "$id": "returnbench:d3dom01:submission",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "dominating_set": {
+      "items": {
+        "type": "integer"
+      },
+      "maxItems": 4,
+      "minItems": 4,
+      "type": "array"
+    },
+    "domination_number": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "dominating_set",
+    "domination_number"
+  ],
+  "title": "d3dom01 actor submission shape (values intentionally omitted)",
+  "type": "object"
+}

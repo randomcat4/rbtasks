@@ -1,0 +1,55 @@
+{
+  "additional_fields": "forbidden",
+  "contract_completeness": "Every required field has an explicit JSON type, shape, defining equation or predicate, and canonicalization rule.",
+  "field_contracts": {
+    "diagonal_bounds": {
+      "canonicalization": "clock order",
+      "definition": "final diagonal entries",
+      "json_type": "array of bounds",
+      "shape": "[clock count]"
+    },
+    "final_canonical_dbm": {
+      "canonicalization": "row i,column j",
+      "definition": "closed DBM at last stage",
+      "json_type": "matrix of bounds",
+      "shape": "[clock count]^2"
+    },
+    "final_shortest_paths": {
+      "canonicalization": "row-major finite-entry order",
+      "definition": "i,j and clock-index path realizing the entry",
+      "json_type": "array of objects",
+      "shape": "[finite DBM entries]"
+    },
+    "stage_dbms": {
+      "canonicalization": "operation order",
+      "definition": "stage name and canonical DBM after each operation",
+      "json_type": "array of objects",
+      "shape": "[initial plus operation count]"
+    },
+    "valuation_witness": {
+      "canonicalization": "clock order",
+      "definition": "one valuation satisfying final zone with reference zero",
+      "json_type": "array of rationals",
+      "shape": "[clock count]"
+    }
+  },
+  "representation_conventions": [
+    "zero-based indices",
+    "exact symbolic/integer/rational data only",
+    "no additional fields"
+  ],
+  "required_fields": [
+    "stage_dbms",
+    "final_canonical_dbm",
+    "final_shortest_paths",
+    "valuation_witness",
+    "diagonal_bounds"
+  ],
+  "schema": "h4.output-contract.v1",
+  "task_rules": [
+    "DBM[i][j] bounds clock_i-clock_j. null is infinity; [c,true] is strict and tighter than [c,false] at equal c. Bound addition adds constants and ORs strictness.",
+    "Canonical closure is all-pairs shortest paths in the bound semiring. Guard intersects bounds then closes; reset copies reference-clock row and column for the reset clock; time elapse removes each real clock upper bound to the reference then closes.",
+    "Every finite final entry has a clock-index path realizing its bound. The rational valuation sets reference clock to zero and must satisfy strict and non-strict entries literally."
+  ],
+  "task_schema": "h4.timed_dbm.v1"
+}

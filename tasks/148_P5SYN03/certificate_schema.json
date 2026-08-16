@@ -1,0 +1,12 @@
+{
+  "schema_version": "returnbench-exact-certificate-v1",
+  "task_id": "P5SYN03",
+  "integer": "JSON integer",
+  "rational": "two-element reduced [numerator,denominator], denominator > 0",
+  "additional_top_level_fields": "rejected",
+  "required_top_level_fields": {
+    "word": "int[] over symbols 0..2",
+    "subset_bfs": "complete FIFO discovery array of {mask:int,distance:int,parent:null|int,symbol:null|int}",
+    "first_singleton_distance": "int"
+  }
+}

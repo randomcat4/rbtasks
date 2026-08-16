@@ -1,0 +1,13 @@
+{
+  "additional_top_level_fields": "rejected",
+  "required_top_level_fields": {
+    "exact_order": "int",
+    "irreducibility_frobenius_trace": "full rows",
+    "modulus_bits": "int",
+    "order_factorization": "[prime,exponent][]",
+    "prime_divisor_order_tests": "full modular power traces[]",
+    "primitive_element_bits": "int"
+  },
+  "schema_version": "returnbench-algebra-optimization-v1",
+  "task_id": "P5FFP21"
+}

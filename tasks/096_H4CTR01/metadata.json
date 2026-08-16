@@ -1,0 +1,26 @@
+{
+  "answer_boundary": "No administrator control, arm assignment, reference answer, or hidden judge is included.",
+  "certificate_type": "Gramian、Riccati、Lyapunov、Hankel 或不变量证书",
+  "difficulty_basis": "本题对象是“Minimum-energy reachability with a dual Gramian certificate”；需核验的特有证书结构为 Gramian、Riccati、Lyapunov、Hankel 或不变量证书，公开合同核心项包括 control、dual、energy、nullspace_orthogonality、terminal。本题的算法与验证负担是：用可控 Gramian 解最小能量输入，返回状态轨迹和 Gramian 对偶向量，核对终点、站立性与原始对偶能量相等。 结构等级生成规则为“高：H4/P5 新题要求跨表示的完整结构证书、针对性负控与独立重放”。该等级仅依据证书宽度、精确重放和独立验收负担评定，未做模型难度校准。",
+  "family": "h4",
+  "lane": "h4",
+  "license": "MIT for project-original material; third-party material retains upstream terms.",
+  "math_domain": "系统与控制",
+  "ordinal": 96,
+  "pilot_status": "PILOT_PENDING",
+  "public_files": [
+    "input.json",
+    "metadata.json",
+    "output_schema.json",
+    "provenance.json",
+    "task.md"
+  ],
+  "release_status": "RELEASE_READY",
+  "representation_bridge": "冻结自然语言/结构化输入 → 线性系统与矩阵证书中的精确表示 → Gramian、Riccati、Lyapunov、Hankel 或不变量证书（核心公开字段：control、dual、energy、nullspace_orthogonality）→ 独立验收回源结论",
+  "schema": "returnbench-public-task-v1",
+  "solution_outline": "用可控 Gramian 解最小能量输入，返回状态轨迹和 Gramian 对偶向量，核对终点、站立性与原始对偶能量相等。",
+  "structural_difficulty": "高",
+  "subdomain": "线性系统与矩阵证书",
+  "task_id": "H4CTR01",
+  "title": "H4CTR01 — Minimum-energy reachability with a dual Gramian certificate"
+}

@@ -1,0 +1,83 @@
+{
+  "additional_fields": "forbidden",
+  "contract_completeness": "Every required field has an explicit JSON type, shape, defining equation or predicate, and canonicalization rule.",
+  "field_contracts": {
+    "all_share_residuals": {
+      "canonicalization": "input share order",
+      "definition": "evaluation minus public share value modulo prime",
+      "json_type": "array of objects",
+      "shape": "[share count]"
+    },
+    "privacy_coalition_evaluations": {
+      "canonicalization": "coalition order",
+      "definition": "evaluations of both polynomials on coalition x-values",
+      "json_type": "array of arrays",
+      "shape": "[2][coalition size]"
+    },
+    "privacy_difference_multiple": {
+      "canonicalization": "canonical GF residue",
+      "definition": "nonzero gamma with f1-f0=gamma*q",
+      "json_type": "integer",
+      "shape": "scalar"
+    },
+    "privacy_polynomials_ascending": {
+      "canonicalization": "base then affine shift",
+      "definition": "two degree-bounded polynomials with identical coalition observations",
+      "json_type": "array of polynomial arrays",
+      "shape": "[2][threshold]"
+    },
+    "privacy_secrets": {
+      "canonicalization": "same order as polynomials",
+      "definition": "constant terms of privacy polynomials",
+      "json_type": "array of integers",
+      "shape": "[2]"
+    },
+    "privacy_vanishing_polynomial_ascending": {
+      "canonicalization": "ascending",
+      "definition": "monic product of x minus coalition coordinates",
+      "json_type": "array of integers",
+      "shape": "[coalition size+1]"
+    },
+    "reconstructed_polynomial_ascending": {
+      "canonicalization": "GF residues, ascending",
+      "definition": "degree-bounded polynomial from Vandermonde reconstruction",
+      "json_type": "array of integers",
+      "shape": "[threshold]"
+    },
+    "reconstructed_secret": {
+      "canonicalization": "GF residue",
+      "definition": "constant coefficient recovered independently by every subset",
+      "json_type": "integer",
+      "shape": "scalar"
+    },
+    "reconstruction_certificates": {
+      "canonicalization": "input subset order",
+      "definition": "share IDs, Lagrange-at-zero coefficients and reconstructed secret",
+      "json_type": "array of objects",
+      "shape": "[subset count]"
+    }
+  },
+  "representation_conventions": [
+    "zero-based indices",
+    "exact symbolic/integer/rational data only",
+    "no additional fields"
+  ],
+  "required_fields": [
+    "reconstructed_polynomial_ascending",
+    "reconstruction_certificates",
+    "reconstructed_secret",
+    "all_share_residuals",
+    "privacy_vanishing_polynomial_ascending",
+    "privacy_polynomials_ascending",
+    "privacy_secrets",
+    "privacy_coalition_evaluations",
+    "privacy_difference_multiple"
+  ],
+  "schema": "h4.output-contract.v1",
+  "task_rules": [
+    "All arithmetic is in GF(prime), represented by integers 0,...,prime-1. Polynomial coefficients are ascending.",
+    "Each reconstruction subset uses the listed share order; Lagrange coefficients are evaluated at zero and a Vandermonde solve independently recovers the degree-bounded polynomial.",
+    "For the privacy coalition, a nonzero multiple of the monic polynomial vanishing on coalition x-coordinates transforms one degree-bounded polynomial into another with identical coalition evaluations and a distinct constant term."
+  ],
+  "task_schema": "h4.shamir_privacy.v1"
+}

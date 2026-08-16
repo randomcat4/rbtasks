@@ -1,0 +1,14 @@
+{
+  "bibliographic_context": [
+    "M. H. A. Newman, On theories with a combinatorial definition of equivalence, 1942",
+    "D. Knuth and P. Bendix, Simple Word Problems in Universal Algebras, 1970"
+  ],
+  "claim_provenance": "project_generated_original_fixed_instance",
+  "license": "MIT",
+  "license_authority": "root LICENSE; explicit project-owner authorization 2026-08-16",
+  "revision": "c925370d2e3e3bc3f5cd1a84be90f2e2f7bede67c760ddecd5d9275b8f73b427",
+  "semantic_deduplication": "No existing task combines a global termination measure with exhaustive critical overlaps and join certificates; Petri/LTL are reachability traces.",
+  "source_locator": "urn:rbtasks:h4:h4trs32:v1",
+  "task_id": "H4TRS32",
+  "third_party_code_or_data_copied": false
+}

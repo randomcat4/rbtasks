@@ -1,0 +1,54 @@
+{
+  "$id": "returnbench:F3MSH1:submission",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "centroid": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "den": {
+            "type": "integer"
+          },
+          "num": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "den",
+          "num"
+        ],
+        "type": "object"
+      },
+      "maxItems": 3,
+      "minItems": 3,
+      "type": "array"
+    },
+    "kind": {
+      "type": "string"
+    },
+    "signed_volume": {
+      "additionalProperties": false,
+      "properties": {
+        "den": {
+          "type": "integer"
+        },
+        "num": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "den",
+        "num"
+      ],
+      "type": "object"
+    }
+  },
+  "required": [
+    "centroid",
+    "kind",
+    "signed_volume"
+  ],
+  "title": "F3MSH1 actor submission shape (values intentionally omitted)",
+  "type": "object"
+}

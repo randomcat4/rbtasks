@@ -1,0 +1,48 @@
+{
+  "additional_fields": "forbidden",
+  "contract_completeness": "Every required field has an explicit JSON type, shape, defining equation or predicate, and canonicalization rule.",
+  "field_contracts": {
+    "critical_pair_count": {
+      "canonicalization": "equals list length",
+      "definition": "number of critical-pair records",
+      "json_type": "integer",
+      "shape": "scalar"
+    },
+    "critical_pairs": {
+      "canonicalization": "left_rule,right_rule,overlap_length,word order",
+      "definition": "ordered-rule overlap, branches, join traces and common normal form",
+      "json_type": "array of objects",
+      "shape": "[all proper overlaps]"
+    },
+    "termination_certificate": {
+      "canonicalization": "rule order",
+      "definition": "rule_id,length_drop,inversion_drop",
+      "json_type": "array of objects",
+      "shape": "[rule count]"
+    },
+    "test_normalizations": {
+      "canonicalization": "input test order",
+      "definition": "deterministic rewrite trace and independent sorted-unique reference",
+      "json_type": "array of objects",
+      "shape": "[test word count]"
+    }
+  },
+  "representation_conventions": [
+    "zero-based indices",
+    "exact symbolic/integer/rational data only",
+    "no additional fields"
+  ],
+  "required_fields": [
+    "termination_certificate",
+    "critical_pairs",
+    "test_normalizations",
+    "critical_pair_count"
+  ],
+  "schema": "h4.output-contract.v1",
+  "task_rules": [
+    "A rewrite step chooses a rule and a zero-based substring position. The termination measure is lexicographic (word length, inversion count under alphabet_order).",
+    "Enumerate every nonempty proper suffix/prefix overlap of ordered rule pairs. Each critical record contains the two one-step branches and complete leftmost-position/lowest-rule join traces.",
+    "The independent normal form reference for test words is the alphabet-sorted word with duplicates removed."
+  ],
+  "task_schema": "h4.terminating_rewrite.v1"
+}

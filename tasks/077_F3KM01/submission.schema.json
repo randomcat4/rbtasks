@@ -1,0 +1,113 @@
+{
+  "$id": "returnbench:F3KM01:submission",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "greenwood_sum": {
+      "additionalProperties": false,
+      "properties": {
+        "den": {
+          "type": "integer"
+        },
+        "num": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "den",
+        "num"
+      ],
+      "type": "object"
+    },
+    "kind": {
+      "type": "string"
+    },
+    "survival": {
+      "additionalProperties": false,
+      "properties": {
+        "den": {
+          "type": "integer"
+        },
+        "num": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "den",
+        "num"
+      ],
+      "type": "object"
+    },
+    "timeline": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "at_risk": {
+            "type": "integer"
+          },
+          "censored": {
+            "type": "integer"
+          },
+          "events": {
+            "type": "integer"
+          },
+          "greenwood_sum": {
+            "additionalProperties": false,
+            "properties": {
+              "den": {
+                "type": "integer"
+              },
+              "num": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "den",
+              "num"
+            ],
+            "type": "object"
+          },
+          "survival": {
+            "additionalProperties": false,
+            "properties": {
+              "den": {
+                "type": "integer"
+              },
+              "num": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "den",
+              "num"
+            ],
+            "type": "object"
+          },
+          "time": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "at_risk",
+          "censored",
+          "events",
+          "greenwood_sum",
+          "survival",
+          "time"
+        ],
+        "type": "object"
+      },
+      "maxItems": 9,
+      "minItems": 9,
+      "type": "array"
+    }
+  },
+  "required": [
+    "greenwood_sum",
+    "kind",
+    "survival",
+    "timeline"
+  ],
+  "title": "F3KM01 actor submission shape (values intentionally omitted)",
+  "type": "object"
+}

@@ -1,0 +1,142 @@
+{
+  "covariance": [
+    [
+      {
+        "den": 4,
+        "num": 1
+      },
+      {
+        "den": 10,
+        "num": 1
+      },
+      {
+        "den": 1,
+        "num": 0
+      }
+    ],
+    [
+      {
+        "den": 10,
+        "num": 1
+      },
+      {
+        "den": 9,
+        "num": 1
+      },
+      {
+        "den": 30,
+        "num": 1
+      }
+    ],
+    [
+      {
+        "den": 1,
+        "num": 0
+      },
+      {
+        "den": 30,
+        "num": 1
+      },
+      {
+        "den": 16,
+        "num": 1
+      }
+    ]
+  ],
+  "nominal": [
+    {
+      "den": 1,
+      "num": 4
+    },
+    {
+      "den": 1,
+      "num": 3
+    },
+    {
+      "den": 1,
+      "num": 2
+    }
+  ],
+  "outputs": [
+    {
+      "expression": {
+        "args": [
+          {
+            "var": "x"
+          },
+          {
+            "var": "y"
+          }
+        ],
+        "op": "mul"
+      },
+      "name": "area"
+    },
+    {
+      "expression": {
+        "args": [
+          {
+            "args": [
+              {
+                "var": "x"
+              },
+              {
+                "var": "y"
+              }
+            ],
+            "op": "div"
+          },
+          {
+            "var": "z"
+          }
+        ],
+        "op": "add"
+      },
+      "name": "ratio_plus"
+    },
+    {
+      "expression": {
+        "args": [
+          {
+            "args": [
+              {
+                "var": "x"
+              },
+              {
+                "args": [
+                  {
+                    "const": {
+                      "den": 1,
+                      "num": 2
+                    }
+                  },
+                  {
+                    "var": "y"
+                  }
+                ],
+                "op": "mul"
+              }
+            ],
+            "op": "add"
+          },
+          {
+            "var": "z"
+          }
+        ],
+        "op": "sub"
+      },
+      "name": "contrast"
+    }
+  ],
+  "schema": "f3.uncertainty.v1",
+  "semantics": "first-order covariance J Sigma J^T at the nominal point",
+  "sham_drop_covariance": [
+    0,
+    1
+  ],
+  "variables": [
+    "x",
+    "y",
+    "z"
+  ]
+}

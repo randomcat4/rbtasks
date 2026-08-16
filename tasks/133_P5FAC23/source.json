@@ -1,0 +1,10 @@
+{
+  "authors": [
+    "ReturnBench contributors"
+  ],
+  "frozen_design": "Pro-derived Batch 03 design freeze v0",
+  "instance_origin": "ReturnBench deterministic project-original generator; no upstream fixture, proof, code, or answer copied",
+  "redistribution_analysis": "Only original integer tables/text and original standard-library verifier code are redistributed.",
+  "references": [],
+  "task_id": "P5FAC23"
+}

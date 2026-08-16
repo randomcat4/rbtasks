@@ -1,0 +1,56 @@
+{
+  "additional_fields": "forbidden",
+  "contract_completeness": "Every required field has an explicit JSON type, shape, defining equation or predicate, and canonicalization rule.",
+  "field_contracts": {
+    "annihilator_coefficients_ascending": {
+      "canonicalization": "ascending powers, last entry 1",
+      "definition": "coefficients c_0,...,c_d of least-degree monic p with C*p(A)=0",
+      "json_type": "array of rationals",
+      "shape": "[d+1]"
+    },
+    "indistinguishable_delta": {
+      "canonicalization": "exactly kernel_basis[0]",
+      "definition": "first canonical kernel vector",
+      "json_type": "array of rationals",
+      "shape": "[n]"
+    },
+    "kernel_basis": {
+      "canonicalization": "in increasing free-column order",
+      "definition": "canonical basis of ker(O)",
+      "json_type": "array of rational arrays",
+      "shape": "[(n-rank) by n]"
+    },
+    "rank": {
+      "canonicalization": "exact RREF rank",
+      "definition": "rank of stacked observability matrix O",
+      "json_type": "integer",
+      "shape": "scalar"
+    },
+    "rref_pivots": {
+      "canonicalization": "strictly increasing",
+      "definition": "zero-based pivot columns of RREF(O)",
+      "json_type": "array of integers",
+      "shape": "[rank]"
+    }
+  },
+  "rational_encoding": "reduced string n or n/d; denominator positive",
+  "representation_conventions": [
+    "Indices are zero-based unless a mathematical exponent or degree is explicitly named. Matrices are row-major; nested tensor array order is stated per task.",
+    "A rational scalar is a reduced JSON string \"n\" or \"n/d\" with positive denominator. JSON integers are used only where the field contract says integer. Floats, decimal approximations, NaN and infinity are invalid.",
+    "The submission object has exactly required_fields, with no additional keys. Nested objects likewise use exactly the named keys."
+  ],
+  "required_fields": [
+    "rank",
+    "rref_pivots",
+    "kernel_basis",
+    "annihilator_coefficients_ascending",
+    "indistinguishable_delta"
+  ],
+  "schema": "h4.output-contract.v1",
+  "task_rules": [
+    "Let n be the state dimension. Stack O=[C; CA; ...; CA^(n-1)] with rows in increasing power order. RREF uses left-to-right pivots and exact rational arithmetic.",
+    "The annihilator is the least positive degree d for which a monic p(z)=sum_{j=0}^d c_j z^j satisfies C p(A)=0; degrees are tried in increasing order and c_d=1.",
+    "The canonical nullspace basis of O uses increasing free columns, one unit free coordinate per vector, and RREF-determined pivot coordinates."
+  ],
+  "task_schema": "h4.observability_kernel.v1"
+}

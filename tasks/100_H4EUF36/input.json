@@ -1,0 +1,164 @@
+{
+  "canonical_policy": "lexicographically first term pair for congruence merges; smallest-cardinality then lexicographically first equality core",
+  "disequalities": [
+    {
+      "id": "d0",
+      "left": "t12",
+      "right": "t13"
+    },
+    {
+      "id": "d1",
+      "left": "t00",
+      "right": "t02"
+    },
+    {
+      "id": "d2",
+      "left": "t16",
+      "right": "t10"
+    }
+  ],
+  "equalities": [
+    {
+      "id": "e0",
+      "left": "t00",
+      "right": "t01"
+    },
+    {
+      "id": "e1",
+      "left": "t02",
+      "right": "t03"
+    },
+    {
+      "id": "e2",
+      "left": "t04",
+      "right": "t05"
+    },
+    {
+      "id": "e3",
+      "left": "t06",
+      "right": "t07"
+    },
+    {
+      "id": "e4",
+      "left": "t08",
+      "right": "t09"
+    }
+  ],
+  "schema": "h4.euf_unsat_core.v1",
+  "terms": [
+    {
+      "args": [],
+      "id": "t00",
+      "symbol": "a"
+    },
+    {
+      "args": [],
+      "id": "t01",
+      "symbol": "b"
+    },
+    {
+      "args": [],
+      "id": "t02",
+      "symbol": "c"
+    },
+    {
+      "args": [],
+      "id": "t03",
+      "symbol": "d"
+    },
+    {
+      "args": [],
+      "id": "t04",
+      "symbol": "p"
+    },
+    {
+      "args": [],
+      "id": "t05",
+      "symbol": "q"
+    },
+    {
+      "args": [],
+      "id": "t06",
+      "symbol": "r"
+    },
+    {
+      "args": [],
+      "id": "t07",
+      "symbol": "s"
+    },
+    {
+      "args": [
+        "t00"
+      ],
+      "id": "t08",
+      "symbol": "f"
+    },
+    {
+      "args": [
+        "t01"
+      ],
+      "id": "t09",
+      "symbol": "f"
+    },
+    {
+      "args": [
+        "t08",
+        "t02"
+      ],
+      "id": "t10",
+      "symbol": "g"
+    },
+    {
+      "args": [
+        "t09",
+        "t03"
+      ],
+      "id": "t11",
+      "symbol": "g"
+    },
+    {
+      "args": [
+        "t10"
+      ],
+      "id": "t12",
+      "symbol": "h"
+    },
+    {
+      "args": [
+        "t11"
+      ],
+      "id": "t13",
+      "symbol": "h"
+    },
+    {
+      "args": [
+        "t04"
+      ],
+      "id": "t14",
+      "symbol": "k"
+    },
+    {
+      "args": [
+        "t05"
+      ],
+      "id": "t15",
+      "symbol": "k"
+    },
+    {
+      "args": [
+        "t14",
+        "t06"
+      ],
+      "id": "t16",
+      "symbol": "m"
+    },
+    {
+      "args": [
+        "t15",
+        "t07"
+      ],
+      "id": "t17",
+      "symbol": "m"
+    }
+  ]
+}

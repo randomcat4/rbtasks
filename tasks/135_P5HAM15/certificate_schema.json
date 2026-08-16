@@ -1,0 +1,12 @@
+{
+  "additional_top_level_fields": "rejected",
+  "required_top_level_fields": {
+    "graph_checks": "degree/connectivity certificate",
+    "held_karp_infeasibility": "endpoint bitset for every odd mask and closing bitset",
+    "source_bridge": "exact encoding summary",
+    "successor_cnf": "exact degree clauses plus every anchor-containing subtour mask",
+    "successor_variables": "directed-edge variable map[]"
+  },
+  "schema_version": "returnbench-structural-certificate-v1",
+  "task_id": "P5HAM15"
+}

@@ -1,0 +1,26 @@
+{
+  "authors": [
+    "ReturnBench contributors"
+  ],
+  "instance_origin": "ReturnBench deterministic project-original generator; no upstream fixture, proof, code, or answer copied",
+  "redistribution_analysis": "Only original finite integer data, original text, and original Python standard-library verifier are redistributed; upstream code/data is absent.",
+  "references": [
+    {
+      "license": "Apache-2.0",
+      "project": "PBLean",
+      "revision": "bcfe56747322f948eccc0bd79f7601c1fb2d1e68",
+      "url": "https://github.com/leansolving/pblean",
+      "use": "format anchor only; unavailable on validation host and not bundled",
+      "version": "HEAD checked 2026-08-16"
+    },
+    {
+      "license": "MIT",
+      "project": "VeriPB",
+      "revision": "01b7b5088c8a67f1611427174501191bc5f5b365",
+      "url": "https://github.com/StephanGocht/VeriPB",
+      "use": "format anchor only; unavailable on validation host and not bundled",
+      "version": "HEAD checked 2026-08-16"
+    }
+  ],
+  "task_id": "P5BIN19"
+}

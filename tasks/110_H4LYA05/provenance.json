@@ -1,0 +1,12 @@
+{
+  "bibliographic_context": [
+    "A. M. Lyapunov, The General Problem of the Stability of Motion; discrete Lyapunov identity used in original fixed instance"
+  ],
+  "claim_provenance": "project_generated_original_fixed_instance",
+  "license": "MIT",
+  "license_authority": "root LICENSE; explicit project-owner authorization 2026-08-16",
+  "revision": "8eef381b06d9aaa1e490d5f4504bc47bbd30955b91f29d3326c4db8573f17259",
+  "source_locator": "urn:rbtasks:h4:h4lya05:v1",
+  "task_id": "H4LYA05",
+  "third_party_code_or_data_copied": false
+}

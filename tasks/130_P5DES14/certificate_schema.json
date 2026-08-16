@@ -1,0 +1,12 @@
+{
+  "additional_top_level_fields": "rejected",
+  "required_top_level_fields": {
+    "block_orbits": "orbit/stabilizer certificate[]",
+    "generator_block_maps": "int[][]",
+    "group_elements": "permutation[]",
+    "parameters": "{v,b,k,lambda}",
+    "pb_pair_equations": "complete pair equality[]"
+  },
+  "schema_version": "returnbench-structural-certificate-v1",
+  "task_id": "P5DES14"
+}

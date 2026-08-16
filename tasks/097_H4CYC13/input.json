@@ -1,0 +1,12 @@
+{
+  "field_prime": 5,
+  "generator_polynomial_ascending": [
+    4,
+    0,
+    0,
+    0,
+    1
+  ],
+  "length": 24,
+  "schema": "h4.cyclic_dual.v1"
+}

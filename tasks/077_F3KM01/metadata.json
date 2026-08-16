@@ -1,0 +1,26 @@
+{
+  "answer_boundary": "No administrator control, arm assignment, reference answer, or hidden judge is included.",
+  "certificate_type": "精确分布、计数递推或有理概率证书",
+  "difficulty_basis": "本题对象是“Kaplan-Meier: censored records to an exact product-limit curve”；需核验的特有证书结构为 精确分布、计数递推或有理概率证书，公开合同核心项包括 greenwood_sum、kind、survival、timeline。本题的算法与验证负担是：按事件时间聚合风险集与死亡数，逐时刻乘 (n−d)/n，输出所有跳点的约分生存概率。 结构等级生成规则为“高：公开题面同时要求多段精确证书、递推、见证或残差核验”。该等级仅依据证书宽度、精确重放和独立验收负担评定，未做模型难度校准。",
+  "family": "baseline",
+  "lane": "f3",
+  "license": "MIT for project-original material; third-party material retains upstream terms.",
+  "math_domain": "概率统计",
+  "ordinal": 77,
+  "pilot_status": "PILOT_ELIGIBLE",
+  "public_files": [
+    "input.json",
+    "metadata.json",
+    "provenance.json",
+    "submission.schema.json",
+    "task.md"
+  ],
+  "release_status": "RELEASE_READY",
+  "representation_bridge": "冻结自然语言/结构化输入 → 精确概率与统计推断中的精确表示 → 精确分布、计数递推或有理概率证书（核心公开字段：greenwood_sum、kind、survival、timeline）→ 独立验收回源结论",
+  "schema": "returnbench-public-task-v1",
+  "solution_outline": "按事件时间聚合风险集与死亡数，逐时刻乘 (n−d)/n，输出所有跳点的约分生存概率。",
+  "structural_difficulty": "高",
+  "subdomain": "精确概率与统计推断",
+  "task_id": "F3KM01",
+  "title": "F3KM01 — Kaplan-Meier: censored records to an exact product-limit curve"
+}

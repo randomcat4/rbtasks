@@ -1,0 +1,26 @@
+{
+  "answer_boundary": "No administrator control, arm assignment, reference answer, or hidden judge is included.",
+  "certificate_type": "形式推导、轨迹、闭包或不可满足性证书",
+  "difficulty_basis": "本题对象是“Markov temporal event: workflow prose to a product-state automaton”；需核验的特有证书结构为 形式推导、轨迹、闭包或不可满足性证书，公开合同核心项包括 claim、event_by_final_state、kind。本题的算法与验证负担是：把 Markov 状态与时序事件监控状态做直积，逐步传播精确概率质量，并汇总首次满足事件的接受状态。 结构等级生成规则为“高：公开题面同时要求多段精确证书、递推、见证或残差核验”。该等级仅依据证书宽度、精确重放和独立验收负担评定，未做模型难度校准。",
+  "family": "baseline",
+  "lane": "f3",
+  "license": "MIT for project-original material; third-party material retains upstream terms.",
+  "math_domain": "理论计算机科学",
+  "ordinal": 78,
+  "pilot_status": "PILOT_ELIGIBLE",
+  "public_files": [
+    "input.json",
+    "metadata.json",
+    "provenance.json",
+    "submission.schema.json",
+    "task.md"
+  ],
+  "release_status": "RELEASE_READY",
+  "representation_bridge": "冻结自然语言/结构化输入 → 自动机、形式语言与程序语义中的精确表示 → 形式推导、轨迹、闭包或不可满足性证书（核心公开字段：claim、event_by_final_state、kind）→ 独立验收回源结论",
+  "schema": "returnbench-public-task-v1",
+  "solution_outline": "把 Markov 状态与时序事件监控状态做直积，逐步传播精确概率质量，并汇总首次满足事件的接受状态。",
+  "structural_difficulty": "高",
+  "subdomain": "自动机、形式语言与程序语义",
+  "task_id": "F3MC01",
+  "title": "F3MC01 — Markov temporal event: workflow prose to a product-state automaton"
+}

@@ -1,0 +1,12 @@
+{
+  "additional_top_level_fields": "rejected",
+  "required_top_level_fields": {
+    "branch_bound_lower_certificate": "nodes/prunes/optimum",
+    "deleted_vertices": "int[]",
+    "directed_triangles": "int[3][]",
+    "exact_weight": "int",
+    "residual_total_order": "int[]"
+  },
+  "schema_version": "returnbench-algebra-optimization-v1",
+  "task_id": "P5TFV22"
+}

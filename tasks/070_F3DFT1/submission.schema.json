@@ -1,0 +1,42 @@
+{
+  "$id": "returnbench:F3DFT1:submission",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "bins": {
+      "items": {
+        "items": {
+          "additionalProperties": false,
+          "properties": {
+            "den": {
+              "type": "integer"
+            },
+            "num": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "den",
+            "num"
+          ],
+          "type": "object"
+        },
+        "maxItems": 4,
+        "minItems": 4,
+        "type": "array"
+      },
+      "maxItems": 8,
+      "minItems": 8,
+      "type": "array"
+    },
+    "kind": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "bins",
+    "kind"
+  ],
+  "title": "F3DFT1 actor submission shape (values intentionally omitted)",
+  "type": "object"
+}

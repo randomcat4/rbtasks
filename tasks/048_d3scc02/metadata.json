@@ -1,0 +1,26 @@
+{
+  "answer_boundary": "No administrator control, arm assignment, reference answer, or hidden judge is included.",
+  "certificate_type": "组合结构、上下界相遇或穷尽证书",
+  "difficulty_basis": "本题对象是“强连通分量与凝聚 DAG 证书”；需核验的特有证书结构为 组合结构、上下界相遇或穷尽证书，公开合同核心项包括 components、condensation_edges、topological_order。本题的算法与验证负担是：用 Tarjan/Kosaraju 得到强连通块，为块内互达给出搜索见证，并构造无环且覆盖全部跨块边的凝聚图。 结构等级生成规则为“中高：需要完整算法轨迹、递推表或精确多字段见证”。该等级仅依据证书宽度、精确重放和独立验收负担评定，未做模型难度校准。",
+  "family": "baseline",
+  "lane": "d3",
+  "license": "MIT for project-original material; third-party material retains upstream terms.",
+  "math_domain": "离散数学",
+  "ordinal": 48,
+  "pilot_status": "PILOT_ELIGIBLE",
+  "public_files": [
+    "input.json",
+    "metadata.json",
+    "provenance.json",
+    "submission.schema.json",
+    "task.md"
+  ],
+  "release_status": "RELEASE_READY",
+  "representation_bridge": "冻结自然语言/结构化输入 → 图论与组合算法中的精确表示 → 组合结构、上下界相遇或穷尽证书（核心公开字段：components、condensation_edges、topological_order）→ 独立验收回源结论",
+  "schema": "returnbench-public-task-v1",
+  "solution_outline": "用 Tarjan/Kosaraju 得到强连通块，为块内互达给出搜索见证，并构造无环且覆盖全部跨块边的凝聚图。",
+  "structural_difficulty": "中高",
+  "subdomain": "图论与组合算法",
+  "task_id": "d3scc02",
+  "title": "d3scc02 — 强连通分量与凝聚 DAG 证书"
+}

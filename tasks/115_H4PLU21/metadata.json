@@ -1,0 +1,26 @@
+{
+  "answer_boundary": "No administrator control, arm assignment, reference answer, or hidden judge is included.",
+  "certificate_type": "代数恒等式、正规形、有限域或消元证书",
+  "difficulty_basis": "本题对象是“Pluecker coordinates to an RREF two-plane”；需核验的特有证书结构为 代数恒等式、正规形、有限域或消元证书，公开合同核心项包括 plucker_relation_residuals、rref_basis、skew_matrix_rank。本题的算法与验证负担是：由 Plücker 坐标选择非零主坐标恢复两行 RREF 基，复算全部 2×2 子式并检查 Plücker 二次关系。 结构等级生成规则为“高：H4/P5 新题要求跨表示的完整结构证书、针对性负控与独立重放”。该等级仅依据证书宽度、精确重放和独立验收负担评定，未做模型难度校准。",
+  "family": "h4",
+  "lane": "h4",
+  "license": "MIT for project-original material; third-party material retains upstream terms.",
+  "math_domain": "代数学",
+  "ordinal": 115,
+  "pilot_status": "PILOT_PENDING",
+  "public_files": [
+    "input.json",
+    "metadata.json",
+    "output_schema.json",
+    "provenance.json",
+    "task.md"
+  ],
+  "release_status": "RELEASE_READY",
+  "representation_bridge": "冻结自然语言/结构化输入 → 群环域与符号计算中的精确表示 → 代数恒等式、正规形、有限域或消元证书（核心公开字段：plucker_relation_residuals、rref_basis、skew_matrix_rank）→ 独立验收回源结论",
+  "schema": "returnbench-public-task-v1",
+  "solution_outline": "由 Plücker 坐标选择非零主坐标恢复两行 RREF 基，复算全部 2×2 子式并检查 Plücker 二次关系。",
+  "structural_difficulty": "高",
+  "subdomain": "群环域与符号计算",
+  "task_id": "H4PLU21",
+  "title": "H4PLU21 — Pluecker coordinates to an RREF two-plane"
+}

@@ -1,0 +1,13 @@
+{
+  "bibliographic_context": [
+    "R. C. Bose and D. K. Ray-Chaudhuri, On a class of error correcting binary group codes, Information and Control 3 (1960)",
+    "D. E. Muller, Application of Boolean algebra to switching circuit design and to error detection, IRE 1954"
+  ],
+  "claim_provenance": "project_generated_original_fixed_instance",
+  "license": "MIT",
+  "license_authority": "root LICENSE; explicit project-owner authorization 2026-08-16",
+  "revision": "704a043990623c78ae45e9f112156a148e2d07539e3f3db70a3ac172cbcb5375",
+  "source_locator": "urn:rbtasks:h4:h4bch09:v1",
+  "task_id": "H4BCH09",
+  "third_party_code_or_data_copied": false
+}

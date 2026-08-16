@@ -1,0 +1,12 @@
+{
+  "source": {
+    "kind": "public_frozen",
+    "license": "Apache-2.0",
+    "license_sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+    "locator": "https://github.com/leanprover-community/mathlib4/blob/c5ea00351c28e24afc9f0f84379aa41082b1188f/Mathlib/NumberTheory/SumTwoSquares.lean#L211",
+    "revision": "c5ea00351c28e24afc9f0f84379aa41082b1188f",
+    "source_file_sha256": "ecc1647de087331c1876ca386b495ff2a83943a428bf140bf6ba8047f9fd80f9",
+    "transform": "完整冻结源码等价：加法表示存在性与所有 3 mod 4 素因子的 p-adic 赋值为偶数。零值分支保持原定义。"
+  },
+  "task_id": "E3S2S08"
+}

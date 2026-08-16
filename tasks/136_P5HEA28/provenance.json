@@ -1,0 +1,18 @@
+{
+  "authors": [
+    "ReturnBench contributors"
+  ],
+  "instance_origin": "ReturnBench deterministic project-original generator; no upstream fixture, proof, code, or answer copied",
+  "redistribution_analysis": "Only original integer tables/text and original Python standard-library verifier code are redistributed.",
+  "references": [
+    {
+      "license": "BSD-2-Clause",
+      "project": "PETSc",
+      "revision": "v3.24.0",
+      "url": "https://gitlab.com/petsc/petsc",
+      "use": "finite-difference terminology anchor only; no code or fixture bundled",
+      "version": "3.24.0"
+    }
+  ],
+  "task_id": "P5HEA28"
+}

@@ -1,0 +1,12 @@
+{
+  "bibliographic_context": [
+    "B. Buchberger, An Algorithm for Finding the Basis Elements of the Residue Class Ring of a Zero Dimensional Polynomial Ideal, 1965 thesis"
+  ],
+  "claim_provenance": "project_generated_original_fixed_instance",
+  "license": "MIT",
+  "license_authority": "root LICENSE; explicit project-owner authorization 2026-08-16",
+  "revision": "7dc9d18764abd33408dc6ddb8041ee9ea18125901eac2b057ed48230e0271a8b",
+  "source_locator": "urn:rbtasks:h4:h4res16:v1",
+  "task_id": "H4RES16",
+  "third_party_code_or_data_copied": false
+}

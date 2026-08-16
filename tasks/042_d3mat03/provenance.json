@@ -1,0 +1,4 @@
+{
+  "license": "Apache-2.0",
+  "source_locator": "Matroid/Intersection.lean:98:exists_common_ind and :141:matroid_intersection_minmax"
+}

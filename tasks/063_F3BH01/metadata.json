@@ -1,0 +1,26 @@
+{
+  "answer_boundary": "No administrator control, arm assignment, reference answer, or hidden judge is included.",
+  "certificate_type": "精确分布、计数递推或有理概率证书",
+  "difficulty_basis": "本题对象是“Benjamini-Hochberg: multiple-testing prose to exact step-up decisions”；需核验的特有证书结构为 精确分布、计数递推或有理概率证书，公开合同核心项包括 adjusted、kind、order、raw_sorted、rejected_indices。本题的算法与验证负担是：将有理 p 值排序，计算 m/i 倍原值并反向累积最小值，截断到 1 后还原原顺序，再按 α=1/20 选拒绝集合。 结构等级生成规则为“中高：需要完整算法轨迹、递推表或精确多字段见证”。该等级仅依据证书宽度、精确重放和独立验收负担评定，未做模型难度校准。",
+  "family": "baseline",
+  "lane": "f3",
+  "license": "MIT for project-original material; third-party material retains upstream terms.",
+  "math_domain": "概率统计",
+  "ordinal": 63,
+  "pilot_status": "PILOT_ELIGIBLE",
+  "public_files": [
+    "input.json",
+    "metadata.json",
+    "provenance.json",
+    "submission.schema.json",
+    "task.md"
+  ],
+  "release_status": "RELEASE_READY",
+  "representation_bridge": "冻结自然语言/结构化输入 → 精确概率与统计推断中的精确表示 → 精确分布、计数递推或有理概率证书（核心公开字段：adjusted、kind、order、raw_sorted）→ 独立验收回源结论",
+  "schema": "returnbench-public-task-v1",
+  "solution_outline": "将有理 p 值排序，计算 m/i 倍原值并反向累积最小值，截断到 1 后还原原顺序，再按 α=1/20 选拒绝集合。",
+  "structural_difficulty": "中高",
+  "subdomain": "精确概率与统计推断",
+  "task_id": "F3BH01",
+  "title": "F3BH01 — Benjamini-Hochberg: multiple-testing prose to exact step-up decisions"
+}

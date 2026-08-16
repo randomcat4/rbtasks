@@ -1,0 +1,41 @@
+{
+  "coefficient_ring": "Q(sqrt(2), i), tuple a+b*sqrt2+i(c+d*sqrt2)",
+  "forward_kernel": "exp(-2*pi*i*k*n/8)",
+  "length": 8,
+  "normalization": "none",
+  "schema": "f3.dft8.v1",
+  "signal": [
+    [
+      3,
+      1
+    ],
+    [
+      -1,
+      2
+    ],
+    [
+      4,
+      -2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      2,
+      0
+    ],
+    [
+      -2,
+      -1
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      5,
+      -3
+    ]
+  ]
+}

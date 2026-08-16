@@ -1,0 +1,6 @@
+{
+  "denominator_degree": 10,
+  "function": "exp(x)",
+  "numerator_degree": 10,
+  "schema": "h4.pade_exp.v1"
+}

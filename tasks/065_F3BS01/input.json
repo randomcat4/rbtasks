@@ -1,0 +1,16 @@
+{
+  "empirical_atoms": "observations by index; duplicates retain multiplicity",
+  "resample_size": 7,
+  "sample": [
+    1,
+    2,
+    2,
+    4,
+    7,
+    11,
+    13
+  ],
+  "schema": "f3.bootstrap.v1",
+  "statistic": "resample sum",
+  "sum_threshold": 42
+}

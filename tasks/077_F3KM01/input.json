@@ -1,0 +1,62 @@
+{
+  "records": [
+    {
+      "event": 1,
+      "time": 2
+    },
+    {
+      "event": 0,
+      "time": 2
+    },
+    {
+      "event": 1,
+      "time": 3
+    },
+    {
+      "event": 1,
+      "time": 4
+    },
+    {
+      "event": 0,
+      "time": 4
+    },
+    {
+      "event": 1,
+      "time": 4
+    },
+    {
+      "event": 0,
+      "time": 5
+    },
+    {
+      "event": 1,
+      "time": 6
+    },
+    {
+      "event": 0,
+      "time": 6
+    },
+    {
+      "event": 1,
+      "time": 7
+    },
+    {
+      "event": 0,
+      "time": 8
+    },
+    {
+      "event": 1,
+      "time": 8
+    },
+    {
+      "event": 1,
+      "time": 9
+    },
+    {
+      "event": 0,
+      "time": 10
+    }
+  ],
+  "schema": "f3.kaplan_meier.v1",
+  "tie_semantics": "subjects censored at t remain at risk for events at t"
+}

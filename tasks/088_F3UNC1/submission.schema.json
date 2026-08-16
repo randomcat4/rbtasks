@@ -1,0 +1,91 @@
+{
+  "$id": "returnbench:F3UNC1:submission",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "jacobian": {
+      "items": {
+        "items": {
+          "additionalProperties": false,
+          "properties": {
+            "den": {
+              "type": "integer"
+            },
+            "num": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "den",
+            "num"
+          ],
+          "type": "object"
+        },
+        "maxItems": 3,
+        "minItems": 3,
+        "type": "array"
+      },
+      "maxItems": 3,
+      "minItems": 3,
+      "type": "array"
+    },
+    "kind": {
+      "type": "string"
+    },
+    "nominal_outputs": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "den": {
+            "type": "integer"
+          },
+          "num": {
+            "type": "integer"
+          }
+        },
+        "required": [
+          "den",
+          "num"
+        ],
+        "type": "object"
+      },
+      "maxItems": 3,
+      "minItems": 3,
+      "type": "array"
+    },
+    "output_covariance": {
+      "items": {
+        "items": {
+          "additionalProperties": false,
+          "properties": {
+            "den": {
+              "type": "integer"
+            },
+            "num": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "den",
+            "num"
+          ],
+          "type": "object"
+        },
+        "maxItems": 3,
+        "minItems": 3,
+        "type": "array"
+      },
+      "maxItems": 3,
+      "minItems": 3,
+      "type": "array"
+    }
+  },
+  "required": [
+    "jacobian",
+    "kind",
+    "nominal_outputs",
+    "output_covariance"
+  ],
+  "title": "F3UNC1 actor submission shape (values intentionally omitted)",
+  "type": "object"
+}

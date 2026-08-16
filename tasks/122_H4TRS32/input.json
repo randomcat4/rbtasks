@@ -1,0 +1,60 @@
+{
+  "alphabet_order": [
+    "a",
+    "b",
+    "c",
+    "d"
+  ],
+  "rules": [
+    {
+      "lhs": "ba",
+      "rhs": "ab"
+    },
+    {
+      "lhs": "ca",
+      "rhs": "ac"
+    },
+    {
+      "lhs": "cb",
+      "rhs": "bc"
+    },
+    {
+      "lhs": "da",
+      "rhs": "ad"
+    },
+    {
+      "lhs": "db",
+      "rhs": "bd"
+    },
+    {
+      "lhs": "dc",
+      "rhs": "cd"
+    },
+    {
+      "lhs": "aa",
+      "rhs": "a"
+    },
+    {
+      "lhs": "bb",
+      "rhs": "b"
+    },
+    {
+      "lhs": "cc",
+      "rhs": "c"
+    },
+    {
+      "lhs": "dd",
+      "rhs": "d"
+    }
+  ],
+  "schema": "h4.terminating_rewrite.v1",
+  "termination_measure": "lexicographic (word length, inversion count)",
+  "test_words": [
+    "dcbaabcd",
+    "ddccbbaa",
+    "cadbdaca",
+    "bbbbacdd",
+    "dacadbbc",
+    "ccddabab"
+  ]
+}

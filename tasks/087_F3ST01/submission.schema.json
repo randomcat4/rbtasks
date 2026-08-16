@@ -1,0 +1,160 @@
+{
+  "$id": "returnbench:F3ST01:submission",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "counts": {
+      "items": {
+        "type": "integer"
+      },
+      "maxItems": 5,
+      "minItems": 5,
+      "type": "array"
+    },
+    "kind": {
+      "type": "string"
+    },
+    "sturm_sequence": {
+      "items": {
+        "anyOf": [
+          {
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "den": {
+                  "type": "integer"
+                },
+                "num": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "den",
+                "num"
+              ],
+              "type": "object"
+            },
+            "maxItems": 6,
+            "minItems": 6,
+            "type": "array"
+          },
+          {
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "den": {
+                  "type": "integer"
+                },
+                "num": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "den",
+                "num"
+              ],
+              "type": "object"
+            },
+            "maxItems": 5,
+            "minItems": 5,
+            "type": "array"
+          },
+          {
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "den": {
+                  "type": "integer"
+                },
+                "num": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "den",
+                "num"
+              ],
+              "type": "object"
+            },
+            "maxItems": 4,
+            "minItems": 4,
+            "type": "array"
+          },
+          {
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "den": {
+                  "type": "integer"
+                },
+                "num": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "den",
+                "num"
+              ],
+              "type": "object"
+            },
+            "maxItems": 3,
+            "minItems": 3,
+            "type": "array"
+          },
+          {
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "den": {
+                  "type": "integer"
+                },
+                "num": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "den",
+                "num"
+              ],
+              "type": "object"
+            },
+            "maxItems": 2,
+            "minItems": 2,
+            "type": "array"
+          },
+          {
+            "items": {
+              "additionalProperties": false,
+              "properties": {
+                "den": {
+                  "type": "integer"
+                },
+                "num": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "den",
+                "num"
+              ],
+              "type": "object"
+            },
+            "maxItems": 1,
+            "minItems": 1,
+            "type": "array"
+          }
+        ]
+      },
+      "maxItems": 6,
+      "minItems": 6,
+      "type": "array"
+    }
+  },
+  "required": [
+    "counts",
+    "kind",
+    "sturm_sequence"
+  ],
+  "title": "F3ST01 actor submission shape (values intentionally omitted)",
+  "type": "object"
+}

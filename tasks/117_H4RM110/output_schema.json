@@ -1,0 +1,55 @@
+{
+  "additional_fields": "forbidden",
+  "contract_completeness": "Every required field has an explicit JSON type, shape, defining equation or predicate, and canonicalization rule.",
+  "field_contracts": {
+    "affine_constant": {
+      "canonicalization": "must be 0 or 1",
+      "definition": "0 if selected W is nonnegative, else 1",
+      "json_type": "integer",
+      "shape": "scalar"
+    },
+    "affine_linear_mask": {
+      "canonicalization": "smallest maximizing mask",
+      "definition": "tie-broken maximizer of |W[a]|",
+      "json_type": "integer",
+      "shape": "scalar"
+    },
+    "hamming_distance": {
+      "canonicalization": "exact nonnegative integer",
+      "definition": "distance from received, also (2^m-|W|)/2",
+      "json_type": "integer",
+      "shape": "scalar"
+    },
+    "nearest_codeword": {
+      "canonicalization": "increasing x, binary entries",
+      "definition": "parity(mask & x) XOR constant",
+      "json_type": "array of integers",
+      "shape": "[2^m]"
+    },
+    "walsh_spectrum": {
+      "canonicalization": "increasing mask a",
+      "definition": "W[a] under the stated parity convention",
+      "json_type": "array of integers",
+      "shape": "[2^m]"
+    }
+  },
+  "representation_conventions": [
+    "Indices are zero-based unless a mathematical exponent or degree is explicitly named. Matrices are row-major; nested tensor array order is stated per task.",
+    "A rational scalar is a reduced JSON string \"n\" or \"n/d\" with positive denominator. JSON integers are used only where the field contract says integer. Floats, decimal approximations, NaN and infinity are invalid.",
+    "The submission object has exactly required_fields, with no additional keys. Nested objects likewise use exactly the named keys."
+  ],
+  "required_fields": [
+    "walsh_spectrum",
+    "affine_linear_mask",
+    "affine_constant",
+    "nearest_codeword",
+    "hamming_distance"
+  ],
+  "schema": "h4.output-contract.v1",
+  "task_rules": [
+    "Coordinates x and masks a are integers 0..2^m-1; parity(a & x) is the GF(2) dot product of their m low-to-high bits.",
+    "W[a]=sum_x (-1)^(received[x]+parity(a&x)), listed by increasing a. Choose a maximizing |W[a]|, breaking ties by smallest a; choose b=0 for W[a]>=0 and b=1 otherwise.",
+    "The affine codeword is parity(a&x) XOR b in increasing x order, and distance=(2^m-|W[a]|)/2."
+  ],
+  "task_schema": "h4.rm1_walsh.v1"
+}

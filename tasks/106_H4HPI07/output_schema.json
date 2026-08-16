@@ -1,0 +1,49 @@
+{
+  "additional_fields": "forbidden",
+  "contract_completeness": "Every required field has an explicit JSON type, shape, defining equation or predicate, and canonicalization rule.",
+  "field_contracts": {
+    "active_constraints": {
+      "canonicalization": "strictly increasing",
+      "definition": "union of all tight input-constraint indices",
+      "json_type": "array of integers",
+      "shape": "[number active]"
+    },
+    "doubled_area": {
+      "canonicalization": "exact positive value",
+      "definition": "positive shoelace doubled area of the intersection polygon",
+      "json_type": "rational scalar",
+      "shape": "scalar"
+    },
+    "redundancy_certificates": {
+      "canonicalization": "inactive t increasing; deterministic single/pair choice in task rules",
+      "definition": "each {constraint:t, combination:[{constraint:i,multiplier:lambda}]} satisfying the conic identity",
+      "json_type": "array of objects",
+      "shape": "[number inactive]"
+    },
+    "vertices_ccw": {
+      "canonicalization": "strict CCW from minimum point; active indices increasing",
+      "definition": "each {point:[x,y], active_constraints:[indices]}",
+      "json_type": "array of objects",
+      "shape": "[polygon vertex count]"
+    }
+  },
+  "rational_encoding": "reduced string n or n/d; denominator positive",
+  "representation_conventions": [
+    "Indices are zero-based unless a mathematical exponent or degree is explicitly named. Matrices are row-major; nested tensor array order is stated per task.",
+    "A rational scalar is a reduced JSON string \"n\" or \"n/d\" with positive denominator. JSON integers are used only where the field contract says integer. Floats, decimal approximations, NaN and infinity are invalid.",
+    "The submission object has exactly required_fields, with no additional keys. Nested objects likewise use exactly the named keys."
+  ],
+  "required_fields": [
+    "vertices_ccw",
+    "active_constraints",
+    "redundancy_certificates",
+    "doubled_area"
+  ],
+  "schema": "h4.output-contract.v1",
+  "task_rules": [
+    "Constraint index means zero-based position in input.constraints; every inequality is a*x+b*y<=c.",
+    "Vertices are feasible pairwise line intersections, reduced to the strict CCW convex hull beginning at minimum (x,y); each vertex lists every tight input constraint in increasing order.",
+    "Active constraints are the sorted union of vertex-tight indices. For each inactive t in increasing order, choose first a single parallel active constraint with identical normal and no larger bound, otherwise the lexicographically first active pair whose nonnegative combination reproduces t normal and has weighted bound <=c_t."
+  ],
+  "task_schema": "h4.halfplane_farkas.v1"
+}

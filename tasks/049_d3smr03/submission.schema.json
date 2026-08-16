@@ -1,0 +1,49 @@
+{
+  "$id": "returnbench:d3smr03:submission",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "matching": {
+      "additionalProperties": false,
+      "properties": {
+        "Ari": {
+          "type": "string"
+        },
+        "Bo": {
+          "type": "string"
+        },
+        "Cy": {
+          "type": "string"
+        },
+        "Dee": {
+          "type": "string"
+        },
+        "Eli": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "Ari",
+        "Bo",
+        "Cy",
+        "Dee",
+        "Eli"
+      ],
+      "type": "object"
+    },
+    "rank_vector": {
+      "items": {
+        "type": "integer"
+      },
+      "maxItems": 5,
+      "minItems": 5,
+      "type": "array"
+    }
+  },
+  "required": [
+    "matching",
+    "rank_vector"
+  ],
+  "title": "d3smr03 actor submission shape (values intentionally omitted)",
+  "type": "object"
+}

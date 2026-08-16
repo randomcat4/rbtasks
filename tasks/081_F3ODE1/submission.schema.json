@@ -1,0 +1,53 @@
+{
+  "$id": "returnbench:F3ODE1:submission",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "kind": {
+      "type": "string"
+    },
+    "lower": {
+      "additionalProperties": false,
+      "properties": {
+        "den": {
+          "type": "integer"
+        },
+        "num": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "den",
+        "num"
+      ],
+      "type": "object"
+    },
+    "terms": {
+      "type": "integer"
+    },
+    "upper": {
+      "additionalProperties": false,
+      "properties": {
+        "den": {
+          "type": "integer"
+        },
+        "num": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "den",
+        "num"
+      ],
+      "type": "object"
+    }
+  },
+  "required": [
+    "kind",
+    "lower",
+    "terms",
+    "upper"
+  ],
+  "title": "F3ODE1 actor submission shape (values intentionally omitted)",
+  "type": "object"
+}

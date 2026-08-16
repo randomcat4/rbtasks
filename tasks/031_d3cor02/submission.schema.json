@@ -1,0 +1,33 @@
+{
+  "$id": "returnbench:d3cor02:submission",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "degeneracy": {
+      "type": "integer"
+    },
+    "k_core": {
+      "items": {
+        "type": "integer"
+      },
+      "maxItems": 6,
+      "minItems": 6,
+      "type": "array"
+    },
+    "order": {
+      "items": {
+        "type": "integer"
+      },
+      "maxItems": 18,
+      "minItems": 18,
+      "type": "array"
+    }
+  },
+  "required": [
+    "degeneracy",
+    "k_core",
+    "order"
+  ],
+  "title": "d3cor02 actor submission shape (values intentionally omitted)",
+  "type": "object"
+}

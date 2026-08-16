@@ -1,0 +1,18 @@
+{
+  "authors": [
+    "ReturnBench contributors"
+  ],
+  "instance_origin": "ReturnBench deterministic project-original generator; no upstream fixture, solved data, code, or answer copied",
+  "redistribution_analysis": "Only original integer/combinatorial instance data, original text, and original standard-library verifier code are redistributed; upstream code/data is absent.",
+  "references": [
+    {
+      "license": "GPL-2.0-or-later",
+      "project": "GAP",
+      "revision": "refs/tags/v4.16.0 @ 01c52771c24808bf81a012c2df29d0a59c72d193",
+      "url": "https://github.com/gap-system/gap",
+      "use": "separated definition/cross-check anchor only; no GAP code, SmallGrp data, or output bundled",
+      "version": "4.16.0"
+    }
+  ],
+  "task_id": "P5BRN13"
+}

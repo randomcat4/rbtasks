@@ -1,0 +1,63 @@
+{
+  "additional_fields": "forbidden",
+  "contract_completeness": "Every required field has an explicit JSON type, shape, defining equation or predicate, and canonicalization rule.",
+  "field_contracts": {
+    "generating_denominator_ascending": {
+      "canonicalization": "ascending powers, constant 1",
+      "definition": "ordinary generating denominator 1+c_(d-1)z+...+c_0z^d",
+      "json_type": "array of rationals",
+      "shape": "[d+1]"
+    },
+    "generating_numerator_ascending": {
+      "canonicalization": "ascending powers",
+      "definition": "first d convolution coefficients denominator times sum h_k z^k",
+      "json_type": "array of rationals",
+      "shape": "[d]"
+    },
+    "hankel_rank": {
+      "canonicalization": "exact RREF rank",
+      "definition": "exact rank of H[i,j]=h_(i+j)",
+      "json_type": "integer",
+      "shape": "scalar"
+    },
+    "hankel_rref_pivots": {
+      "canonicalization": "strictly increasing",
+      "definition": "zero-based pivot columns of the requested Hankel matrix",
+      "json_type": "array of integers",
+      "shape": "[hankel_rank]"
+    },
+    "markov_parameters": {
+      "canonicalization": "chronological k order",
+      "definition": "h_k=C*A^k*B for k increasing from 0",
+      "json_type": "array of rationals",
+      "shape": "[markov_parameter_count]"
+    },
+    "minimal_recurrence_ascending": {
+      "canonicalization": "ascending shift; final coefficient 1",
+      "definition": "shortest monic recurrence coefficients",
+      "json_type": "array of rationals",
+      "shape": "[d+1]"
+    }
+  },
+  "rational_encoding": "reduced string n or n/d; denominator positive",
+  "representation_conventions": [
+    "Indices are zero-based unless a mathematical exponent or degree is explicitly named. Matrices are row-major; nested tensor array order is stated per task.",
+    "A rational scalar is a reduced JSON string \"n\" or \"n/d\" with positive denominator. JSON integers are used only where the field contract says integer. Floats, decimal approximations, NaN and infinity are invalid.",
+    "The submission object has exactly required_fields, with no additional keys. Nested objects likewise use exactly the named keys."
+  ],
+  "required_fields": [
+    "markov_parameters",
+    "minimal_recurrence_ascending",
+    "hankel_rank",
+    "hankel_rref_pivots",
+    "generating_denominator_ascending",
+    "generating_numerator_ascending"
+  ],
+  "schema": "h4.output-contract.v1",
+  "task_rules": [
+    "Let h_k=C A^k B, using the scalar entry because B has one column and C one row.",
+    "The recurrence is the shortest monic list [c_0,...,c_(d-1),1] such that h_(k+d)+sum_(j=0)^(d-1)c_j h_(k+j)=0 for every available k; try d=1,2,... in order.",
+    "The s by s Hankel matrix is H[i,j]=h_(i+j). The ordinary generating denominator is 1+c_(d-1)z+...+c_0 z^d; its numerator contains the first d coefficients of denominator times the series."
+  ],
+  "task_schema": "h4.hankel_realization.v1"
+}

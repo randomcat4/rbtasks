@@ -1,0 +1,251 @@
+{
+  "$id": "returnbench:F3BN01:submission",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "elimination_order": {
+      "items": {
+        "type": "string"
+      },
+      "maxItems": 5,
+      "minItems": 5,
+      "type": "array"
+    },
+    "evidence_probability": {
+      "additionalProperties": false,
+      "properties": {
+        "den": {
+          "type": "integer"
+        },
+        "num": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "den",
+        "num"
+      ],
+      "type": "object"
+    },
+    "kind": {
+      "type": "string"
+    },
+    "posterior": {
+      "additionalProperties": false,
+      "properties": {
+        "den": {
+          "type": "integer"
+        },
+        "num": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "den",
+        "num"
+      ],
+      "type": "object"
+    },
+    "trace": {
+      "items": {
+        "anyOf": [
+          {
+            "additionalProperties": false,
+            "properties": {
+              "scope": {
+                "items": {
+                  "type": "string"
+                },
+                "maxItems": 2,
+                "minItems": 2,
+                "type": "array"
+              },
+              "table": {
+                "items": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "bits": {
+                      "items": {
+                        "type": "integer"
+                      },
+                      "maxItems": 2,
+                      "minItems": 2,
+                      "type": "array"
+                    },
+                    "value": {
+                      "additionalProperties": false,
+                      "properties": {
+                        "den": {
+                          "type": "integer"
+                        },
+                        "num": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "den",
+                        "num"
+                      ],
+                      "type": "object"
+                    }
+                  },
+                  "required": [
+                    "bits",
+                    "value"
+                  ],
+                  "type": "object"
+                },
+                "maxItems": 4,
+                "minItems": 4,
+                "type": "array"
+              },
+              "variable": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "scope",
+              "table",
+              "variable"
+            ],
+            "type": "object"
+          },
+          {
+            "additionalProperties": false,
+            "properties": {
+              "scope": {
+                "items": {
+                  "type": "string"
+                },
+                "maxItems": 3,
+                "minItems": 3,
+                "type": "array"
+              },
+              "table": {
+                "items": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "bits": {
+                      "items": {
+                        "type": "integer"
+                      },
+                      "maxItems": 3,
+                      "minItems": 3,
+                      "type": "array"
+                    },
+                    "value": {
+                      "additionalProperties": false,
+                      "properties": {
+                        "den": {
+                          "type": "integer"
+                        },
+                        "num": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "den",
+                        "num"
+                      ],
+                      "type": "object"
+                    }
+                  },
+                  "required": [
+                    "bits",
+                    "value"
+                  ],
+                  "type": "object"
+                },
+                "maxItems": 8,
+                "minItems": 8,
+                "type": "array"
+              },
+              "variable": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "scope",
+              "table",
+              "variable"
+            ],
+            "type": "object"
+          },
+          {
+            "additionalProperties": false,
+            "properties": {
+              "scope": {
+                "items": {
+                  "type": "string"
+                },
+                "maxItems": 1,
+                "minItems": 1,
+                "type": "array"
+              },
+              "table": {
+                "items": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "bits": {
+                      "items": {
+                        "type": "integer"
+                      },
+                      "maxItems": 1,
+                      "minItems": 1,
+                      "type": "array"
+                    },
+                    "value": {
+                      "additionalProperties": false,
+                      "properties": {
+                        "den": {
+                          "type": "integer"
+                        },
+                        "num": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "den",
+                        "num"
+                      ],
+                      "type": "object"
+                    }
+                  },
+                  "required": [
+                    "bits",
+                    "value"
+                  ],
+                  "type": "object"
+                },
+                "maxItems": 2,
+                "minItems": 2,
+                "type": "array"
+              },
+              "variable": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "scope",
+              "table",
+              "variable"
+            ],
+            "type": "object"
+          }
+        ]
+      },
+      "maxItems": 5,
+      "minItems": 5,
+      "type": "array"
+    }
+  },
+  "required": [
+    "elimination_order",
+    "evidence_probability",
+    "kind",
+    "posterior",
+    "trace"
+  ],
+  "title": "F3BN01 actor submission shape (values intentionally omitted)",
+  "type": "object"
+}

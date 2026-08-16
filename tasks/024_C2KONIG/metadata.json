@@ -1,0 +1,24 @@
+{
+  "answer_boundary": "No administrator control, arm assignment, reference answer, or hidden judge is included.",
+  "certificate_type": "组合结构、上下界相遇或穷尽证书",
+  "difficulty_basis": "本题对象是“Königsberg graph parity obstruction”；需核验的特有证书结构为 组合结构、上下界相遇或穷尽证书，公开合同核心项包括 形式声明、定义展开与内核检查。本题的算法与验证负担是：计算 Königsberg 图四个顶点的奇度，结合 Euler 路径至多两个奇端点的必要条件得到不可行障碍。 结构等级生成规则为“中高：需要完整算法轨迹、递推表或精确多字段见证”。该等级仅依据证书宽度、精确重放和独立验收负担评定，未做模型难度校准。",
+  "family": "baseline",
+  "lane": "c2",
+  "license": "MIT for project-original material; third-party material retains upstream terms.",
+  "math_domain": "离散数学",
+  "ordinal": 24,
+  "pilot_status": "PILOT_HOLD_EXISTING",
+  "public_files": [
+    "metadata.json",
+    "provenance.json",
+    "task.md"
+  ],
+  "release_status": "RELEASE_READY",
+  "representation_bridge": "冻结自然语言/结构化输入 → 图论与组合算法中的精确表示 → 组合结构、上下界相遇或穷尽证书（核心公开字段：题面指定的形式声明或证书对象）→ 独立验收回源结论",
+  "schema": "returnbench-public-task-v1",
+  "solution_outline": "计算 Königsberg 图四个顶点的奇度，结合 Euler 路径至多两个奇端点的必要条件得到不可行障碍。",
+  "structural_difficulty": "中高",
+  "subdomain": "图论与组合算法",
+  "task_id": "C2KONIG",
+  "title": "C2KONIG — Königsberg graph parity obstruction"
+}

@@ -1,0 +1,26 @@
+{
+  "answer_boundary": "No administrator control, arm assignment, reference answer, or hidden judge is included.",
+  "certificate_type": "编码/译码轨迹、谱或有限域证书",
+  "difficulty_basis": "本题对象是“CRC-32 bit order: reflected LFSR versus normal polynomial division”；需核验的特有证书结构为 编码/译码轨迹、谱或有限域证书，公开合同核心项包括 crc32、kind。本题的算法与验证负担是：分别按 reflected LFSR 位序与 normal 多项式长除实现 CRC-32，显式反转位序映射并逐步核对两条余数轨迹。 结构等级生成规则为“中高：需要完整算法轨迹、递推表或精确多字段见证”。该等级仅依据证书宽度、精确重放和独立验收负担评定，未做模型难度校准。",
+  "family": "baseline",
+  "lane": "f3",
+  "license": "MIT for project-original material; third-party material retains upstream terms.",
+  "math_domain": "信息与编码",
+  "ordinal": 68,
+  "pilot_status": "PILOT_ELIGIBLE",
+  "public_files": [
+    "input.json",
+    "metadata.json",
+    "provenance.json",
+    "submission.schema.json",
+    "task.md"
+  ],
+  "release_status": "RELEASE_READY",
+  "representation_bridge": "冻结自然语言/结构化输入 → 编码、压缩与信息论中的精确表示 → 编码/译码轨迹、谱或有限域证书（核心公开字段：crc32、kind）→ 独立验收回源结论",
+  "schema": "returnbench-public-task-v1",
+  "solution_outline": "分别按 reflected LFSR 位序与 normal 多项式长除实现 CRC-32，显式反转位序映射并逐步核对两条余数轨迹。",
+  "structural_difficulty": "中高",
+  "subdomain": "编码、压缩与信息论",
+  "task_id": "F3CRC1",
+  "title": "F3CRC1 — CRC-32 bit order: reflected LFSR versus normal polynomial division"
+}

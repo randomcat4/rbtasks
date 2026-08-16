@@ -1,0 +1,14 @@
+{
+  "pilot_eligible": false,
+  "private_controls_outside_package": true,
+  "public_files": [
+    "task.md",
+    "input.json",
+    "certificate_schema.json",
+    "source.json",
+    "license.json",
+    "verifier.json"
+  ],
+  "status": "RELEASE_READY_MIT",
+  "task_id": "P5ROT11"
+}

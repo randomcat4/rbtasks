@@ -1,0 +1,17 @@
+{
+  "additional_top_level_fields": "rejected",
+  "required_top_level_fields": {
+    "berlekamp_massey_trace": "all 36 rows",
+    "chien_search_table": "all 127 rows",
+    "corrected_codeword": "int[127]",
+    "corrected_syndromes": "int[36]",
+    "error_count": "int",
+    "error_evaluator": "int[]",
+    "error_locator": "int[]",
+    "error_positions": "int[]",
+    "error_values": "int[]",
+    "received_syndromes": "int[36]"
+  },
+  "schema_version": "returnbench-exact-return-v1",
+  "task_id": "P5RS25"
+}

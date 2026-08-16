@@ -1,0 +1,24 @@
+{
+  "answer_boundary": "No administrator control, arm assignment, reference answer, or hidden judge is included.",
+  "certificate_type": "精确坐标、定向、支撑或拓扑不变量证书",
+  "difficulty_basis": "本题对象是“Heron's formula”；需核验的特有证书结构为 精确坐标、定向、支撑或拓扑不变量证书，公开合同核心项包括 形式声明、定义展开与内核检查。本题的算法与验证负担是：由三边构造半周长，验证三角形不等式使根号项非负，再代入 Heron 公式并精确化简目标面积。 结构等级生成规则为“中：以单一形式声明或较窄证书为主，但仍需内核或精确裁判闭合”。该等级仅依据证书宽度、精确重放和独立验收负担评定，未做模型难度校准。",
+  "family": "baseline",
+  "lane": "c",
+  "license": "MIT for project-original material; third-party material retains upstream terms.",
+  "math_domain": "几何学",
+  "ordinal": 18,
+  "pilot_status": "PILOT_ELIGIBLE",
+  "public_files": [
+    "metadata.json",
+    "provenance.json",
+    "task.md"
+  ],
+  "release_status": "RELEASE_READY",
+  "representation_bridge": "冻结自然语言/结构化输入 → 计算、欧氏与离散几何中的精确表示 → 精确坐标、定向、支撑或拓扑不变量证书（核心公开字段：题面指定的形式声明或证书对象）→ 独立验收回源结论",
+  "schema": "returnbench-public-task-v1",
+  "solution_outline": "由三边构造半周长，验证三角形不等式使根号项非负，再代入 Heron 公式并精确化简目标面积。",
+  "structural_difficulty": "中",
+  "subdomain": "计算、欧氏与离散几何",
+  "task_id": "C03HERON",
+  "title": "C03HERON — Heron's formula"
+}

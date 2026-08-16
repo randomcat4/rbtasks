@@ -1,0 +1,19 @@
+{
+  "authors": [
+    "ReturnBench contributors"
+  ],
+  "frozen_design": "Pro-derived Batch 02 design freeze v0",
+  "instance_origin": "ReturnBench deterministic project-original generator; no upstream fixture, proof, code, or answer copied",
+  "redistribution_analysis": "Only original finite integer data, original text, and original Python standard-library verifier are redistributed; upstream code/data is absent.",
+  "references": [
+    {
+      "license": "MIT",
+      "project": "CaDiCaL",
+      "revision": "refs/tags/rel-3.0.1 @ c60730422e758ef1cebe7aeddf2dda31c996bf04",
+      "url": "https://github.com/arminbiere/cadical",
+      "use": "frozen SAT anchor unavailable on validation host; not used or bundled",
+      "version": "3.0.1"
+    }
+  ],
+  "task_id": "P5CAP18"
+}

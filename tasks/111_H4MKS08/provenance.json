@@ -1,0 +1,12 @@
+{
+  "bibliographic_context": [
+    "A. M. Andrew, Another efficient algorithm for convex hulls in two dimensions, Information Processing Letters 9(5), 1979"
+  ],
+  "claim_provenance": "project_generated_original_fixed_instance",
+  "license": "MIT",
+  "license_authority": "root LICENSE; explicit project-owner authorization 2026-08-16",
+  "revision": "a00d5ab7800857df1445d72664df21458d8ad8c18c6a90687d817478c5c6c7b1",
+  "source_locator": "urn:rbtasks:h4:h4mks08:v1",
+  "task_id": "H4MKS08",
+  "third_party_code_or_data_copied": false
+}

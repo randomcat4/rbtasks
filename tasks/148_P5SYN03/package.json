@@ -1,0 +1,14 @@
+{
+  "task_id": "P5SYN03",
+  "status": "RELEASE_READY_MIT",
+  "public_files": [
+    "task.md",
+    "input.json",
+    "certificate_schema.json",
+    "source.json",
+    "license.json",
+    "verifier.json"
+  ],
+  "private_controls_outside_package": true,
+  "pilot_eligible": false
+}
