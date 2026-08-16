@@ -2,7 +2,7 @@
   "accept_exit_code": 0,
   "command": [
     "python3",
-    "../_shared/exact_return_certificate_judge.py",
+    "../../verifiers/p5/exact_return_certificate_judge.py",
     ".",
     "artifact.json"
   ],

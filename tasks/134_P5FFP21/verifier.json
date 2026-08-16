@@ -2,7 +2,7 @@
   "accept_exit_code": 0,
   "command": [
     "python3",
-    "../_shared/algebra_optimization_judge.py",
+    "../../verifiers/p5/algebra_optimization_judge.py",
     ".",
     "artifact.json"
   ],

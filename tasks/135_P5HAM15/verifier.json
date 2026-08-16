@@ -2,7 +2,7 @@
   "accept_exit_code": 0,
   "command": [
     "python3",
-    "../_shared/structural_certificate_judge.py",
+    "../../verifiers/p5/structural_certificate_judge.py",
     ".",
     "artifact.json"
   ],
