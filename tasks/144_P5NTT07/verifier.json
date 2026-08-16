@@ -2,7 +2,7 @@
   "type": "shared_exact_certificate",
   "command": [
     "python3",
-    "../_shared/exact_certificate_judge.py",
+    "../../verifiers/p5/exact_certificate_judge.py",
     ".",
     "artifact.json"
   ],
