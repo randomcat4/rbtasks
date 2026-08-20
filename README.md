@@ -13,6 +13,16 @@ the public input/output files needed for development and replay. The collection 
 mathematics, algebra, geometry, probability and statistics, optimization, theoretical computer
 science, coding, numerical analysis, signal processing, mathematical physics, and control.
 
+## 🔭 与 RBtask 配套的 RK／欧拉运行记录演示
+
+本仓库同时保存了一份与 **RBtask 配套的 RK／欧拉（EULER）真实运行记录静态演示**：它把 Gao 多智能体研究运行中的 **132 轮、176 个工作节点、318 条关系边**冻结为一个可交互页面，用于展示 RBtask 所处的研究、调度、否决与审计语境。
+
+[打开演示说明与截图](demos/rk-euler-gao-run/README.md) · [下载自包含网页](demos/rk-euler-gao-run/index.html)
+
+![RK／欧拉 Gao 运行记录演示](demos/rk-euler-gao-run/preview.png)
+
+> **性质说明：**这是一次历史运行记录的静态 Demo，不是正在运行的 RK 服务，也不宣称已经接入实时事件流。`index.html` 已内嵌界面代码、样式和运行快照；下载后无需登录、无需后端、无需联网即可展示。
+
 > **This is the public task bank, not a contamination-free hidden evaluation.** Reference answers,
 > administrator controls, sham definitions, arm assignments, private judges, and raw evaluation logs
 > are deliberately excluded. Blind or Pilot measurements require a separately maintained,
